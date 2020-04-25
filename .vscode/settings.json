@@ -1,7 +1,0 @@
-{
-  "files.exclude": {
-    ".vscode": true,
-    "README.md": true,
-    "firstapp\\node_modules": true
-  }
-}
