@@ -1,0 +1,7 @@
+{
+  "files.exclude": {
+    "mask\\node_modules": true,
+    ".vscode": true,
+    ".idea": true
+  }
+}
