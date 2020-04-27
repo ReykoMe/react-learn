@@ -1,0 +1,19 @@
+.sidebar {
+    padding: 10px;
+}
+
+.item {
+    margin: 10px 0;
+}
+
+.item p {
+    font-size: 0.7em;
+}
+.item img {
+    position: relative;
+    width: 100%;
+}
+
+.item h4 {
+    font-size: 1em;
+}

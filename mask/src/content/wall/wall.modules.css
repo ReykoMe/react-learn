@@ -1,0 +1,9 @@
+.wall {
+    position: relative;
+    top: 10px;
+}
+
+.message-area textarea {
+    width: 100%;
+    resize: none;
+}

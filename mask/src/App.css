@@ -1,17 +1,21 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
+body {
+    font-size: 14px;
+}
 
 .content, .footer, .header, .sidebar, .navmenu {
-    border: 1px solid #000000;
-    background-color: #E9E9E9;
+    border: 1px solid lightgrey;
+
 }
 
 .main-wrapper {
     display: grid;
-    grid-template-areas: "header header" "sidebar content" "footer footer";
+    grid-template-areas: "header header" "sidebar content" "sidebar footer";
     grid-template-rows: 50px 1fr;
     grid-template-columns: 1fr 5fr;
     grid-gap: 3px;
