@@ -1,0 +1,15 @@
+.content {
+    padding: 10px;
+}
+
+.ava-template {
+    position: relative;
+    width: 100px;
+    float: left;
+}
+
+.wall {
+    position: relative;
+    clear: left;
+    top: 10px;
+}

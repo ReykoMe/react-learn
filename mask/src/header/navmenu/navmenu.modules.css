@@ -1,0 +1,10 @@
+.navmenu {
+    display: flex;
+    list-style: none;
+
+    width: 20%;
+}
+
+.navmenu li {
+    margin-right: 5px;
+}

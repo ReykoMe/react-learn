@@ -1,5 +1,37 @@
-body {
-  text-align: center;
-  background-color: #040327;
-  color: #ffffff;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.content, .footer, .header, .sidebar, .navmenu {
+    border: 1px solid #000000;
+    background-color: #E9E9E9;
+}
+
+.main-wrapper {
+    display: grid;
+    grid-template-areas: "header header" "sidebar content" "footer footer";
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 3px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
 }
