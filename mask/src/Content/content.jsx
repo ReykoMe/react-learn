@@ -1,11 +1,11 @@
 import React from "react";
-import './content.modules.css';
+import classes from './content.module.css';
 import Profile from "./profile/profile";
 import Wall from "./wall/wall";
 
 const Content = () => {
     return (
-        <div className='content'>
+        <div className={classes.content}>
             <Profile />
             <Wall />
         </div>

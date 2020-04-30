@@ -1,9 +1,9 @@
 import React from "react";
-import './profile.modules.css'
+import classes from'./profile.module.css'
 
-const Profile = () => {
+const Profile = (props) => {
     return (
-        <div className="profile">
+        <div className={classes.profile}>
             <img src={require("../../media/avatar_template.png")} className="ava-template" alt="kek"/>
             <h3>Albert Kremov</h3>
             <p>16 years old</p>

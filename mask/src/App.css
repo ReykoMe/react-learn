@@ -1,17 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-
+    border: 1px solid lightgrey;
 }
 
 body {
     font-size: 14px;
+    padding: 1%;
 }
 
-.content, .footer, .header, .sidebar, .navmenu {
-    border: 1px solid lightgrey;
-
-}
 
 .main-wrapper {
     display: grid;
@@ -21,18 +18,20 @@ body {
     grid-gap: 3px;
     width: 80%;
     margin: 0 auto;
+    padding: 1%;
 }
 
 .header {
     grid-area: header;
 }
 
-.sidebar {
-    grid-area: sidebar;
+.content {
+    padding: 10px;
+    grid-area: content;
 }
 
-.content {
-    grid-area: content;
+.sidebar {
+    grid-area: sidebar;
 }
 
 .footer {

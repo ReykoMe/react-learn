@@ -1,14 +1,18 @@
 import React from "react";
-import './navmenu.modules.css';
+import classes from './navmenu.module.css';
+import {NavLink} from "react-router-dom"; //вместо classes можно использовать любое другое имя, при работе глобальные стили перестают работать, поэтому стили необходимо выносить в отдельные модули
 
 const Navmenu = () => {
     return (
-        <ul className="navmenu">
-            <li>First</li>
-            <li>Second</li>
-            <li>Third</li>
-            <li>Fourth</li>
-        </ul>
+        <div className={classes.navmenu}>
+            <div className={classes.item}>
+                <NavLink to="/main" activeClassName={classes.selected}>Main</NavLink>
+            </div>
+            <div className={classes.item}>
+                <NavLink to="/dialogs" activeClassName={classes.selected}>Dialogs</NavLink>
+            </div>
+
+        </div>
     )
 }
 

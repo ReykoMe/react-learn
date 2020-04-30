@@ -1,5 +1,5 @@
 import React from "react";
-import './header.modules.css'
+import './header.module.css'
 import Navmenu from './navmenu/navmenu';
 const Header = () => {
    return (

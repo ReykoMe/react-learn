@@ -1,0 +1,21 @@
+.item {
+    color: #000;
+    margin: 3px;
+}
+
+.item a {
+    text-decoration: none;
+}
+
+.item a:visited {
+    color: #000;
+}
+
+.selected {
+    font-weight: bold;
+    color: red;
+}
+
+.users {
+
+}

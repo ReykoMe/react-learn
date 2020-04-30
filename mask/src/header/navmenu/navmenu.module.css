@@ -1,0 +1,17 @@
+.navmenu {
+    display: flex;
+    list-style: none;
+    border: 1px solid lightgrey;
+    width: 20%;
+}
+.item {
+    margin: 3px;
+}
+.item a{
+    color: black;
+    text-decoration: none;
+}
+
+.item a.selected {
+    color: red;
+}
