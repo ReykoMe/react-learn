@@ -14,6 +14,7 @@ const App = () => {
                 <Header/>
                 <Sidebar/>
                 <div className="content">
+                    {/*Добавляем Route (необходимо установить из npm react-router-dom), с помощью которого реализуется логика "Если в строке браузера отображается /путь условный => отображать компоненту*/}
                     <Route exact path ="/dialogs" component={Dialogs}/>
                     <Route path ="/main" component={Content}/>
                 </div>

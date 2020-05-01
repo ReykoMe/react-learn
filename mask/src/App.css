@@ -6,9 +6,12 @@
 
 body {
     font-size: 14px;
-    padding: 1%;
 }
 
+
+html, body, #root {
+    border: none;
+}
 
 .main-wrapper {
     display: grid;
