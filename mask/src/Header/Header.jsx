@@ -1,10 +1,10 @@
 import React from "react";
-import './header.module.css'
-import Navmenu from './navmenu/navmenu';
+import './Header.module.css'
+import NavigationBar from './NavigationBar/NavigationBar';
 const Header = () => {
    return (
        <div className='header'>
-            <Navmenu />
+            <NavigationBar />
        </div>
     )
 };

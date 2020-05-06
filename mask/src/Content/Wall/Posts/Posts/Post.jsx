@@ -1,7 +1,7 @@
 import React from "react";
-import classes from'./wall-message.module.css';
+import classes from './PostMessage.module.css';
 
-    const WallMessage = (props) => {
+    const Post = (props) => {
         return (
             <div className={classes.item}>
                 <h4>{props.userName}</h4>
@@ -10,4 +10,4 @@ import classes from'./wall-message.module.css';
         )
     }
 
-export default WallMessage;
+export default Post;
