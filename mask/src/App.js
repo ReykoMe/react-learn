@@ -13,7 +13,7 @@ const App = (props) => {
         <BrowserRouter>
             <div className='main-wrapper'>
                 <Header/>
-                <Sidebar/>
+                <Sidebar friends={props.Data.sidebar.friends}/>
                 <div className="content">
                     {/*Добавляем Route (необходимо установить из npm react-router-dom), с помощью которого реализуется логика "Если в строке браузера отображается /путь условный => отображать компоненту*/}
                     <Route exact
