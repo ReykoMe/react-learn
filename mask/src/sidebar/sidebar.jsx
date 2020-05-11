@@ -1,10 +1,10 @@
 import React from "react";
-import classes from './sidebar.module.css';
+import classes from './Sidebar.module.css';
 //Создаем экземпляр (подкомпоненту)одного элемента
 let FriendItem = (props) => {
     return(
         <div className={classes.friend}>
-            <div className={classes.name}>{props.firstName}</div>
+            <div className={classes.name}> {props.firstName} </div>
             <div className={classes.status}><p>Цитата дня: </p>{props.status}</div>
         </div>
     )
@@ -14,6 +14,7 @@ const Sidebar = (props) => {
     //При каждой итерации возвращать возвращать следующий элемент с данными
     let lastFriends = props.friends.map((friend) => <FriendItem firstName={friend.firstName}
                                                                 status={friend.status}
+                                                                key = {friend.id}
     />);
 
 

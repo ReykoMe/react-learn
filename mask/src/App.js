@@ -3,14 +3,13 @@ import './App.css';
 import Header from './Header/Header';
 import Content from "./Content/Content";
 import Footer from './Footer/Footer';
-import Sidebar from "./sidebar/sidebar";
+import Sidebar from "./Sidebar/Sidebar";
 import Messenger from "./Messenger/Messenger";
-import {BrowserRouter, Route} from "react-router-dom";
+import {Route} from "react-router-dom";
+
 
 const App = (props) => {
-
     return (
-        <BrowserRouter>
             <div className='main-wrapper'>
                 <Header/>
                 <Sidebar friends={props.Data.sidebar.friends}/>
@@ -23,11 +22,12 @@ const App = (props) => {
                            />}/>
                     <Route exact
                            path="/"
-                           render={() => <Content wallPosts={props.Data.profile.wallPosts}/>}/>
+                           render={() => <Content profileData={props.Data.profile}
+                                                  dispatch={props.dispatch}
+                           />}/>
                 </div>
                 <Footer/>
             </div>
-        </BrowserRouter>
     );
 }
 

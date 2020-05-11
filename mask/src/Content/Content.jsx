@@ -8,7 +8,11 @@ const Content = (props) => {
     return (
         <div className={classes.content}>
             <Profile />
-            <Wall wallPosts={props.wallPosts}/>
+            <Wall wallPosts={props.profileData.wallPosts}
+                  areaText ={props.profileData.newText}
+                  dispatch={props.dispatch}
+                  newPostText={props.newPostText}
+            />
         </div>
     )
 }
