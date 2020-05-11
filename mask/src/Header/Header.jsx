@@ -1,9 +1,9 @@
 import React from "react";
-import './Header.module.css'
+import classes from './Header.module.css'
 import NavigationBar from './NavigationBar/NavigationBar';
 const Header = () => {
    return (
-       <div className='header'>
+       <div className={classes.header + " row p-2"}>
             <NavigationBar />
        </div>
     )

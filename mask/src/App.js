@@ -10,23 +10,30 @@ import {Route} from "react-router-dom";
 
 const App = (props) => {
     return (
-            <div className='main-wrapper'>
-                <Header/>
-                <Sidebar friends={props.Data.sidebar.friends}/>
-                <div className="content">
-                    {/*Добавляем Route (необходимо установить из npm react-router-dom), с помощью которого реализуется логика "Если в строке браузера отображается /путь условный => отображать компоненту*/}
-                    <Route exact
-                           path="/messenger"
-                           render={() => <Messenger messagesData={props.Data.messenger.messagesData}
-                                                    usersData={props.Data.messenger.usersData}
-                           />}/>
-                    <Route exact
-                           path="/"
-                           render={() => <Content profileData={props.Data.profile}
-                                                  dispatch={props.dispatch}
-                           />}/>
+            <div className='container'>
+                <div className="row">
+                    <Header/>
                 </div>
-                <Footer/>
+                <div className="row">
+                    <Sidebar friends={props.Data.sidebar.friends}/>
+                    <div className="col-8 content">
+                        {/*Добавляем Route (необходимо установить из npm react-router-dom), с помощью которого реализуется логика "Если в строке браузера отображается /путь условный => отображать компоненту*/}
+                        <Route exact
+                               path="/messenger"
+                               render={() => <Messenger messagesData={props.Data.messenger.messagesData}
+                                                        usersData={props.Data.messenger.usersData}
+                               />}/>
+                        <Route exact
+                               path="/"
+                               render={() => <Content profileData={props.Data.profile}
+                                                      dispatch={props.dispatch}
+                               />}/>
+                    </div>
+                </div>
+                <div className="row">
+                    <Footer/>
+                </div>
+
             </div>
     );
 }

@@ -6,13 +6,16 @@ import Wall from "./Wall/Wall";
 const Content = (props) => {
 
     return (
-        <div className={classes.content}>
-            <Profile />
-            <Wall wallPosts={props.profileData.wallPosts}
-                  areaText ={props.profileData.newText}
-                  dispatch={props.dispatch}
-                  newPostText={props.newPostText}
-            />
+        <div className={classes.content + " row"}>
+            <div className="col">
+                <Profile />
+                <Wall wallPosts={props.profileData.wallPosts}
+                      areaText ={props.profileData.newText}
+                      dispatch={props.dispatch}
+                      newPostText={props.newPostText}
+                />
+            </div>
+
         </div>
     )
 }

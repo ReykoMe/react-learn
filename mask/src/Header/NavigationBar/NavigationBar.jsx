@@ -4,14 +4,9 @@ import {NavLink} from "react-router-dom"; //вместо classes можно ис
 
 const NavigationBar = () => {
     return (
-        <div className={classes.navmenu}>
-            <div className={classes.item}>
-                <NavLink to="/" activeClassName={classes.selected}>Main</NavLink>
-            </div>
-            <div className={classes.item}>
-                <NavLink to="/messenger" activeClassName={classes.selected}>Dialogs</NavLink>
-            </div>
-
+        <div className={classes.navmenu + " col d-flex p-3"}>
+                <NavLink to="/" className = {"p-2 rounded"} activeClassName={classes.selected + " border border-danger"}>Main</NavLink>
+                <NavLink to="/messenger" className = {"p-2 rounded"} activeClassName={classes.selected + " border border-danger"}>Dialogs</NavLink>
         </div>
     )
 }

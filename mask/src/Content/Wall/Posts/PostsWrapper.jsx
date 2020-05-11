@@ -12,8 +12,8 @@ const PostsWrapper = (props) => {
           />
     })
     return (
-        <div className={classes.messageWrapper}>
-            {Posts}
+        <div className={classes.messageWrapper + " col d-flex flex-column"}>
+                {Posts}
         </div>
     )
 }
