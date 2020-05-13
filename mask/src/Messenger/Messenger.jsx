@@ -9,7 +9,7 @@ const Messenger = (props) => {
     return (
         <div className={classes.dialogs}>
             <Users usersData={props.usersData}/>
-            <Messages messagesData={props.messagesData}/>
+            <Messages messagesData={props.messagesData} dispatch={props.dispatch} inputText={props.inputText}/>
         </div>
     )
 }
