@@ -3,9 +3,13 @@ import classes from './Sidebar.module.css';
 //Создаем экземпляр (подкомпоненту)одного элемента
 let FriendItem = (props) => {
     return(
-        <div className={classes.friend}>
-            <div className={classes.name}> {props.firstName} </div>
-            <div className={classes.status}><p>Цитата дня: </p>{props.status}</div>
+        <div className="card mb-3">
+            <div className={classes.item + " card-body p-2"}>
+                <div> {props.firstName} </div>
+                <p>Цитата дня: </p>
+                <p>{props.status}</p>
+            </div>
+
         </div>
     )
 }
@@ -19,9 +23,9 @@ const Sidebar = (props) => {
 
 
     return (
-        <div className={classes.sidebar}>
+        <div className={classes.sidebar +" col-3 wrapper"}>
             <h2>Last friends online</h2>
-            <div className={classes.friends}>
+            <div>
                 {lastFriends}
             </div>
         </div>

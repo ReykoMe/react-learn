@@ -22,6 +22,8 @@ const App = (props) => {
                                path="/messenger"
                                render={() => <Messenger messagesData={props.Data.messenger.messagesData}
                                                         usersData={props.Data.messenger.usersData}
+                                                        dispatch={props.dispatch}
+                                                        inputText={props.Data.messenger.newMessageText}
                                />}/>
                         <Route exact
                                path="/"
