@@ -50,7 +50,6 @@ let Store = {
         this._callSubscriber = observer;
     },
     dispatch(action) {
-
         this._state.profile = profileReducer(this._state.profile, action);
         this._state.messenger = messengerReducer(this._state.messenger, action)
         this._callSubscriber(this._state);
