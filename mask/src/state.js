@@ -1,8 +1,8 @@
+import profileReducer from "./profile-reducer";
+import messengerReducer from "./messenger-reducer";
+
 let Store = {
     _state: {
-        likesGen() {
-            return Math.floor(Math.random() * 10);
-        },
         profile: {
             newText: "",
             wallPosts: [
@@ -50,44 +50,17 @@ let Store = {
         this._callSubscriber = observer;
     },
     dispatch(action) {
-        if (action.type === 'ADD-POST') {
-            this._state.profile.wallPosts.push(
-                {
-                    id: this._state.profile.wallPosts.length + 1,
-                    author: 'Сергей Гумноедов',
-                    message: this._state.profile.newText,
-                    likes: this._state.likesGen()
-                }
-            );
-            console.log(`Текст: ${this._state.profile.newText} добавлен в Store._state.profile.newText`);
-            this._state.profile.newText = '';
-            this._callSubscriber(this._state);
-        } else if (action.type === 'UPDATE-TEXT') {
-            this._state.profile.newText = action.newText;
-            console.log(this._state.profile.newText);
-            this._callSubscriber(this._state);
-        } else if (action.type === 'UPDATE-DIALOG-TEXT') {
-            this._state.messenger.newMessageText = action.dialogText;
-            console.log(this._state.messenger.newMessageText);
-            this._callSubscriber(this._state);
-        } else if (action.type === 'SEND-MESSAGE') {
-            let text = this._state.messenger.newMessageText;
-            this._state.messenger.messagesData.push({
-                id: this._state.messenger.messagesData.length + 1,
-                message: text,
-                likesCount: this._state.likesGen()
-            })
-            this._state.messenger.newMessageText = '';
-            this._callSubscriber(this._state);
 
-        }
-            }
+        this._state.profile = profileReducer(this._state.profile, action);
+        this._state.messenger = messengerReducer(this._state.messenger, action)
+        this._callSubscriber(this._state);
+    }
 }
 
-export const addPostAC = () => ({type: 'ADD-POST'})
-export const updateTextAC = (text) => ({type: 'UPDATE-TEXT', newText: text})
-export const updateInputTextAC = (text) =>  ({type: 'UPDATE-DIALOG-TEXT', dialogText: text})
-export const sendMessageAC = () => ({type: "SEND-MESSAGE"})
+
+
+
+export const likesGen = () => Math.floor(Math.random() * 10);
 
 export default Store;
 window.store = Store

@@ -1,6 +1,6 @@
 import React from "react";
 import PostsWrapper from "./Posts/PostsWrapper";
-import {addPostAC, updateTextAC} from "../../state";
+import {addPostAC, updateTextAC} from "../../profile-reducer";
 
 const Wall = (props) => {
     let textArea = React.createRef() //Связываем наше текстовое поле при помощи рефа

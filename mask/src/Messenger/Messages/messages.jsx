@@ -21,7 +21,9 @@ const Messages = (props) => {
     />)
     return (
         <div className="messages">
-            <MessagesInput dispatch={props.dispatch} inputText={props.inputText}/>
+            <MessagesInput dispatch={props.dispatch}
+                           inputText={props.inputText}
+            />
             {messagesText}
 
         </div>
