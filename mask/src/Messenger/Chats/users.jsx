@@ -15,9 +15,9 @@ const UserItem = (props) => {
 
 const Users = (props) => {
     //создаем новый массив, где usersData берет данные из массива объектов, расположенном в index.js, передаваемый через props
-    let usersElementsArray = props.usersData.map((element) => <UserItem name={element.name}
-                                                                        id={element.id}
-                                                                        key ={element.id}/>);
+    let usersElementsArray = props.users.map((user) => <UserItem name={user.name}
+                                                                        id={user.id}
+                                                                        key ={user.id}/>);
 
     return (
         <div className="users">

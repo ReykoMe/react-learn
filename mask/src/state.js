@@ -15,15 +15,14 @@ let Store = {
         },
         messenger: {
             newMessageText: "",
-            messagesData: [
+            messages: [
                 {id: 1, message: "It's Posts from: %username", likesCount: 23},
                 {id: 2, message: "Message from another %username", likesCount: 11},
                 {id: 3, message: "Shmyga", likesCount: 3},
                 {id: 4, message: "Ololol", likesCount: 118},
                 {id: 5, message: "Bingo", likesCount: 0}
             ],
-
-            usersData: [
+            users: [
                 {id: 1, name: "Anatoly"},
                 {id: 2, name: "Dmytri"},
                 {id: 3, name: "Oksana"},

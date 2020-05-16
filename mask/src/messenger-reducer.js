@@ -9,8 +9,8 @@ const messengerReducer = (state, action) => {
             break;
         case 'SEND-MESSAGE':
             let text = state.newMessageText;
-            state.messagesData.push({
-                id: state.messagesData.length + 1,
+            state.messages.push({
+                id: state.messages.length + 1,
                 message: text,
                 likesCount: likesGen()
             })

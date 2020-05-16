@@ -5,13 +5,11 @@ import Messages from "./Messages/messages";
 
 
 const Messenger = (props) => {
-
     return (
         <div className={classes.dialogs}>
-            <Users usersData={props.usersData}/>
-            <Messages messagesData={props.messagesData}
-                      dispatch={props.dispatch}
-                      inputText={props.inputText}
+            <Users users={props.messenger.users}/>
+            <Messages messenger={props.messenger}
+                      dispatch={props.dispatch}                     
             />
         </div>
     )

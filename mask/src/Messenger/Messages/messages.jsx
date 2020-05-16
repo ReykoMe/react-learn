@@ -2,9 +2,8 @@ import React from "react";
 import classes from'./messages.module.css';
 import MessagesInput from "./MessagesInput";
 
-
-//Если подкомпонента нигде не используется, ее можно оставить вместе с основной, но делать так нужно в том случае, если такой подход не будет создавать нагромождения
-const MessageItem =(props) => {
+//Подкомпонента, отвечающая за отображение 1 единицы сообщения
+const Message =(props) => {
     return(
         <div className={classes.item}>
             {props.text}
@@ -15,14 +14,14 @@ const MessageItem =(props) => {
 }
 
 const Messages = (props) => {
-    let messagesText = props.messagesData.map((element) => <MessageItem text ={element.message}
-                                                                        likesCount ={element.likesCount}
-                                                                        key ={element.id}
+    let messagesText = props.messenger.messages.map((message) => <Message text={message.message}
+                                                                              likesCount ={message.likesCount}
+                                                                              key ={message.id}
     />)
     return (
         <div className="messages">
-            <MessagesInput dispatch={props.dispatch}
-                           inputText={props.inputText}
+            <MessagesInput inputText={props.messenger.inputText}
+                           dispatch={props.dispatch}
             />
             {messagesText}
 

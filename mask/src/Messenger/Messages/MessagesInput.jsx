@@ -2,7 +2,8 @@ import React from "react";
 import {sendMessageAC, updateInputTextAC} from "../../messenger-reducer";
 
 const MessagesInput = (props) => {
-    let placeHolder = 'Please, input your message'
+    const placeHolder = 'Please, input your message'
+
     let textInput = React.createRef();
     let changeInputValue = () => {
         let text = textInput.current.value;
