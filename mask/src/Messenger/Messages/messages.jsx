@@ -1,5 +1,6 @@
 import React from "react";
 import classes from'./messages.module.css';
+import MessagesInput from "./MessagesInput";
 
 
 //Если подкомпонента нигде не используется, ее можно оставить вместе с основной, но делать так нужно в том случае, если такой подход не будет создавать нагромождения
@@ -20,7 +21,11 @@ const Messages = (props) => {
     />)
     return (
         <div className="messages">
+            <MessagesInput dispatch={props.dispatch}
+                           inputText={props.inputText}
+            />
             {messagesText}
+
         </div>
     )
 }

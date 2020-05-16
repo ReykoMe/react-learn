@@ -8,11 +8,12 @@ const PostsWrapper = (props) => {
           return <Post userName={post.author}
                        message={post.message}
                        id={post.id}
+                       likes={post.likes}
                        key={post.id}
           />
     })
     return (
-        <div className={classes.messageWrapper + " col d-flex flex-column"}>
+        <div className={classes.messageWrapper + " col d-flex flex-column flex-column-reverse"}>
                 {Posts}
         </div>
     )

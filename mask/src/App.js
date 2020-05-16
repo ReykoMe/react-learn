@@ -3,7 +3,7 @@ import './App.css';
 import Header from './Header/Header';
 import Content from "./Content/Content";
 import Footer from './Footer/Footer';
-import Sidebar from "./Sidebar/Sidebar";
+import Sidebar from "./Sidebar/sidebar";
 import Messenger from "./Messenger/Messenger";
 import {Route} from "react-router-dom";
 
@@ -22,6 +22,8 @@ const App = (props) => {
                                path="/messenger"
                                render={() => <Messenger messagesData={props.Data.messenger.messagesData}
                                                         usersData={props.Data.messenger.usersData}
+                                                        dispatch={props.dispatch}
+                                                        inputText={props.Data.messenger.newMessageText}
                                />}/>
                         <Route exact
                                path="/"
