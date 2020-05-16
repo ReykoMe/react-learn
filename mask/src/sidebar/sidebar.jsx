@@ -1,5 +1,5 @@
 import React from "react";
-import classes from './Sidebar.module.css';
+import classes from './sidebar.module.css';
 //Создаем экземпляр (подкомпоненту)одного элемента
 let FriendItem = (props) => {
     return(
