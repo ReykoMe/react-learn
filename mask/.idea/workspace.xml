@@ -16,13 +16,22 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff7592fd-851c-46f3-b6d2-6927d9446c42" name="Default Changelist" comment="Created reducers">
+    <list default="true" id="164f9115-05b3-46e1-b4f4-1cb4b5b5d24d" name="Default Changelist" comment="ddf">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sidebar/preview/prev.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sidebar/preview/prev.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sidebar/preview/prev.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sidebar/preview/prev.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sidebar/sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sidebar/Sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sidebar/sidebar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sidebar/Sidebar.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
