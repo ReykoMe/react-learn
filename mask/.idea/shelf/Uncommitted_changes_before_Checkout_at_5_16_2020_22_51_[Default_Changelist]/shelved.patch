@@ -1,0 +1,89 @@
+Index: src/App.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\r\nimport './App.css';\r\nimport Header from './Header/Header';\r\nimport Content from \"./Content/Content\";\r\nimport Footer from './Footer/Footer';\r\nimport Sidebar from \"./Sidebar/Sidebar\";\r\nimport Messenger from \"./Messenger/Messenger\";\r\nimport {Route} from \"react-router-dom\";\r\n\r\n\r\nconst App = (props) => {\r\n    return (\r\n            <div className='container'>\r\n                <div className=\"row\">\r\n                    <Header/>\r\n                </div>\r\n                <div className=\"row\">\r\n                    <Sidebar friends={props.Data.sidebar.friends}/>\r\n                    <div className=\"col-8 content\">\r\n                        {/*Добавляем Route (необходимо установить из npm react-router-dom), с помощью которого реализуется логика \"Если в строке браузера отображается /путь условный => отображать компоненту*/}\r\n                        <Route exact\r\n                               path=\"/messenger\"\r\n                               render={() => <Messenger messagesData={props.Data.messenger.messagesData}\r\n                                                        usersData={props.Data.messenger.usersData}\r\n                               />}/>\r\n                        <Route exact\r\n                               path=\"/\"\r\n                               render={() => <Content profileData={props.Data.profile}\r\n                                                      dispatch={props.dispatch}\r\n                               />}/>\r\n                    </div>\r\n                </div>\r\n                <div className=\"row\">\r\n                    <Footer/>\r\n                </div>\r\n\r\n            </div>\r\n    );\r\n}\r\n\r\nexport default App;\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/App.js	(revision 268b44dd70696ea7c466054109deb49b23581906)
++++ src/App.js	(date 1589658642827)
+@@ -3,38 +3,38 @@
+ import Header from './Header/Header';
+ import Content from "./Content/Content";
+ import Footer from './Footer/Footer';
+-import Sidebar from "./Sidebar/Sidebar";
++import Sidebar from "./sidebar/sidebar";
+ import Messenger from "./Messenger/Messenger";
+ import {Route} from "react-router-dom";
+ 
+ 
+ const App = (props) => {
+     return (
+-            <div className='container'>
+-                <div className="row">
+-                    <Header/>
+-                </div>
+-                <div className="row">
+-                    <Sidebar friends={props.Data.sidebar.friends}/>
+-                    <div className="col-8 content">
+-                        {/*Добавляем Route (необходимо установить из npm react-router-dom), с помощью которого реализуется логика "Если в строке браузера отображается /путь условный => отображать компоненту*/}
+-                        <Route exact
+-                               path="/messenger"
+-                               render={() => <Messenger messagesData={props.Data.messenger.messagesData}
+-                                                        usersData={props.Data.messenger.usersData}
+-                               />}/>
+-                        <Route exact
+-                               path="/"
+-                               render={() => <Content profileData={props.Data.profile}
+-                                                      dispatch={props.dispatch}
+-                               />}/>
+-                    </div>
+-                </div>
+-                <div className="row">
+-                    <Footer/>
+-                </div>
++        <div className='container'>
++            <div className="row">
++                <Header/>
++            </div>
++            <div className="row">
++                <Sidebar friends={props.Data.sidebar.friends}/>
++                <div className="col-8 content">
++                    {/*Добавляем Route (необходимо установить из npm react-router-dom), с помощью которого реализуется логика "Если в строке браузера отображается /путь условный => отображать компоненту*/}
++                    <Route exact
++                           path="/messenger"
++                           render={() => <Messenger messagesData={props.Data.messenger.messagesData}
++                                                    usersData={props.Data.messenger.usersData}
++                           />}/>
++                    <Route exact
++                           path="/"
++                           render={() => <Content profileData={props.Data.profile}
++                                                  dispatch={props.dispatch}
++                           />}/>
++                </div>
++            </div>
++            <div className="row">
++                <Footer/>
++            </div>
+ 
+-            </div>
++        </div>
+     );
+ }
+ 
+Index: src/sidebar/sidebar.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from \"react\";\r\nimport classes from './Sidebar.module.css';\r\n//Создаем экземпляр (подкомпоненту)одного элемента\r\nlet FriendItem = (props) => {\r\n    return(\r\n        <div className={classes.friend}>\r\n            <div className={classes.name}> {props.firstName} </div>\r\n            <div className={classes.status}><p>Цитата дня: </p>{props.status}</div>\r\n        </div>\r\n    )\r\n}\r\n//перебираем массив friends из файла state.js и для каждого элемента внутри сайдбара создаем компоненту FriendItem с параметрами\r\nconst Sidebar = (props) => {\r\n    //При каждой итерации возвращать возвращать следующий элемент с данными\r\n    let lastFriends = props.friends.map((friend) => <FriendItem firstName={friend.firstName}\r\n                                                                status={friend.status}\r\n                                                                key = {friend.id}\r\n    />);\r\n\r\n\r\n    return (\r\n        <div className={classes.sidebar}>\r\n            <h2>Last friends online</h2>\r\n            <div className={classes.friends}>\r\n                {lastFriends}\r\n            </div>\r\n        </div>\r\n    )\r\n}\r\n\r\nexport default Sidebar;
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/sidebar/sidebar.jsx	(revision 268b44dd70696ea7c466054109deb49b23581906)
++++ src/sidebar/sidebar.jsx	(date 1589658436341)
+@@ -1,5 +1,5 @@
+ import React from "react";
+-import classes from './Sidebar.module.css';
++import classes from './sidebar.module.css';
+ //Создаем экземпляр (подкомпоненту)одного элемента
+ let FriendItem = (props) => {
+     return(
