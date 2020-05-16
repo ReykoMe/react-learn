@@ -33,7 +33,6 @@ const App = (props) => {
                 <div className="row">
                     <Footer/>
                 </div>
-
             </div>
     );
 }
