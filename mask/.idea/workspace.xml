@@ -25,15 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164f9115-05b3-46e1-b4f4-1cb4b5b5d24d" name="Default Changelist" comment="ddf">
+    <list default="true" id="164f9115-05b3-46e1-b4f4-1cb4b5b5d24d" name="Default Changelist" comment="Changed standart path of props's">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Messenger/Chats/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messenger/Chats/users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Messenger/Messages/MessagesInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messenger/Messages/MessagesInput.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Messenger/Messages/messages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messenger/Messages/messages.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Messenger/Messenger.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messenger/Messenger.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messenger-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/messenger-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +56,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -138,7 +132,7 @@
       <workItem from="1589660668869" duration="192000" />
       <workItem from="1589663056360" duration="286000" />
       <workItem from="1589663362709" duration="630000" />
-      <workItem from="1589664017369" duration="527000" />
+      <workItem from="1589664017369" duration="1129000" />
     </task>
     <task id="LOCAL-00001" summary="Many little changes">
       <created>1588764656945</created>
@@ -189,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589659566217</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changed standart path of props's">
+      <created>1589664599257</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1589664599258</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +201,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -215,7 +228,8 @@
     <MESSAGE value="created AC, added input on messenger" />
     <MESSAGE value="Created reducers" />
     <MESSAGE value="ddf" />
-    <option name="LAST_COMMIT_MESSAGE" value="ddf" />
+    <MESSAGE value="Changed standart path of props's" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed standart path of props's" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1588769771933">
@@ -226,10 +240,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="493" y="89" key="#Menus_and_Toolbars/0.0.1366.738@0.0.1366.738" timestamp="1589191894154" />
-    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1589664462668">
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1589664781687">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1589664462668" />
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1589664781687" />
     <state width="1345" height="218" key="GridCell.Tab.0.bottom" timestamp="1589659942359">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -294,18 +308,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1345" height="218" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1589659942361" />
-    <state x="194" y="27" key="SettingsEditor" timestamp="1589664529573">
+    <state x="103" y="0" key="SettingsEditor" timestamp="1589665135654">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="194" y="27" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1589664529573" />
+    <state x="103" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1589665135654" />
     <state x="489" y="66" key="VCS.ChangeListViewerDialog" timestamp="1589461553865">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="489" y="66" key="VCS.ChangeListViewerDialog/0.0.1366.738@0.0.1366.738" timestamp="1589461553865" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1589659573007">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1589664608176">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1589659573007" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1589664608176" />
     <state x="391" y="88" width="583" height="562" key="find.popup" timestamp="1589193467605">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
