@@ -16,7 +16,7 @@ let FriendItem = (props) => {
 //перебираем массив friends из файла state.js и для каждого элемента внутри сайдбара создаем компоненту FriendItem с параметрами
 const Sidebar = (props) => {
     //При каждой итерации возвращать возвращать следующий элемент с данными
-    let lastFriends = props.friends.map((friend) => <FriendItem firstName={friend.firstName}
+    let lastFriends = props.sidebar.friends.map((friend) => <FriendItem firstName={friend.firstName}
                                                                 status={friend.status}
                                                                 key = {friend.id}
     />);

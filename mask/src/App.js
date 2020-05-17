@@ -15,7 +15,7 @@ const App = (props) => {
                     <Header/>
                 </div>
                 <div className="row">
-                    <Sidebar friends={props.Data.sidebar.friends}/>
+                    <Sidebar sidebar={props.Data.sidebar}/>
                     <div className="col-8 content">
                         {/*Добавляем Route (необходимо установить из npm react-router-dom), с помощью которого реализуется логика "Если в строке браузера отображается /путь условный => отображать компоненту*/}
                         <Route exact
