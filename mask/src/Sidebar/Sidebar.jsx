@@ -6,8 +6,8 @@ let FriendItem = (props) => {
         <div className="card mb-3">
             <div className={classes.item + " card-body p-2"}>
                 <div> {props.firstName} </div>
-                <p >Цитата дня: </p>
-                <p>{props.status}</p>
+                <div>Цитата дня: </div>
+                <div>{props.status}</div>
             </div>
 
         </div>

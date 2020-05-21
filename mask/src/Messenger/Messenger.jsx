@@ -7,10 +7,8 @@ import Messages from "./Messages/messages";
 const Messenger = (props) => {
     return (
         <div className={classes.dialogs}>
-            <Users users={props.messenger.users}/>
-            <Messages messenger={props.messenger}
-                      dispatch={props.dispatch}                     
-            />
+            <Users users={props.store.getState().messenger.users}/>
+            <Messages store={props.store}/>
         </div>
     )
 }

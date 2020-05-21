@@ -1,7 +1,8 @@
 import React from "react";
 import classes from './Content.module.css';
 import Profile from "./Profile/profile";
-import Wall from "./Wall/Wall";
+
+import WallContainer from "../containers/WallContainer";
 
 const Content = (props) => {
 
@@ -9,11 +10,7 @@ const Content = (props) => {
         <div className={classes.content + " row"}>
             <div className="col">
                 <Profile />
-                <Wall wallPosts={props.profileData.wallPosts}
-                      areaText ={props.profileData.newText}
-                      dispatch={props.dispatch}
-                      newPostText={props.newPostText}
-                />
+                <WallContainer store = {props.store}/>
             </div>
 
         </div>

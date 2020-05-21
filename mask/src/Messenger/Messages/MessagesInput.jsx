@@ -1,27 +1,14 @@
 import React from "react";
-import {sendMessageAC, updateInputTextAC} from "../../messenger-reducer";
 
 const MessagesInput = (props) => {
-    const placeHolder = 'Please, input your message'
-
     let textInput = React.createRef();
+   
     let changeInputValue = () => {
         let text = textInput.current.value;
-        props.dispatch(updateInputTextAC(text));
+        props.changeInputValue(text);
     }
-    let sendMessage = () => {
-        let text = textInput.current.value;
-        if (text !== ' ' && text !== '') {
-            props.dispatch(sendMessageAC());
-        } else alert('Please, enter text of message')
-
-    }
-
-    let keyHandler = (e) => {
-        if (e.key === 'Enter') {
-            sendMessage();
-        }
-    }
+    let sendMessage = () =>  props.sendMessage();
+    let keyHandler = (e) =>  (e.key === 'Enter') ? sendMessage() : null;
 
     return (
         <div className="input-group">
@@ -30,8 +17,8 @@ const MessagesInput = (props) => {
                    onChange={changeInputValue}
                    onKeyPress={keyHandler}
                    className="form-control"
-                   placeholder={placeHolder}
-                   value={props.inputText}
+                   value={props.messenger.newMessageText} 
+
             />
             <div className="input-group-append">
                 <button className='btn btn-primary' onClick={sendMessage}>Add Message</button>
