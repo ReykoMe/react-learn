@@ -19,33 +19,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="Changed standart path of props's">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/MessagesInputContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/WallContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/messenger-reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/profile-reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/sidebar-reducer.js" afterDir="false" />
+    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="Many many changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Content.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Content/Content.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Content.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Content/Profile/profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Profile/profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Content/Wall/Posts/Posts/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Wall/Posts/Posts/Post.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Content/Wall/Posts/Posts/PostMessage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Wall/Posts/Posts/PostMessage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Content/Wall/Posts/PostsWrapper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Wall/Posts/PostsWrapper.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Content/Wall/Wall.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Wall/Wall.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Header/NavigationBar/NavigationBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/NavigationBar/NavigationBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Messenger/Chats/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messenger/Chats/users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Messenger/Messages/MessagesInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messenger/Messages/MessagesInput.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Messenger/Messages/messages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messenger/Messages/messages.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Messenger/Messenger.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messenger/Messenger.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header/NavigationBar/NavigationBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/NavigationBar/NavigationBar.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sidebar/Sidebar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messenger-reducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profile-reducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sidebar-reducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/media/avatar_template.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/avatar_template.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +65,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -83,15 +73,15 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\denwer\www\denwer\react-learn\mask\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\denwer\www\denwer\react-learn\mask\src\containers" />
       <recent name="W:\denwer\www\denwer\react-learn\mask\src" />
       <recent name="W:\denwer\www\denwer\react-learn\mask\src\components" />
       <recent name="W:\denwer\www\denwer\react-learn\mask\src\redux" />
       <recent name="W:\denwer\www\denwer\react-learn\mask\src\reducers" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="W:\denwer\www\denwer\react-learn\mask\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.test">
@@ -171,7 +161,9 @@
       <workItem from="1589907481014" duration="747000" />
       <workItem from="1589908352292" duration="622000" />
       <workItem from="1590000367487" duration="606000" />
-      <workItem from="1590001000927" duration="1301000" />
+      <workItem from="1590001000927" duration="1365000" />
+      <workItem from="1590076811519" duration="2138000" />
+      <workItem from="1590082379901" duration="2292000" />
     </task>
     <task id="LOCAL-00001" summary="Many little changes">
       <created>1588764656945</created>
@@ -229,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589664599258</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Many many changes">
+      <created>1590076171809</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1590076171809</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +267,8 @@
     <MESSAGE value="Created reducers" />
     <MESSAGE value="ddf" />
     <MESSAGE value="Changed standart path of props's" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed standart path of props's" />
+    <MESSAGE value="Many many changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Many many changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1588769771933">
@@ -283,10 +283,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="493" y="89" key="#Menus_and_Toolbars/0.0.1366.738@0.0.1366.738" timestamp="1589191894154" />
-    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1590000842068">
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1590079248231">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1590000842068" />
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1590079248231" />
     <state width="1345" height="174" key="GridCell.Tab.0.bottom" timestamp="1589747932287">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -351,10 +351,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1345" height="218" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1589659942361" />
-    <state x="81" y="28" key="SettingsEditor" timestamp="1590001311634">
+    <state x="81" y="28" key="SettingsEditor" timestamp="1590076898345">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="81" y="28" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1590001311634" />
+    <state x="81" y="28" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1590076898345" />
     <state x="489" y="66" key="VCS.ChangeListViewerDialog" timestamp="1589461553865">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

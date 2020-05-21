@@ -1,5 +1,4 @@
 import React from "react";
-import classes from './PostsWrapper.module.css';
 import Post from "./Posts/Post";
 
 const PostsWrapper = (props) => {
@@ -13,7 +12,7 @@ const PostsWrapper = (props) => {
           />
     })
     return (
-        <div className={classes.messageWrapper + " col d-flex flex-column flex-column-reverse"}>
+        <div className={"col d-flex flex-column flex-column-reverse"}>
                 {Posts}
         </div>
     )

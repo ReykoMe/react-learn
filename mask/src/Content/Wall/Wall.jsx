@@ -9,18 +9,18 @@ const Wall = (props) => {
 
   return (
     <div className="row">
-      <div className="col">
-        <div className="row">
-          <div className="col">
+      <div className="col-md-12">
+
             <div className={"input-group mb-4"}>
               <input type="text"
                       placeholder="Please input your message" className="form-control"
                       onChange={onTextChange}
                       onKeyPress={(e) => {
-                  if (e.key === "Enter") {
-                    onMessageAdd();
-                  }
-                }}
+                        if (e.key === "Enter") {
+                          onMessageAdd();
+                        }
+                      }
+                      }
                       ref={textArea} //связываем наше текстовое поле с переменной textArea, при помощи React.createRef()
                       value={props.inputText}
               />
@@ -34,8 +34,7 @@ const Wall = (props) => {
               </div>
 
             </div>
-          </div>
-        </div>
+
         <div className="row">
           <PostsWrapper wallPosts={props.wallPosts} />
         </div>

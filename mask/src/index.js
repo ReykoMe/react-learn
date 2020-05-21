@@ -1,6 +1,5 @@
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-//import Store from "./state";
 import Store from './redux/store';
 import ReactDOM from "react-dom";
 import React from "react";
@@ -11,10 +10,7 @@ let renderEntireTree = (state) => {
     ReactDOM.render (
         <React.StrictMode>
             <BrowserRouter>
-                <App state={state}
-                     store = {Store}
-                     dispatch={Store.dispatch.bind(Store)}
-                     />
+                <App state={state} store = {Store}/>
             </BrowserRouter>
         </React.StrictMode>,
         document.getElementById('root')
