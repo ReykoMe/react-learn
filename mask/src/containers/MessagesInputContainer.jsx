@@ -1,4 +1,3 @@
-
 import { sendMessageAC, updateInputTextAC } from "../redux/reducers/messenger-reducer";
 import MessagesInput from "../Messenger/Messages/MessagesInput";
 import { connect } from "react-redux";
@@ -14,6 +13,7 @@ let mapDispatchToProps = (dispatch) => {
       dispatch(sendMessageAC())
     },
     changeInputValue: (text) => {
+
         dispatch(updateInputTextAC(text))
     }
   }

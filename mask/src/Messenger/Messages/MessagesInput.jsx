@@ -3,9 +3,9 @@ import React from "react";
 const MessagesInput = (props) => {
     let textInput = React.createRef();
    
-    let changeInputValue = () => {
-        let text = textInput.current.value;
-        props.changeInputValue(text);
+    let changeInput = () => {
+
+        props.changeInputValue(textInput.current.value);
     }
     let sendMessage = () =>  props.sendMessage();
     let keyHandler = (e) =>  (e.key === 'Enter') ? sendMessage() : null;
@@ -14,7 +14,7 @@ const MessagesInput = (props) => {
         <div className="input-group">
             <input type="text"
                    ref={textInput}
-                   onChange={changeInputValue}
+                   onChange={changeInput}
                    onKeyPress={keyHandler}
                    className="form-control"
                    value={props.messenger.newMessageText} 

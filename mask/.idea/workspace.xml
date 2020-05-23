@@ -19,8 +19,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="Changed styles">
+    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="23.06.2020">
+      <change afterPath="$PROJECT_DIR$/src/containers/SidebarContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Content/Profile/profile.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Content/Wall/Posts/Posts/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Wall/Posts/Posts/Post.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Content/Wall/Wall.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Wall/Wall.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Content/Wall/Wall.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Footer/Footer.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Messenger/Chats/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messenger/Chats/users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Messenger/Chats/users.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Messenger/Messages/MessagesInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messenger/Messages/MessagesInput.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Messenger/Messages/messages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messenger/Messages/messages.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Messenger/Messenger.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messenger/Messenger.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MessagesInputContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MessagesInputContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/WallContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/WallContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/messenger-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/messenger-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +73,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -92,8 +110,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.test" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.test" />
         <item itemvalue="npm.test" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.test" />
@@ -150,6 +168,7 @@
       <workItem from="1590076811519" duration="2138000" />
       <workItem from="1590082379901" duration="2411000" />
       <workItem from="1590085708761" duration="422000" />
+      <workItem from="1590238857298" duration="6435000" />
     </task>
     <task id="LOCAL-00001" summary="Many little changes">
       <created>1588764656945</created>
@@ -221,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590084729195</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="23.06.2020">
+      <created>1590238904590</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1590238904590</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +288,8 @@
     <MESSAGE value="Changed standart path of props's" />
     <MESSAGE value="Many many changes" />
     <MESSAGE value="Changed styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed styles" />
+    <MESSAGE value="23.06.2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="23.06.2020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1588769771933">
@@ -281,22 +308,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1590079248231" />
-    <state width="1345" height="174" key="GridCell.Tab.0.bottom" timestamp="1589747932287">
+    <state width="1345" height="174" key="GridCell.Tab.0.bottom" timestamp="1590245431387">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="174" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1589747932287" />
-    <state width="1345" height="174" key="GridCell.Tab.0.center" timestamp="1589747932287">
+    <state width="1345" height="174" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1590245431387" />
+    <state width="1345" height="174" key="GridCell.Tab.0.center" timestamp="1590245431386">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="174" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1589747932287" />
-    <state width="1345" height="174" key="GridCell.Tab.0.left" timestamp="1589747932286">
+    <state width="1345" height="174" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1590245431386" />
+    <state width="1345" height="174" key="GridCell.Tab.0.left" timestamp="1590245431386">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="174" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1589747932286" />
-    <state width="1345" height="174" key="GridCell.Tab.0.right" timestamp="1589747932287">
+    <state width="1345" height="174" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1590245431386" />
+    <state width="1345" height="174" key="GridCell.Tab.0.right" timestamp="1590245431386">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="174" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1589747932287" />
+    <state width="1345" height="174" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1590245431386" />
     <state width="1345" height="218" key="GridCell.Tab.1.bottom" timestamp="1589659942360">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -345,10 +372,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1345" height="218" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1589659942361" />
-    <state x="62" y="28" key="SettingsEditor" timestamp="1590086122028">
+    <state x="62" y="28" key="SettingsEditor" timestamp="1590245399326">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="62" y="28" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1590086122028" />
+    <state x="62" y="28" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1590245399326" />
     <state x="489" y="66" key="VCS.ChangeListViewerDialog" timestamp="1589461553865">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -357,10 +384,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1590084734664" />
-    <state x="391" y="88" width="583" height="562" key="find.popup" timestamp="1589193467605">
+    <state x="391" y="88" width="583" height="562" key="find.popup" timestamp="1590243200193">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="391" y="88" width="583" height="562" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1589193467605" />
+    <state x="391" y="88" width="583" height="562" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1590243200193" />
     <state x="463" y="81" key="git4idea.branch.GitSmartOperationDialog" timestamp="1589747804537">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -369,9 +396,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1589530737531" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1588767182703">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1590240023406">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1588767182703" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1590240023406" />
   </component>
 </project>

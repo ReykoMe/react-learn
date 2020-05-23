@@ -21,19 +21,27 @@ const initState = {
 
 const messengerReducer = (state = initState, action) => {
   switch (action.type) {
-    case 'UPDATE-DIALOG-TEXT':
-      state.newMessageText = action.dialogText;
-      console.log(state.newMessageText);
-      return state;
-    case 'SEND-MESSAGE':
-      let text = state.newMessageText;
-      state.messages.push({
+    case 'UPDATE-DIALOG-TEXT': {
+      let newState = {
+        ...state, newMessageText: action.dialogText
+      };
+      console.log(newState.newMessageText);
+      return newState;
+    }
+    case 'SEND-MESSAGE': {
+      let newState = {
+        ...state,
+        messages: [...state.messages]
+      };
+
+      newState.messages.push({
         id: state.messages.length + 1,
-        message: text,
+        message: state.newMessageText,
         likesCount: likesGen()
       })
-      state.newMessageText = '';
-      return state;
+      newState.newMessageText = '';
+      return newState;
+    }
     default:
       return state;
   }
