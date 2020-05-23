@@ -19,23 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="Many many changes">
+    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="Changed styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Content.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Content/Content.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Content.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Content/Profile/profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Profile/profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Content/Wall/Posts/Posts/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Wall/Posts/Posts/Post.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Content/Wall/Posts/Posts/PostMessage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Wall/Posts/Posts/PostMessage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Content/Wall/Posts/PostsWrapper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Wall/Posts/PostsWrapper.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Content/Wall/Wall.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Wall/Wall.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Header/NavigationBar/NavigationBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/NavigationBar/NavigationBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Header/NavigationBar/NavigationBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/NavigationBar/NavigationBar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sidebar/Sidebar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/avatar_template.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/avatar_template.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +148,8 @@
       <workItem from="1590000367487" duration="606000" />
       <workItem from="1590001000927" duration="1365000" />
       <workItem from="1590076811519" duration="2138000" />
-      <workItem from="1590082379901" duration="2292000" />
+      <workItem from="1590082379901" duration="2411000" />
+      <workItem from="1590085708761" duration="422000" />
     </task>
     <task id="LOCAL-00001" summary="Many little changes">
       <created>1588764656945</created>
@@ -228,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590076171809</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Changed styles">
+      <created>1590084729195</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1590084729195</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +261,8 @@
     <MESSAGE value="ddf" />
     <MESSAGE value="Changed standart path of props's" />
     <MESSAGE value="Many many changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Many many changes" />
+    <MESSAGE value="Changed styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed styles" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1588769771933">
@@ -351,18 +345,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1345" height="218" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1589659942361" />
-    <state x="81" y="28" key="SettingsEditor" timestamp="1590076898345">
+    <state x="62" y="28" key="SettingsEditor" timestamp="1590086122028">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="81" y="28" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1590076898345" />
+    <state x="62" y="28" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1590086122028" />
     <state x="489" y="66" key="VCS.ChangeListViewerDialog" timestamp="1589461553865">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="489" y="66" key="VCS.ChangeListViewerDialog/0.0.1366.738@0.0.1366.738" timestamp="1589461553865" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1589664608176">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1590084734664">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1589664608176" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1590084734664" />
     <state x="391" y="88" width="583" height="562" key="find.popup" timestamp="1589193467605">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

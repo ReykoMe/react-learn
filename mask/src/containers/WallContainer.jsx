@@ -1,21 +1,24 @@
-import React from "react";
+
 import { addPostAC, updateTextAC } from "../redux/reducers/profile-reducer";
 import Wall from "../Content/Wall/Wall"
+import { connect } from "react-redux";
 
-const WallContainer = (props) => {
-  let state = props.store.getState();
-  let addMessage = () =>  props.store.dispatch(addPostAC());
-  let areaTextChanged = (text) => {
-    props.store.dispatch(updateTextAC(text));
-  }
-  return (
-    <Wall 
-      wallPosts={state.profile.wallPosts}
-      inputText={state.profile.newText}
-      updateText={areaTextChanged}
-      addPost={addMessage}
-    />
-  )
+let mapStateToProps = (state) => {
+    return {
+      wallPosts: state.profile.wallPosts,
+      inputText: state.profile.newText
+    }
+}
+let mapDispatchToProps = (dispatch) => {
+      return {
+        updateText:(text) => {
+          dispatch(updateTextAC(text))
+        },
+        addPost: () => {
+          dispatch(addPostAC())
+        }
+      }
 }
 
+const WallContainer = connect(mapStateToProps, mapDispatchToProps)(Wall)
 export default WallContainer;

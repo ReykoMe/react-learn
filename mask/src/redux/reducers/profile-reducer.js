@@ -13,22 +13,24 @@ const initState = {
 
 const profileReducer = (state = initState, action) => {
   switch (action.type) {
-    case 'ADD-POST':
-      state.wallPosts.push(
-          {
-            id: state.wallPosts.length + 1,
-            author: 'Сергей Гумноедов',
-            message: state.newText,
-            likes: likesGen()
-          }
-      );
-      console.log(`Текст: ${state.newText} добавлен в Store._state.profile.newText`);
-      state.newText = '';
-      return state
-    case 'UPDATE-TEXT':
-      state.newText = action.newText;
+    case 'ADD-POST':{
+      let newPost =  {
+        id: state.wallPosts.length + 1,
+        author: 'Сергей Гумноедов',
+        message: state.newText,
+        likes: likesGen()
+      }
+      let newState = {...state};
+      newState.wallPosts = [...state.wallPosts]
+      newState.wallPosts.push(newPost)
+      newState.newText = '';
+      console.log(`Текст: ${state.newText} добавлен в wallPosts`);
+      return newState;}
+    case 'UPDATE-TEXT':{
+      let newState = {...state};
+      newState.newText = action.newText;
       console.log(state.newText);
-      return state
+      return newState}
     default:
       return state;
   }

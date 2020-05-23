@@ -13,7 +13,8 @@ const Message = (props) => {
 }
 
 const Messages = (props) => {
-  let messagesText = props.store.getState().messenger.messages.map((message) => <Message text={message.message}
+  debugger;
+  let messagesText = props.messages.map((message) => <Message text={message.message}
     likesCount={message.likesCount}
     key={message.id}
   />)

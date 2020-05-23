@@ -7,7 +7,7 @@ const Content = (props) => {
         <div className={"row"}>
             <div className="col">
                 <Profile />
-                <WallContainer store = {props.store}/>
+                <WallContainer />
             </div>
         </div>
     )

@@ -1,25 +1,22 @@
-import React from "react";
+
 import { sendMessageAC, updateInputTextAC } from "../redux/reducers/messenger-reducer";
 import MessagesInput from "../Messenger/Messages/MessagesInput";
+import { connect } from "react-redux";
 
-const MessagesInputContainer = (props) => {
-  let state = props.store.getState();
-  let changeInputValue = (text) => props.store.dispatch(updateInputTextAC(text));
-  let sendMessage = () => props.store.dispatch(sendMessageAC());
-
-  let keyHandler = (e) => {
-    if (e.key === 'Enter') {
-      sendMessage();
+let mapStateToProps = (state) => {
+  return {
+    messenger: state.messenger,
+  }
+}
+let mapDispatchToProps = (dispatch) => {
+  return {
+    sendMessage: () => {
+      dispatch(sendMessageAC())
+    },
+    changeInputValue: (text) => {
+        dispatch(updateInputTextAC(text))
     }
   }
-
-  return (
-    <MessagesInput messenger = {state.messenger} 
-                   changeInputValue={changeInputValue}
-                   sendMessage={sendMessage}
-                   keyHandler={keyHandler}
-    />
-  )
 }
-
+const MessagesInputContainer = connect(mapStateToProps, mapDispatchToProps)(MessagesInput)
 export default MessagesInputContainer;

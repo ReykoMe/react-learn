@@ -3,10 +3,10 @@ import './App.css';
 import Header from './Header/Header';
 import Content from "./Content/Content";
 import Footer from './Footer/Footer';
-import Sidebar from "./Sidebar/Sidebar";
+import SidebarContainer from "./containers/SidebarContainer";
+//import MessengerContainer from "./containers/MessengerContainer";
 import Messenger from "./Messenger/Messenger";
 import { Route } from "react-router-dom";
-
 
 const App = (props) => {
   return (
@@ -15,10 +15,10 @@ const App = (props) => {
         <Header />
       </div>
       <div className="row">
-        <Sidebar sidebar={props.state.sidebar} />
+        <SidebarContainer store={props.store} />
         <div className="col-9 content">
           {/*Добавляем Route (необходимо установить из npm react-router-dom), с помощью которого реализуется логика "Если в строке браузера отображается /путь условный => отображать компоненту*/}
-          <Route exact path="/messenger" render={() => <Messenger store={props.store} />} />
+          <Route exact path="/messenger" render={() => <Messenger />} />
           <Route exact path="/" render={() => <Content store={props.store}
             />} />
 
