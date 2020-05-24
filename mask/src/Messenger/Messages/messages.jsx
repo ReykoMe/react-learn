@@ -21,7 +21,7 @@ const Messages = (props) => {
 
 
   return (
-    <div className="messages">
+    <div className="messages col-md-10">
       <MessagesInputContainer store={props.store}/>
       {messagesText}
     </div>

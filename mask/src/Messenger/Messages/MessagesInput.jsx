@@ -2,13 +2,9 @@ import React from "react";
 
 const MessagesInput = (props) => {
     let textInput = React.createRef();
-   
-    let changeInput = () => {
-
-        props.changeInputValue(textInput.current.value);
-    }
-    let sendMessage = () =>  props.sendMessage();
-    let keyHandler = (e) =>  (e.key === 'Enter') ? sendMessage() : null;
+    let changeInput = () => props.changeInputValue(textInput.current.value);
+    let sendMessage = () => props.sendMessage();
+    let keyHandler = (e) => (e.key === 'Enter') ? sendMessage() : null;
 
     return (
         <div className="input-group">

@@ -7,6 +7,7 @@ const NavigationBar = () => {
         <div className={" d-flex p-2"}>
                 <NavLink to="/" className = {"p-2 rounded text-light"} activeClassName={classes.underline}>Main</NavLink>
                 <NavLink to="/messenger" className = {"p-2 rounded text-light"} activeClassName={classes.underline}>Dialogs</NavLink>
+                <NavLink to="/friends" className = {"p-2 rounded text-light"} activeClassName={classes.underline}>Friends</NavLink>
         </div>
     )
 }

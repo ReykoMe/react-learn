@@ -18,7 +18,7 @@ const Users = (props) => {
                                                                  key={user.id}/>);
 
     return (
-        <div className="users">
+        <div className="users col-md-2">
             {usersElementsArray}
         </div>
     )

@@ -20,30 +20,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="23.06.2020">
-      <change afterPath="$PROJECT_DIR$/src/containers/SidebarContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FriendList/FriendItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FriendList/Friends.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/FriendsContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/media/react_substrate.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/media/users_avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/friends-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mask.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Content/Profile/profile.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Content/Wall/Posts/Posts/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Wall/Posts/Posts/Post.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Content/Wall/Wall.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Wall/Wall.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Content/Wall/Wall.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Footer/Footer.module.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header/NavigationBar/NavigationBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/NavigationBar/NavigationBar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Messenger/Chats/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messenger/Chats/users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Messenger/Chats/users.module.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Messenger/Messages/MessagesInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messenger/Messages/MessagesInput.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Messenger/Messages/messages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messenger/Messages/messages.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Messenger/Messenger.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messenger/Messenger.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MessagesInputContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MessagesInputContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/WallContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/WallContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/messenger-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/messenger-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Messenger/Messenger.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sidebar/Sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -64,11 +71,12 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/containers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -76,15 +84,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="W:\denwer\www\denwer\react-learn\mask\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\denwer\www\denwer\react-learn\mask\src\containers" />
       <recent name="W:\denwer\www\denwer\react-learn\mask\src" />
       <recent name="W:\denwer\www\denwer\react-learn\mask\src\components" />
       <recent name="W:\denwer\www\denwer\react-learn\mask\src\redux" />
       <recent name="W:\denwer\www\denwer\react-learn\mask\src\reducers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\denwer\www\denwer\react-learn\mask\src\containers" />
+      <recent name="W:\denwer\www\denwer\react-learn\mask\src\redux\reducers" />
+      <recent name="W:\denwer\www\denwer\react-learn\mask\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.test">
@@ -169,6 +179,9 @@
       <workItem from="1590082379901" duration="2411000" />
       <workItem from="1590085708761" duration="422000" />
       <workItem from="1590238857298" duration="6435000" />
+      <workItem from="1590245624196" duration="4450000" />
+      <workItem from="1590259448816" duration="10026000" />
+      <workItem from="1590269603803" duration="20253000" />
     </task>
     <task id="LOCAL-00001" summary="Many little changes">
       <created>1588764656945</created>
@@ -278,6 +291,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Many little changes" />
     <MESSAGE value="Added lst online friends block" />
     <MESSAGE value="11/05/2020 (many many changes)" />
@@ -300,30 +314,34 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="421" y="77" key="#JavaScript/0.0.1366.738@0.0.1366.738" timestamp="1589906956934" />
-    <state x="493" y="89" key="#Menus_and_Toolbars" timestamp="1589191894154">
+    <state x="493" y="89" key="#Menus_and_Toolbars" timestamp="1590259464607">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="493" y="89" key="#Menus_and_Toolbars/0.0.1366.738@0.0.1366.738" timestamp="1589191894154" />
+    <state x="493" y="89" key="#Menus_and_Toolbars/0.0.1366.738@0.0.1366.738" timestamp="1590259464607" />
+    <state x="437" y="171" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590264365948">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="437" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1590264365948" />
     <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1590079248231">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1590079248231" />
-    <state width="1345" height="174" key="GridCell.Tab.0.bottom" timestamp="1590245431387">
+    <state width="1345" height="174" key="GridCell.Tab.0.bottom" timestamp="1590269579282">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="174" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1590245431387" />
-    <state width="1345" height="174" key="GridCell.Tab.0.center" timestamp="1590245431386">
+    <state width="1345" height="174" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1590269579282" />
+    <state width="1345" height="174" key="GridCell.Tab.0.center" timestamp="1590269579282">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="174" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1590245431386" />
-    <state width="1345" height="174" key="GridCell.Tab.0.left" timestamp="1590245431386">
+    <state width="1345" height="174" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1590269579282" />
+    <state width="1345" height="174" key="GridCell.Tab.0.left" timestamp="1590269579282">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="174" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1590245431386" />
-    <state width="1345" height="174" key="GridCell.Tab.0.right" timestamp="1590245431386">
+    <state width="1345" height="174" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1590269579282" />
+    <state width="1345" height="174" key="GridCell.Tab.0.right" timestamp="1590269579282">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="174" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1590245431386" />
+    <state width="1345" height="174" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1590269579282" />
     <state width="1345" height="218" key="GridCell.Tab.1.bottom" timestamp="1589659942360">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -380,10 +398,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="489" y="66" key="VCS.ChangeListViewerDialog/0.0.1366.738@0.0.1366.738" timestamp="1589461553865" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1590084734664">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1590245691257">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1590084734664" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1590245691257" />
     <state x="391" y="88" width="583" height="562" key="find.popup" timestamp="1590243200193">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -392,10 +410,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="81" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.738@0.0.1366.738" timestamp="1589747804537" />
-    <state x="339" y="165" key="run.anything.popup" timestamp="1589530737531">
+    <state x="339" y="165" key="run.anything.popup" timestamp="1590322743055">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1589530737531" />
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1590322743055" />
+    <state x="475" y="228" key="scopes" timestamp="1590264304290">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="475" y="228" key="scopes/0.0.1366.738@0.0.1366.738" timestamp="1590264304290" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1590240023406">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

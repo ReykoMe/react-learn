@@ -1,9 +1,9 @@
 import React from "react";
-let FriendItem = (props) => {
+const FriendItem = (props) => {
     return(
         <div className="shadow-sm mb-3">
-            <div className={"card-body p-2"}>
-                <h6 className={"mb-0"}> {props.firstName} </h6>
+            <div className="card-body p-2">
+                <h6 className="mb-0"> {props.firstName} </h6>
                 <div>Цитата дня: </div>
                 <div>{props.status}</div>
             </div>
@@ -21,7 +21,7 @@ const Sidebar = (props) => {
 
     return (
         <div className={"col-3 wrapper"}>
-            <h2>Last friends online</h2>
+            <h5 className="text-center">Last friends online</h5>
             {lastFriends}
         </div>
     )
