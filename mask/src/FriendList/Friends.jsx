@@ -3,7 +3,14 @@ import FriendItem from "./FriendItem";
 
 
 let Friends = (props) => {
-    props.loadUsers()
+    if (props.friends.users.length === 0) {
+        props.loadUsers([
+            {id: 1, name: "Bingo", location: "Ukraine, Kuiv", status: "Eating fresh fish", isFriend: false},
+            {id: 2, name: "Jango", location: "Africa, Luanda", status: "Working hard", isFriend: false},
+            {id: 3, name: "Anna", location: "Russia, Moscow", status: "Searching job", isFriend: true}
+        ])
+    }
+
     let recommended = props.friends.users.map(
         (user) => <FriendItem name={user.name}
                               location={user.location}

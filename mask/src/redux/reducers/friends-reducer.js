@@ -1,10 +1,11 @@
 const initState = {
     searchInputText: "Always bingo",
-    users: [
-        {id: 1, name: "Bingo", location: "Ukraine, Kuiv", status: "Eating fresh fish", isFriend: false},
-        {id: 2, name: "Jango", location: "Africa, Luanda", status: "Working hard", isFriend: false},
-        {id: 3, name: "Anna", location: "Russia, Moscow", status: "Searching job", isFriend: true},
-    ],
+    users: [],
+    // users: [
+    //     {id: 1, name: "Bingo", location: "Ukraine, Kuiv", status: "Eating fresh fish", isFriend: false},
+    //     {id: 2, name: "Jango", location: "Africa, Luanda", status: "Working hard", isFriend: false},
+    //     {id: 3, name: "Anna", location: "Russia, Moscow", status: "Searching job", isFriend: true},
+    // ],
 }
 
 const FriendsReducer = (state = initState, action) => {
@@ -36,6 +37,6 @@ const FriendsReducer = (state = initState, action) => {
 }
 export const hideUserAC = (userId) => ({type: "HIDE_FRIEND_ITEM", userId: userId});
 export const changeSubscribeStatusAC = (userId) => ({type: "CHANGE_SUBSCRIBE_STATUS", userId: userId})
-export const loadUsersAC = (users) => ({type: "LOAD_USERS", users})
+export const loadUsersAC = (users) => ({type: "LOAD_USERS", users: users})
 export const updateSearchInputAC = (text) => ({type: "UPDATE_SEARCH_INPUT_TEXT", text: text})
 export default FriendsReducer;

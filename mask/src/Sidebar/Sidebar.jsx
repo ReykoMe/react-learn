@@ -1,4 +1,5 @@
 import React from "react";
+import style from "./Sidebar.module.css";
 const FriendItem = (props) => {
     return(
         <div className="shadow-sm mb-3">
@@ -20,7 +21,7 @@ const Sidebar = (props) => {
 
 
     return (
-        <div className={"col-3 wrapper"}>
+        <div className={"col-md-3 " + style.wrapper}>
             <h5 className="text-center">Last friends online</h5>
             {lastFriends}
         </div>
