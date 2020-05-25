@@ -4,6 +4,7 @@ import messengerReducer from "./reducers/messenger-reducer"
 import sidebarReducer from "./reducers/sidebar-reducer"
 import FriendsReducer from "./reducers/friends-reducer";
 import HooksReducer from "../HooksDir/hooks-reducer";
+
 let reducers = combineReducers({
   messenger: messengerReducer,
   profile: profileReducer,
