@@ -2,6 +2,7 @@ import React from "react";
 
 
 let FriendItem = (props) => {
+
     let changeSubscribeStatus = (userId) => props.changeSubscribeStatus(userId)
     let hideUser = (userId) => props.hideUser(userId);
 
@@ -12,11 +13,13 @@ let FriendItem = (props) => {
             </div>
             <div className="col-md-7">
                 <h6><span className="mr-2 badge badge-secondary">id: {props.id}</span>{props.name} </h6>
-                <p className="m-0">{props.location}</p>
-                <p>{props.status}</p>
+                {/* <p className="m-0">{props.location}</p>
+                <p>{props.status}</p> */}
+                 <p className="m-0">Country, city</p>
+                <p>Looking for job</p>
             </div>
             <div className="col-md-3 d-flex align-items-center justify-content-end"> {
-                !props.isFriend ?
+                !props.followed ?
                     (<div className="d-flex">
                             <button className="btn btn-primary mr-1"
                                     onClick={() => {changeSubscribeStatus(props.id)}}>Follow</button>

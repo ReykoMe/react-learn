@@ -17,8 +17,8 @@ const App = (props) => {
                 <SidebarContainer store={props.store}/>
                 <div className="col-md-9 content">
                     {/*Добавляем Route (необходимо установить из npm react-router-dom), с помощью которого реализуется логика "Если в строке браузера отображается /путь условный => отображать компоненту*/}
-                    <Route exact path="/messenger" render={() => <Messenger/>}/>
                     <Route exact path="/" render={() => <Content/>}/>
+                    <Route exact path="/messenger" render={() => <Messenger/>}/>
                     <Route exact path="/friends" render={() => <FriendsContainer/>}/>
                 </div>
             </div>

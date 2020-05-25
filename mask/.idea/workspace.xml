@@ -19,16 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="2020/05/24 Added:&#10;- Friends page,&#10;- buttons (follow, unfollow, hide)&#10;- Friends (R, C, AC) methods">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Content.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Content/Profile/profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content/Profile/profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FriendList/Friends.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/FriendList/Friends.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sidebar/Sidebar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sidebar/Sidebar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sidebar/Sidebar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/friends-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/friends-reducer.js" afterDir="false" />
-    </list>
+    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="Added friend list filter" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,7 +161,7 @@
       <workItem from="1590238857298" duration="6435000" />
       <workItem from="1590245624196" duration="4450000" />
       <workItem from="1590259448816" duration="10026000" />
-      <workItem from="1590269603803" duration="24709000" />
+      <workItem from="1590269603803" duration="24765000" />
     </task>
     <task id="LOCAL-00001" summary="Many little changes">
       <created>1588764656945</created>
@@ -256,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590335707873</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added friend list filter">
+      <created>1590344144302</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1590344144302</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +298,8 @@
     <MESSAGE value="Changed styles" />
     <MESSAGE value="23.06.2020" />
     <MESSAGE value="2020/05/24 Added:&#10;- Friends page,&#10;- buttons (follow, unfollow, hide)&#10;- Friends (R, C, AC) methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020/05/24 Added:&#10;- Friends page,&#10;- buttons (follow, unfollow, hide)&#10;- Friends (R, C, AC) methods" />
+    <MESSAGE value="Added friend list filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added friend list filter" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1588769771933">
@@ -395,10 +394,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="489" y="66" key="VCS.ChangeListViewerDialog/0.0.1366.738@0.0.1366.738" timestamp="1589461553865" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1590335722277">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1590344154484">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1590335722277" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1590344154484" />
     <state x="391" y="88" width="583" height="562" key="find.popup" timestamp="1590243200193">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

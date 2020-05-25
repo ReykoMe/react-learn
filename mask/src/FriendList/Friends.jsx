@@ -1,21 +1,23 @@
 import React from "react";
 import FriendItem from "./FriendItem";
-
+import * as axios from "axios"
 
 let Friends = (props) => {
-    if (props.friends.users.length === 0) {
-        props.loadUsers([
-            {id: 1, name: "Bingo", location: "Ukraine, Kuiv", status: "Eating fresh fish", isFriend: false},
-            {id: 2, name: "Jango", location: "Africa, Luanda", status: "Working hard", isFriend: false},
-            {id: 3, name: "Anna", location: "Russia, Moscow", status: "Searching job", isFriend: true}
-        ])
+    let getUsers = () => {
+        if (props.friends.users.length === 0) {
+            axios.get("https://social-network.samuraijs.com/api/1.0/users")
+            .then(response => {
+                props.loadUsers (response.data.items)
+            }) 
+        }
     }
+   
 
     let recommended = props.friends.users.map(
         (user) => <FriendItem name={user.name}
-                              location={user.location}
-                              status={user.status}
-                              isFriend={user.isFriend}
+                            //   location={user.location}
+                            //   status={user.status}
+                              followed={user.followed}
                               id={user.id}
                               key={user.id}
                               changeSubscribeStatus={props.changeSubscribeStatus}
@@ -29,14 +31,16 @@ let Friends = (props) => {
             <div className="col p-0 mb-2 input-group">
                 <input type="text"
                        className="form-control"
-                       placeholder="Please, enter Name, City or other search info"
+                       placeholder="Press the button to load user list =>>>"
                        ref={inputValue}
                        value={props.friends.searchInputText}
                        onChange={changeInput}
                 />
 
                 <div className="input-group-append">
-                    <button className='btn btn-primary'>Search</button>
+                    <button className='btn btn-primary'
+                            onClick={getUsers}
+                    >Get Users</button>
                 </div>
             </div>
             <div className="col-md-12">
