@@ -1,11 +1,7 @@
 const initState = {
   searchInputText: "",
-  users: [],
-  // users: [
-  //     {id: 1, name: "Bingo", location: "Ukraine, Kuiv", status: "Eating fresh fish", isFriend: false},
-  //     {id: 2, name: "Jango", location: "Africa, Luanda", status: "Working hard", isFriend: false},
-  //     {id: 3, name: "Anna", location: "Russia, Moscow", status: "Searching job", isFriend: true},
-  // ],
+  count: 100 ,
+  users: []
 }
 
 const FriendsReducer = (state = initState, action) => {
@@ -28,7 +24,7 @@ const FriendsReducer = (state = initState, action) => {
       //копируем state, создаем в нем свойство users, куда присваиваем все значения, которые подходят под условия
       return { ...state, users: state.users.filter((user) => user.id !== action.userId) }
     case "LOAD_USERS":
-      return { ...state, users: [...state.users, ...action.users] }
+      return { ...state, users: [...action.users] }
     //при помощи spread-оператора производится склеивание старого массива и нового, а результат вовзвращается в виде нового объекта
     default:
       return state;

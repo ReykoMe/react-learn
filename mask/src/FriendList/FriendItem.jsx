@@ -8,17 +8,16 @@ let FriendItem = (props) => {
 
     return (
         <div className="row shadow-sm rounded p-2">
-            <div className="col-md-2 p-0">
+            <div className="col-2 p-0">
                 <img src={require("../media/users_avatar.jpg")} alt="user" className="w-100"/>
             </div>
-            <div className="col-md-7">
+            <div className="col-7">
                 <h6><span className="mr-2 badge badge-secondary">id: {props.id}</span>{props.name} </h6>
-                {/* <p className="m-0">{props.location}</p>
-                <p>{props.status}</p> */}
+
                  <p className="m-0">Country, city</p>
                 <p>Looking for job</p>
             </div>
-            <div className="col-md-3 d-flex align-items-center justify-content-end"> {
+            <div className="col-3 d-flex align-items-center justify-content-end"> {
                 !props.followed ?
                     (<div className="d-flex">
                             <button className="btn btn-primary mr-1"
