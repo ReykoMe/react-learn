@@ -7,12 +7,13 @@ import * as axios from "axios";
 const FriendListHooks = () => {
         const friends = useSelector(state => state.friends)
         const dispatch = useDispatch()
+
+        const hideUser = (userId) => dispatch(hideUserAC(userId))
+        const changeSubscribe = (userId) => dispatch(changeSubscribeStatusAC(userId))
         useEffect(() => {
             axios.get (`https://social-network.samuraijs.com/api/1.0/users?count=${friends.count}`)
-                .then(response => {
-                    dispatch(loadUsersAC(response.data.items))
-                    console.log(response)
-                })
+                .then(response => dispatch(loadUsersAC(response.data.items))
+                )
         }, [])
 
         return (
@@ -22,11 +23,9 @@ const FriendListHooks = () => {
                                                                 followed={user.followed}
                                                                 id={user.id}
                                                                 key={user.id}
-                                                                changeSubscribeStatus={() =>{dispatch(changeSubscribeStatusAC(user.id))}}
-                                                                hideUser={()=> {
-                                                                    dispatch(hideUserAC(user.id))}
-                                                                }
-                        />
+                                                                changeSubscribeStatus={() => changeSubscribe(user.id)}
+                                                                hideUser={()=> hideUser(user.id)}
+                                                                />
                     )}
                 </div>
                 <div className="col-md-12 mt-3">

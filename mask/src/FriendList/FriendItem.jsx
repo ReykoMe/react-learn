@@ -9,11 +9,10 @@ let FriendItem = (props) => {
     return (
         <div className="row shadow-sm rounded p-2">
             <div className="col-2 p-0">
-                <img src={require("../media/users_avatar.jpg")} alt="user" className="w-100"/>
+                <img src={props.userPhoto} alt="user" className="w-100 rounded-lg"/>
             </div>
             <div className="col-7">
                 <h6><span className="mr-2 badge badge-secondary">id: {props.id}</span>{props.name} </h6>
-
                  <p className="m-0">Country, city</p>
                 <p>Looking for job</p>
             </div>

@@ -19,21 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="Added friend list filter">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ReykoMe.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FriendList/FriendList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FriendList/SearchFriendsInput.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HooksDir/FriendListHooks.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/FriendListSearchInputContainer.jsx" afterDir="false" />
+    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="Added hooks to FriendList.jsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FriendList/FriendItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/FriendList/FriendItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FriendList/FriendList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/FriendList/FriendList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FriendList/Friends.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/FriendList/Friends.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HooksDir/HooksTest.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HooksDir/hooks-reducer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/FriendsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/FriendListContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HooksDir/FriendListHooks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HooksDir/FriendListHooks.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/FriendListContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/FriendListContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducers/friends-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/friends-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +174,7 @@
       <workItem from="1590269603803" duration="24765000" />
       <workItem from="1590434340164" duration="538000" />
       <workItem from="1590434899425" duration="17375000" />
-      <workItem from="1590749657878" duration="13519000" />
+      <workItem from="1590749657878" duration="33739000" />
     </task>
     <task id="LOCAL-00001" summary="Many little changes">
       <created>1588764656945</created>
@@ -281,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590434835373</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added hooks to FriendList.jsx">
+      <created>1590771711842</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1590771711842</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +326,8 @@
     <MESSAGE value="23.06.2020" />
     <MESSAGE value="2020/05/24 Added:&#10;- Friends page,&#10;- buttons (follow, unfollow, hide)&#10;- Friends (R, C, AC) methods" />
     <MESSAGE value="Added friend list filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added friend list filter" />
+    <MESSAGE value="Added hooks to FriendList.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added hooks to FriendList.jsx" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1588769771933">
@@ -421,10 +422,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="489" y="66" key="VCS.ChangeListViewerDialog/0.0.1366.738@0.0.1366.738" timestamp="1589461553865" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1590434841089">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1590771725680">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1590434841089" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1590771725680" />
     <state x="391" y="88" width="583" height="562" key="find.popup" timestamp="1590437635525">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -433,10 +434,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="81" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.738@0.0.1366.738" timestamp="1589747804537" />
-    <state x="339" y="165" key="run.anything.popup" timestamp="1590322743055">
+    <state x="339" y="165" key="run.anything.popup" timestamp="1590826215462">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1590322743055" />
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1590826215462" />
     <state x="475" y="228" key="scopes" timestamp="1590264304290">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
