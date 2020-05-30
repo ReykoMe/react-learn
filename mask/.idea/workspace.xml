@@ -19,14 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="Added hooks to FriendList.jsx">
+    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="30/05/2020 added some components, refactoret userList, added Pagination">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FriendList/FriendItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/FriendList/FriendItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FriendList/FriendList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/FriendList/FriendList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FriendList/Friends.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/FriendList/Friends.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HooksDir/FriendListHooks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HooksDir/FriendListHooks.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/FriendListContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/FriendListContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/friends-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/friends-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +58,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/FriendList" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -174,7 +168,9 @@
       <workItem from="1590269603803" duration="24765000" />
       <workItem from="1590434340164" duration="538000" />
       <workItem from="1590434899425" duration="17375000" />
-      <workItem from="1590749657878" duration="33739000" />
+      <workItem from="1590749657878" duration="33836000" />
+      <workItem from="1590842184188" duration="25000" />
+      <workItem from="1590842948155" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="Many little changes">
       <created>1588764656945</created>
@@ -281,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590771711842</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="30/05/2020 added some components, refactoret userList, added Pagination">
+      <created>1590840924502</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1590840924502</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +330,8 @@
     <MESSAGE value="2020/05/24 Added:&#10;- Friends page,&#10;- buttons (follow, unfollow, hide)&#10;- Friends (R, C, AC) methods" />
     <MESSAGE value="Added friend list filter" />
     <MESSAGE value="Added hooks to FriendList.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added hooks to FriendList.jsx" />
+    <MESSAGE value="30/05/2020 added some components, refactoret userList, added Pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="30/05/2020 added some components, refactoret userList, added Pagination" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1588769771933">
@@ -346,10 +350,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="437" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1590437474991" />
-    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1590079248231">
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1590842206924">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1590079248231" />
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1590842206924" />
     <state width="1345" height="174" key="GridCell.Tab.0.bottom" timestamp="1590269579282">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -422,10 +426,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="489" y="66" key="VCS.ChangeListViewerDialog/0.0.1366.738@0.0.1366.738" timestamp="1589461553865" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1590771725680">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1590840934867">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1590771725680" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1590840934867" />
     <state x="391" y="88" width="583" height="562" key="find.popup" timestamp="1590437635525">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

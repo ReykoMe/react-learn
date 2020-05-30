@@ -3,13 +3,15 @@ import {
     hideUserAC,
     loadUsersAC,
     setCurrentPageAC,
-    setTotalUsersCountAC
+    setTotalUsersCountAC,
+    toggleGettingDataAC
 } from "../redux/reducers/friends-reducer";
 
-import {connect} from "react-redux";
+import { connect } from "react-redux";
 import React from "react";
 import * as axios from "axios";
 import FriendList from "../FriendList/FriendList";
+import Preloader from "../service/Preloader";
 
 class FriendListContainer extends React.Component {
     setCurrentPage = (page) => {
@@ -24,8 +26,10 @@ class FriendListContainer extends React.Component {
 
     }
     getUsers = (page) => {
+        this.props.toggleGettingData(true)
         axios.get(`https://social-network.samuraijs.com/api/1.0/users?count=${this.props.countUsers}&page=${page}`)
             .then(response => {
+                this.props.toggleGettingData(false)
                 this.props.loadUsers(response.data.items)
                 this.props.setTotalUsersCount(response.data.totalCount)
             })
@@ -36,16 +40,23 @@ class FriendListContainer extends React.Component {
     }
 
     render() {
-        return (
-            <FriendList totalUsers={this.props.totalUsers}
-                        countUsers={this.props.countUsers}
-                        currentPage={this.props.currentPage}
-                        setCurrentPage={this.setCurrentPage}
-                        getUsers={this.getUsers}
-                        users={this.props.users}
-                        hideUser={this.props.hideUser}
-                        changeSubscribeStatus={this.props.changeSubscribeStatus}
-            />
+        return (<>
+                    
+                            {this.props.gettingData ? (
+                                <Preloader/>                                                      
+                            ) : (<FriendList totalUsers={this.props.totalUsers}
+                            countUsers={this.props.countUsers}
+                            currentPage={this.props.currentPage}
+                            setCurrentPage={this.setCurrentPage}
+                            getUsers={this.getUsers}
+                            users={this.props.users}
+                            hideUser={this.props.hideUser}
+                            changeSubscribeStatus={this.props.changeSubscribeStatus}
+                        />)}  
+                    
+                   
+                    
+                </>
         )
     }
 }
@@ -55,7 +66,8 @@ let mapStateToProps = (state) => {
         users: state.friends.users,
         totalUsers: state.friends.totalUsers,
         countUsers: state.friends.count,
-        currentPage: state.friends.currentPage
+        currentPage: state.friends.currentPage,
+        gettingData: state.friends.gettingData
     }
 }
 let mapDispatchToProps = (dispatch) => {
@@ -65,7 +77,8 @@ let mapDispatchToProps = (dispatch) => {
         loadUsers: (userList) => dispatch(loadUsersAC(userList)),
         setCurrentPage: (page) => dispatch(setCurrentPageAC(page)),
         setTotalUsersCount: (usersCount) => dispatch(setTotalUsersCountAC(usersCount)),
+        toggleGettingData: (toggle) => dispatch(toggleGettingDataAC(toggle))
     }
 }
 
-export default  connect(mapStateToProps, mapDispatchToProps)(FriendListContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(FriendListContainer)

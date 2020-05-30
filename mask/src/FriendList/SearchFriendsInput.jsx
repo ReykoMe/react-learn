@@ -14,11 +14,8 @@ let SearchFriendsInput = (props) => {
                        value={props.textInput}
                        onChange={changeInput}
                 />
-
                 <div className="input-group-append">
-                    <button className='btn btn-primary'
-
-                    >Search</button>
+                    <button className='btn btn-primary'>Search</button>
                 </div>
             </div>
         </div>
