@@ -6,7 +6,7 @@ let SearchFriendsInput = (props) => {
     let changeInput = () => props.updateInput(inputValue.current.value);
     return (
         <div className="row">
-            <div className="col p-0 mb-2 input-group">
+            <div className="col-12 p-0 mb-2 input-group">
                 <input type="text"
                        className="form-control"
                        placeholder="Press the button to load user list =>>>"

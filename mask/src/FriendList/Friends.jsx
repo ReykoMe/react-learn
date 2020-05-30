@@ -7,9 +7,12 @@ import FriendListContainer from "../containers/FriendListContainer";
 let Friends = () => {
     return (
         <div className="row">
-            <SearchFriendsInputContainer />
-            {/*<FriendListHooks />*/}
-            <FriendListContainer />
+            <div className="col">
+                <SearchFriendsInputContainer />
+                {/*<FriendListHooks />*/}
+                <FriendListContainer />
+            </div>
+            
         </div>
     )
 }

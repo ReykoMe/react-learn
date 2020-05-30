@@ -41,11 +41,11 @@ const FriendsReducer = (state = initState, action) => {
 
 }
 
-export const toggleGettingDataAC = (toggle) => ({type:"TOGGLE_GETTING_DATA", toggle: toggle })
-export const setTotalUsersCountAC = (usersCount) => ({ type: "SET_TOTAL_USERS_COUNT", usersCount: usersCount })
-export const setCurrentPageAC = (page) => ({ type: "CURRENT_PAGE", page: page })
-export const hideUserAC = (userId) => ({ type: "HIDE_FRIEND_ITEM", userId: userId });
-export const changeSubscribeStatusAC = (userId) => ({ type: "CHANGE_SUBSCRIBE_STATUS", userId: userId })
-export const loadUsersAC = (users) => ({ type: "LOAD_USERS", users: users })
-export const updateSearchInputAC = (text) => ({ type: "UPDATE_SEARCH_INPUT_TEXT", text: text })
+export const toggleGettingData = (toggle) => ({type:"TOGGLE_GETTING_DATA", toggle })
+export const setTotalUsersCount = (usersCount) => ({ type: "SET_TOTAL_USERS_COUNT", usersCount })
+export const setCurrentPage = (page) => ({ type: "CURRENT_PAGE", page })
+export const hideUser = (userId) => ({ type: "HIDE_FRIEND_ITEM", userId });
+export const changeSubscribeStatus = (userId) => ({ type: "CHANGE_SUBSCRIBE_STATUS", userId })
+export const loadUsers = (users) => ({ type: "LOAD_USERS", users: users })
+export const updateSearchInputAC = (text) => ({ type: "UPDATE_SEARCH_INPUT_TEXT", text })
 export default FriendsReducer;
