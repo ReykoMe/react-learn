@@ -1,11 +1,12 @@
 import React from "react";
 import NavigationBar from './NavigationBar/NavigationBar';
 
-const Header = () => {
+const Header = (props) => {
+    console.log(props)
     return (
         <div className="row bg-primary mt-2  mb-3 rounded shadow">
             <div className="col">
-                <NavigationBar/>
+                <NavigationBar authorised={props.authorised} login={props.login} userId = {props.userId}/>
             </div>
         </div>
     )

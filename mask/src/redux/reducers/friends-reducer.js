@@ -1,6 +1,6 @@
 const initState = {
     searchInputText: "",
-    count: 5,
+    count: 10,
     totalUsers: 0,
     users: [],
     currentPage: 1,
