@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 
 let FriendItem = (props) => {
@@ -12,7 +13,9 @@ let FriendItem = (props) => {
                 <img src={props.userPhoto} alt="user" className="w-100 rounded-lg"/>
             </div>
             <div className="col-7">
-                <h6><span className="mr-2 badge badge-secondary">id: {props.id}</span>{props.name} </h6>
+                <h6>
+            <NavLink to={`/profile/${props.id}`}><span className="mr-2 badge badge-secondary">id: {props.id} </span></NavLink>{props.name}</h6>
+                    
                  <p className="m-0">Country, city</p>
                 <p>Looking for job</p>
             </div>

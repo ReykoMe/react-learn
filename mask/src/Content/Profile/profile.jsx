@@ -1,16 +1,35 @@
 import React from "react";
+import Preloader from "../../service/Preloader";
+const Profile = (props) => {
+    const profile = props.userProfile;
+    //Если profile пустой, показывать прелоадер
+    if (!profile) {
+        return <Preloader />;
+    }
 
-const Profile = () => {
+    let socialLinks = [];
+    for (let link in profile.contacts) {
+        profile.contacts[link] && socialLinks.push({ name: link, key: link, link: profile.contacts[link] });
+    }
+
     return (
-        <div className={"row mb-3"}>
+        <div className='row mb-3'>
             <div className='col-md-3'>
-                <img src={require("../../media/avatar_template.png")} className='w-100 rounded mb-2' alt='kek' />
+                <img src={profile.photos.small} className='w-100 rounded mb-2' alt='kek' />
             </div>
             <div className='col-md-9'>
-                <h3>Albert Kremov</h3>
-                <p>16 years old</p>
-                <p>From: hell</p>
-                <p>Status: Reactive Rektal</p>
+                <h3>
+                    <span className='badge badge-secondary mr-2'>UserId: {profile.userId}</span>
+                    {profile.fullName}
+                </h3>
+                <p>{profile.aboutMe}</p>
+                <ul>
+                    {socialLinks.map((link) => (
+                        <li key={link.key}>
+                            <a href={link.link}>{link.name}</a>
+                        </li>
+                    ))}
+                </ul>
             </div>
         </div>
     );

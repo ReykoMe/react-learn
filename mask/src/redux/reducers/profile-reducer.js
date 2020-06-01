@@ -1,6 +1,7 @@
 import {likesGen} from "../../state";
 
 const initState = {
+  currentProfile: null,
   newText: "",
   wallPosts: [
     {id: 1, author: "Василий Чичкалкин", message: "Бородульку тебе", likes: 5},
@@ -31,11 +32,14 @@ const profileReducer = (state = initState, action) => {
       newState.newText = action.newText;
       console.log(state.newText);
       return newState}
+    case 'LOAD_PROFILE':{
+       return {...state, currentProfile: action.profileId}
+    }
     default:
       return state;
   }
 };
-
+export const loadUserProfile = (profileId) => ({type: 'LOAD_PROFILE', profileId}) 
 export const addPostAC = () => ({type: 'ADD-POST'});
 export const updateTextAC = (text) => ({type: 'UPDATE-TEXT', newText: text})
 export default profileReducer;

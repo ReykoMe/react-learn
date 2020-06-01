@@ -14,6 +14,7 @@ import FriendList from "../FriendList/FriendList";
 import Preloader from "../service/Preloader";
 
 class FriendListContainer extends React.Component {
+    
     setCurrentPage = (page) => {
         if (page === "...") {
             let enterPage = parseInt(prompt("Enter number of page"), 10);
@@ -24,10 +25,17 @@ class FriendListContainer extends React.Component {
             this.getUsers(page);
         }
     };
-    getUsers = (page) => {
+   getUsers = (page) => {
         this.props.toggleGettingData(true);
+        let url = `https://social-network.samuraijs.com/api/1.0/users?count=${this.props.countUsers}&page=${page}`
+        // let response = fetch(url).then(response => response.json()).then(data => {
+        //     this.props.toggleGettingData(false)
+        //     this.props.loadUsers(data.items)
+        //     this.props.setTotalUsersCount(data.totalCount)
+        // })
+
         axios
-            .get(`https://social-network.samuraijs.com/api/1.0/users?count=${this.props.countUsers}&page=${page}`)
+            .get(url)
             .then((response) => {
                 this.props.toggleGettingData(false);
                 this.props.loadUsers(response.data.items);
