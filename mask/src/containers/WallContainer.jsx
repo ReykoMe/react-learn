@@ -1,5 +1,5 @@
 import { addPostAC, updateTextAC } from "../redux/reducers/profile-reducer";
-import Wall from "../Content/Wall/Wall";
+import Wall from "../components/Content/Wall/Wall";
 import { connect } from "react-redux";
 
 let mapStateToProps = (state) => {

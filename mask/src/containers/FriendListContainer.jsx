@@ -5,17 +5,16 @@ import {
     setCurrentPage,
     setTotalUsersCount,
     toggleGettingData,
-    toggleFollowing
+    toggleFollowing,
 } from "../redux/reducers/friends-reducer";
 
 import { connect } from "react-redux";
 import React from "react";
-import FriendList from "../FriendList/FriendList";
+import FriendList from "../components/Content/FriendList/FriendList";
 import Preloader from "../service/Preloader";
-import {getAllUsers} from "../service/api/axiosQueries"
+import { getAllUsers } from "../service/api/axiosQueries";
 
 class FriendListContainer extends React.Component {
-    
     setCurrentPage = (page, count = this.props.countUsers) => {
         if (page === "...") {
             let enterPage = parseInt(prompt("Enter number of page"), 10);
@@ -23,12 +22,12 @@ class FriendListContainer extends React.Component {
             this.getUsers(enterPage, count);
         } else {
             this.props.setCurrentPage(page, count);
-            this.getUsers(page,count);
+            this.getUsers(page, count);
         }
     };
     getUsers = (page, count) => {
         this.props.toggleGettingData(true);
-       getAllUsers(page, count).then((response) => {
+        getAllUsers(page, count).then((response) => {
             this.props.toggleGettingData(false);
             this.props.loadUsers(response.items);
             this.props.setTotalUsersCount(response.totalCount);
@@ -36,7 +35,6 @@ class FriendListContainer extends React.Component {
     };
 
     componentDidMount() {
-        
         this.getUsers(this.props.currentPage, this.props.countUsers);
     }
 
@@ -71,7 +69,7 @@ let mapStateToProps = (state) => {
         countUsers: state.friends.count,
         currentPage: state.friends.currentPage,
         gettingData: state.friends.gettingData,
-        following: state.friends.following
+        following: state.friends.following,
     };
 };
 // let mapDispatchToProps = (dispatch) => {
@@ -94,5 +92,5 @@ export default connect(mapStateToProps, {
     setCurrentPage,
     setTotalUsersCount,
     toggleGettingData,
-    toggleFollowing
+    toggleFollowing,
 })(FriendListContainer);

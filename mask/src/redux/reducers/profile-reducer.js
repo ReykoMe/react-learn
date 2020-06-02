@@ -14,8 +14,8 @@ const initState = {
 
 const profileReducer = (state = initState, action) => {
   switch (action.type) {
-    case 'ADD-POST':{
-      let newPost =  {
+    case 'ADD-POST': {
+      let newPost = {
         id: state.wallPosts.length + 1,
         author: 'state.currentProfile.fullName',
         message: state.newText,
@@ -26,20 +26,22 @@ const profileReducer = (state = initState, action) => {
       newState.wallPosts.push(newPost)
       newState.newText = '';
       console.log(`Текст: ${state.newText} добавлен в wallPosts`);
-      return newState;}
-    case 'UPDATE-TEXT':{
+      return newState;
+    }
+    case 'UPDATE-TEXT': {
       let newState = {...state};
       newState.newText = action.newText;
       console.log(state.newText);
-      return newState}
-    case 'LOAD_PROFILE':{
-       return {...state, currentProfile: action.profileId}
+      return newState
+    }
+    case 'LOAD_PROFILE': {
+      return {...state, currentProfile: action.profileId}
     }
     default:
       return state;
   }
 };
-export const loadUserProfile = (profileId) => ({type: 'LOAD_PROFILE', profileId}) 
+export const loadUserProfile = (profileId) => ({type: 'LOAD_PROFILE', profileId})
 export const addPostAC = () => ({type: 'ADD-POST'});
 export const updateTextAC = (text) => ({type: 'UPDATE-TEXT', newText: text})
 export default profileReducer;

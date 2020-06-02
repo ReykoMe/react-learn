@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { userSubscribe, userUnsubscribe } from "../service/api/axiosQueries";
+import { userSubscribe, userUnsubscribe } from "../../../service/api/axiosQueries";
 
 let FriendItem = (props) => {
     //let changeSubscribeStatus = (userId) => {props.changeSubscribeStatus(userId)}

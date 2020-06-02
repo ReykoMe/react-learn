@@ -19,8 +19,46 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="30/05/2020 added some components, refactoret userList, added Pagination">
+    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="02/05/2020 add more changes">
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Content/Content.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Content/Profile/profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Profile/profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Content/Wall/Posts/Posts/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Wall/Posts/Posts/Post.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Content/Wall/Posts/Posts/PostMessage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Wall/Posts/Posts/PostMessage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Content/Wall/Posts/PostsWrapper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Wall/Posts/PostsWrapper.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Content/Wall/Posts/PostsWrapper.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Wall/Posts/PostsWrapper.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Content/Wall/Wall.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Wall/Wall.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FriendList/FriendItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/FriendList/FriendItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FriendList/FriendList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/FriendList/FriendList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FriendList/Friends.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/FriendList/Friends.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FriendList/SearchFriendsInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/FriendList/SearchFriendsInput.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header/NavigationBar/NavigationBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/NavigationBar/NavigationBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header/NavigationBar/NavigationBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/NavigationBar/NavigationBar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Messenger/Chats/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messenger/Chats/users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Messenger/Messages/MessagesInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messenger/Messages/MessagesInput.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Messenger/Messages/messages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messenger/Messages/messages.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Messenger/Messages/messages.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messenger/Messages/messages.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Messenger/Messenger.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messenger/Messenger.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sidebar/Sidebar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sidebar/preview/prev.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/preview/prev.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sidebar/preview/prev.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/preview/prev.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/ContentContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ContentContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/FriendListContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/FriendListContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/FriendListSearchInputContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/FriendListSearchInputContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/HeaderContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MessagesInputContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MessagesInputContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/SidebarContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/SidebarContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/WallContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/WallContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/friends-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/friends-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/profile-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,22 +101,22 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="W:\denwer\www\denwer\react-learn\mask\src" />
+      <recent name="W:\denwer\www\denwer\react-learn\mask\src\components\Content" />
+      <recent name="W:\denwer\www\denwer\react-learn\mask\src\components" />
+      <recent name="W:\denwer\www\denwer\react-learn\mask\src\containers" />
+      <recent name="W:\denwer\www\denwer\react-learn\mask\src\redux" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="W:\denwer\www\denwer\react-learn\mask\src\FriendList" />
       <recent name="W:\denwer\www\denwer\react-learn\mask\src\containers" />
       <recent name="W:\denwer\www\denwer\react-learn\mask\src\redux\reducers" />
       <recent name="W:\denwer\www\denwer\react-learn\mask\src" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="W:\denwer\www\denwer\react-learn\mask\src\containers" />
-      <recent name="W:\denwer\www\denwer\react-learn\mask\src" />
-      <recent name="W:\denwer\www\denwer\react-learn\mask\src\components" />
-      <recent name="W:\denwer\www\denwer\react-learn\mask\src\redux" />
-      <recent name="W:\denwer\www\denwer\react-learn\mask\src\reducers" />
     </key>
   </component>
   <component name="RunManager" selected="npm.test">
@@ -171,6 +209,9 @@
       <workItem from="1590749657878" duration="33836000" />
       <workItem from="1590842184188" duration="25000" />
       <workItem from="1590842948155" duration="3000" />
+      <workItem from="1591107552563" duration="81000" />
+      <workItem from="1591107637626" duration="5960000" />
+      <workItem from="1591125167310" duration="999000" />
     </task>
     <task id="LOCAL-00001" summary="Many little changes">
       <created>1588764656945</created>
@@ -284,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590840924502</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="02/05/2020 add more changes">
+      <created>1591107607040</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1591107607040</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,17 +379,18 @@
     <MESSAGE value="Added friend list filter" />
     <MESSAGE value="Added hooks to FriendList.jsx" />
     <MESSAGE value="30/05/2020 added some components, refactoret userList, added Pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="30/05/2020 added some components, refactoret userList, added Pagination" />
+    <MESSAGE value="02/05/2020 add more changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="02/05/2020 add more changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1588769771933">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="309" y="47" key="#Inspections/0.0.1366.738@0.0.1366.738" timestamp="1588769771933" />
-    <state x="421" y="77" key="#JavaScript" timestamp="1589906956934">
+    <state x="421" y="77" key="#JavaScript" timestamp="1591116792163">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="421" y="77" key="#JavaScript/0.0.1366.738@0.0.1366.738" timestamp="1589906956934" />
+    <state x="421" y="77" key="#JavaScript/0.0.1366.738@0.0.1366.738" timestamp="1591116792163" />
     <state x="493" y="89" key="#Menus_and_Toolbars" timestamp="1590259464607">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -350,10 +399,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="437" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1590437474991" />
-    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1590842206924">
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1591107634224">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1590842206924" />
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1591107634224" />
     <state width="1345" height="174" key="GridCell.Tab.0.bottom" timestamp="1590269579282">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -418,22 +467,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1345" height="218" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1589659942361" />
-    <state x="62" y="28" key="SettingsEditor" timestamp="1590245399326">
+    <state x="50" y="28" key="SettingsEditor" timestamp="1591117021409">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="62" y="28" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1590245399326" />
+    <state x="50" y="28" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1591117021409" />
     <state x="489" y="66" key="VCS.ChangeListViewerDialog" timestamp="1589461553865">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="489" y="66" key="VCS.ChangeListViewerDialog/0.0.1366.738@0.0.1366.738" timestamp="1589461553865" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1590840934867">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591107610883">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1590840934867" />
-    <state x="391" y="88" width="583" height="562" key="find.popup" timestamp="1590437635525">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1591107610883" />
+    <state x="391" y="88" width="583" height="562" key="find.popup" timestamp="1591110165350">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="391" y="88" width="583" height="562" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1590437635525" />
+    <state x="391" y="88" width="583" height="562" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1591110165350" />
     <state x="463" y="81" key="git4idea.branch.GitSmartOperationDialog" timestamp="1589747804537">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

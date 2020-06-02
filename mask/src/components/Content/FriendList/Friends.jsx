@@ -1,6 +1,6 @@
 import React from "react";
-import SearchFriendsInputContainer from "../containers/FriendListSearchInputContainer";
-import FriendListContainer from "../containers/FriendListContainer";
+import SearchFriendsInputContainer from "../../../containers/FriendListSearchInputContainer";
+import FriendListContainer from "../../../containers/FriendListContainer";
 // import FriendListHooks from "../HooksDir/FriendListHooks";
 
 

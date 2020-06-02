@@ -1,5 +1,5 @@
 import { updateSearchInputAC } from "../redux/reducers/friends-reducer";
-import SearchFriendsInput from "../FriendList/SearchFriendsInput";
+import SearchFriendsInput from "../components/Content/FriendList/SearchFriendsInput";
 import { connect } from "react-redux";
 
 let mapStateToProps = (state) => {

@@ -1,5 +1,5 @@
 import { sendMessageAC, updateInputTextAC } from "../redux/reducers/messenger-reducer";
-import MessagesInput from "../Messenger/Messages/MessagesInput";
+import MessagesInput from "../components/Messenger/Messages/MessagesInput";
 import { connect } from "react-redux";
 
 let mapStateToProps = (state) => {

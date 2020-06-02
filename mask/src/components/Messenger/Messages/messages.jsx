@@ -1,6 +1,6 @@
 import React from "react";
 import classes from './messages.module.css';
-import MessagesInputContainer from "../../containers/MessagesInputContainer"
+import MessagesInputContainer from "../../../containers/MessagesInputContainer"
 //Подкомпонента, отвечающая за отображение 1 единицы сообщения
 const Message = (props) => {
   return (

@@ -1,7 +1,6 @@
 import React from "react";
 
 let SearchFriendsInput = (props) => {
-
     let inputValue = React.createRef()
     let changeInput = () => props.updateInput(inputValue.current.value);
     return (

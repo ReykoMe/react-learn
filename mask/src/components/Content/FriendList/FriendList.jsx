@@ -1,5 +1,5 @@
 import FriendItem from "./FriendItem";
-import avatarImg from "../media/users_avatar.jpg";
+import avatarImg from "../../../media/users_avatar.jpg";
 import React from "react";
 
 let FriendList = (props) => {
@@ -42,7 +42,6 @@ let FriendList = (props) => {
             <div className='col-md-12 mt-3'>
                 <nav aria-label='Page navigation example'>
                     <ul className='pagination pagination-sm  justify-content-center'>
-                        {/* TODO: сделать кнопки вперед/назад} */}
                         <li className={props.currentPage !== 1 ? "page-item" : "page-item d-none"}>
                             <button
                                 className='page-link bg-primary text-light'

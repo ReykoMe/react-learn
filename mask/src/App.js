@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Footer from './Footer/Footer';
+import Footer from './components/Footer/Footer';
 import SidebarContainer from "./containers/SidebarContainer";
-import Messenger from "./Messenger/Messenger";
+import Messenger from "./components/Messenger/Messenger";
 import {Route} from "react-router-dom";
-import Friends from "./FriendList/Friends";
+import Friends from "./components/Content/FriendList/Friends";
 import ContentContainer from './containers/ContentContainer'
 import HeaderContainer from './containers/HeaderContainer';
 const App = (props) => {
