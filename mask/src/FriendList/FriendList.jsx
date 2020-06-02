@@ -10,27 +10,27 @@ let FriendList = (props) => {
     const pageBeforeAfter = 3;
     let paginationPages = [];
 
-   
-
-    if (showPaginationPages > props.currentPage ) {
+    if (showPaginationPages > props.currentPage) {
         for (let i = 1; i <= showPaginationPages; i++) {
             paginationPages.push(i);
         }
         paginationPages.push(spread, paginationPagesCount);
-    } else 
-    if (props.currentPage >= showPaginationPages && props.currentPage < paginationPagesCount - pageBeforeAfter ) {
-        paginationPages.push(1)
-        for (let i = props.currentPage-pageBeforeAfter; i <= props.currentPage + pageBeforeAfter; i++) {
-                  paginationPages.push(i);
-              }
-        paginationPages.push(spread, paginationPagesCount);
-    } else if (props.currentPage >= paginationPagesCount - pageBeforeAfter) {
-        paginationPages.push(1)
-        for (let i = props.currentPage-pageBeforeAfter; i <= props.currentPage + (paginationPagesCount-props.currentPage) ; i++) {
+    } else if (props.currentPage >= showPaginationPages && props.currentPage < paginationPagesCount - pageBeforeAfter) {
+        paginationPages.push(1);
+        for (let i = props.currentPage - pageBeforeAfter; i <= props.currentPage + pageBeforeAfter; i++) {
             paginationPages.push(i);
         }
-    }
-    else {
+        paginationPages.push(spread, paginationPagesCount);
+    } else if (props.currentPage >= paginationPagesCount - pageBeforeAfter) {
+        paginationPages.push(1);
+        for (
+            let i = props.currentPage - pageBeforeAfter;
+            i <= props.currentPage + (paginationPagesCount - props.currentPage);
+            i++
+        ) {
+            paginationPages.push(i);
+        }
+    } else {
         for (let i = 1; i <= paginationPagesCount; i++) {
             paginationPages.push(i);
         }
@@ -87,8 +87,10 @@ let FriendList = (props) => {
                         id={user.id}
                         key={user.id}
                         changeSubscribeStatus={props.changeSubscribeStatus}
+                        following={props.following}
                         hideUser={props.hideUser}
                         userPhoto={user.photos.small !== null ? user.photos.small : avatarImg}
+                        toggleFollowing={props.toggleFollowing}
                     />
                 ))}
             </div>

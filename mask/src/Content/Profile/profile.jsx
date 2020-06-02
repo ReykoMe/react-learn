@@ -1,5 +1,7 @@
 import React from "react";
 import Preloader from "../../service/Preloader";
+import avatarImg from '../../media/avatar_template.png'
+
 const Profile = (props) => {
     const profile = props.userProfile;
     //Если profile пустой, показывать прелоадер
@@ -15,7 +17,8 @@ const Profile = (props) => {
     return (
         <div className='row mb-3'>
             <div className='col-md-3'>
-                <img src={profile.photos.small} className='w-100 rounded mb-2' alt='kek' />
+            {profile.photos.small ? (<img src={profile.photos.small} className='w-100 rounded mb-2' alt='Avatar' />):
+                (<img src={avatarImg} className='w-100 rounded mb-2' alt='Avatar' />)}
             </div>
             <div className='col-md-9'>
                 <h3>

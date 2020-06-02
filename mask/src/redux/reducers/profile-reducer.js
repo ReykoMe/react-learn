@@ -17,7 +17,7 @@ const profileReducer = (state = initState, action) => {
     case 'ADD-POST':{
       let newPost =  {
         id: state.wallPosts.length + 1,
-        author: 'Сергей Гумноедов',
+        author: 'state.currentProfile.fullName',
         message: state.newText,
         likes: likesGen()
       }

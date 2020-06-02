@@ -5,46 +5,39 @@ import {
     setCurrentPage,
     setTotalUsersCount,
     toggleGettingData,
+    toggleFollowing
 } from "../redux/reducers/friends-reducer";
 
 import { connect } from "react-redux";
 import React from "react";
-import * as axios from "axios";
 import FriendList from "../FriendList/FriendList";
 import Preloader from "../service/Preloader";
+import {getAllUsers} from "../service/api/axiosQueries"
 
 class FriendListContainer extends React.Component {
     
-    setCurrentPage = (page) => {
+    setCurrentPage = (page, count = this.props.countUsers) => {
         if (page === "...") {
             let enterPage = parseInt(prompt("Enter number of page"), 10);
             this.props.setCurrentPage(enterPage);
-            this.getUsers(enterPage);
+            this.getUsers(enterPage, count);
         } else {
-            this.props.setCurrentPage(page);
-            this.getUsers(page);
+            this.props.setCurrentPage(page, count);
+            this.getUsers(page,count);
         }
     };
-   getUsers = (page) => {
+    getUsers = (page, count) => {
         this.props.toggleGettingData(true);
-        let url = `https://social-network.samuraijs.com/api/1.0/users?count=${this.props.countUsers}&page=${page}`
-        // let response = fetch(url).then(response => response.json()).then(data => {
-        //     this.props.toggleGettingData(false)
-        //     this.props.loadUsers(data.items)
-        //     this.props.setTotalUsersCount(data.totalCount)
-        // })
-
-        axios
-            .get(url)
-            .then((response) => {
-                this.props.toggleGettingData(false);
-                this.props.loadUsers(response.data.items);
-                this.props.setTotalUsersCount(response.data.totalCount);
-            });
+       getAllUsers(page, count).then((response) => {
+            this.props.toggleGettingData(false);
+            this.props.loadUsers(response.items);
+            this.props.setTotalUsersCount(response.totalCount);
+        });
     };
 
     componentDidMount() {
-        this.getUsers(this.props.currentPage);
+        
+        this.getUsers(this.props.currentPage, this.props.countUsers);
     }
 
     render() {
@@ -62,6 +55,8 @@ class FriendListContainer extends React.Component {
                         users={this.props.users}
                         hideUser={this.props.hideUser}
                         changeSubscribeStatus={this.props.changeSubscribeStatus}
+                        following={this.props.following}
+                        toggleFollowing={this.props.toggleFollowing}
                     />
                 )}
             </>
@@ -76,6 +71,7 @@ let mapStateToProps = (state) => {
         countUsers: state.friends.count,
         currentPage: state.friends.currentPage,
         gettingData: state.friends.gettingData,
+        following: state.friends.following
     };
 };
 // let mapDispatchToProps = (dispatch) => {
@@ -98,4 +94,5 @@ export default connect(mapStateToProps, {
     setCurrentPage,
     setTotalUsersCount,
     toggleGettingData,
+    toggleFollowing
 })(FriendListContainer);
