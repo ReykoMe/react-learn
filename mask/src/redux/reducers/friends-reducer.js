@@ -1,4 +1,4 @@
-import {getAllUsers} from "../../service/api/axiosQueries";
+import {friendsApi} from "../../service/api/axiosQueries";
 
 const initState = {
     searchInputText: "",
@@ -61,7 +61,7 @@ export const updateSearchInputAC = (text) => ({type: "UPDATE_SEARCH_INPUT_TEXT",
 export const getUsersThunkCreator = (page, count) => {
     return (dispatch) => {
             dispatch(toggleGettingData(true));
-            getAllUsers(page, count).then((response) => {
+            friendsApi.getAllUsers(page, count).then((response) => {
             dispatch(toggleGettingData(false));
             dispatch(loadUsers(response.items));
             dispatch(setTotalUsersCount(response.totalCount));

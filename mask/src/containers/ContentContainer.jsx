@@ -1,12 +1,12 @@
 import React from "react";
 import { loadUserProfile } from "../redux/reducers/profile-reducer";
 import { connect } from "react-redux";
-import { getProfileInfo } from "../service/api/axiosQueries";
+import { profileApi } from "../service/api/axiosQueries";
 import Content from "../components/Content/Content";
 import { withRouter } from "react-router-dom";
 class ContentContainer extends React.Component {
     getProfileInfo = (userId) => {
-        getProfileInfo(userId).then((response) => {
+        profileApi.getProfileInfo(userId).then((response) => {
             this.props.loadUserProfile(response);
         });
     };

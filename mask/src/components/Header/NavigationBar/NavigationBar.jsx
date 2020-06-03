@@ -3,12 +3,12 @@ import classes from './NavigationBar.module.css';
 import {NavLink} from "react-router-dom";
 import {useDispatch} from "react-redux";
 import {loadUserProfile} from "../../../redux/reducers/profile-reducer";
-import {getProfileInfo} from "../../../service/api/axiosQueries";
+import {profileApi} from "../../../service/api/axiosQueries";
 
 const NavigationBar = (props) => {
     //Решение костыльное, но все же работает (пока что)
     const dispatch = useDispatch();
-    const getMyProfile = (userId) => getProfileInfo(userId).then((response) => {
+    const getMyProfile = (userId) => profileApi.getProfileInfo(userId).then((response) => {
         dispatch(loadUserProfile(response))
     })
     return (

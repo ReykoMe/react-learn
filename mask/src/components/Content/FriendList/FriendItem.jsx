@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { userSubscribe, userUnsubscribe } from "../../../service/api/axiosQueries";
+import { friendsApi } from "../../../service/api/axiosQueries";
 
 let FriendItem = (props) => {
     //let changeSubscribeStatus = (userId) => {props.changeSubscribeStatus(userId)}
@@ -9,13 +9,13 @@ let FriendItem = (props) => {
         console.log(props.following);
         switch (followed) {
             case false:
-                userSubscribe(userId).then((response) => {
+                friendsApi.userSubscribe(userId).then((response) => {
                     response.resultCode === 0 && props.changeSubscribeStatus(userId);
                     props.toggleFollowing(false);
                 });
                 break;
             case true: {
-                userUnsubscribe(userId).then((response) => {
+                friendsApi.userUnsubscribe(userId).then((response) => {
                     response.resultCode === 0 && props.changeSubscribeStatus(userId);
                     props.toggleFollowing(false, userId);
                 });
@@ -48,7 +48,7 @@ let FriendItem = (props) => {
                 {!props.followed ? (
                     <div className='d-flex'>
                         <button
-                            disabled={props.following.some(id => id === props.id)}
+                            disabled={props.following.some((id) => id === props.id)}
                             className='btn btn-primary mr-1'
                             onClick={() => {
                                 changeSubscribeStatus(props.id, props.followed);
@@ -67,7 +67,7 @@ let FriendItem = (props) => {
                     <div className='d-flex'>
                         <button className='btn btn-success mr-1'>Message</button>
                         <button
-                            disabled={props.following.some(id => id === props.id)}
+                            disabled={props.following.some((id) => id === props.id)}
                             className='btn btn-outline-warning mr-1'
                             onClick={() => {
                                 changeSubscribeStatus(props.id, props.followed);

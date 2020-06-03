@@ -5,14 +5,14 @@ import {
     setCurrentPage,
     setTotalUsersCount,
     toggleGettingData,
-    toggleFollowing,
+    toggleFollowing, getUsersThunkCreator,
 } from "../redux/reducers/friends-reducer";
 
 import { connect } from "react-redux";
 import React from "react";
 import FriendList from "../components/Content/FriendList/FriendList";
 import Preloader from "../service/Preloader";
-import { getAllUsers } from "../service/api/axiosQueries";
+import { friendsApi } from "../service/api/axiosQueries";
 
 class FriendListContainer extends React.Component {
     setCurrentPage = (page, count = this.props.countUsers) => {
@@ -27,7 +27,7 @@ class FriendListContainer extends React.Component {
     };
     getUsers = (page, count) => {
         this.props.toggleGettingData(true);
-        getAllUsers(page, count).then((response) => {
+        friendsApi.getAllUsers(page, count).then((response) => {
             this.props.toggleGettingData(false);
             this.props.loadUsers(response.items);
             this.props.setTotalUsersCount(response.totalCount);
@@ -93,4 +93,5 @@ export default connect(mapStateToProps, {
     setTotalUsersCount,
     toggleGettingData,
     toggleFollowing,
+    getUsersThunkCreator
 })(FriendListContainer);
