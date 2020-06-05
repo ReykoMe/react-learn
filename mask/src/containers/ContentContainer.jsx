@@ -4,8 +4,9 @@ import { connect } from "react-redux";
 import { profileApi } from "../service/api/axiosQueries";
 import Content from "../components/Content/Content";
 import { withRouter } from "react-router-dom";
+
 class ContentContainer extends React.Component {
-    getProfileInfo = (userId) => {
+    getProfileInfo = ( userId ) => {
         profileApi.getProfileInfo(userId).then((response) => {
             this.props.loadUserProfile(response);
         });
@@ -13,6 +14,7 @@ class ContentContainer extends React.Component {
     componentDidMount() {
         let userId = this.props.match.params.userId;
         if (!userId) {
+            //Если userId === null || undefined
             userId = 8509;
         }
         this.getProfileInfo(userId);
@@ -21,7 +23,7 @@ class ContentContainer extends React.Component {
         return <Content {...this.props} />;
     }
 }
-
+n;
 let mapStateToProps = (state) => ({
     userProfile: state.profile.currentProfile,
 });

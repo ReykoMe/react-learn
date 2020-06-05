@@ -5,6 +5,7 @@ import sidebarReducer from "./reducers/sidebar-reducer"
 import FriendsReducer from "./reducers/friends-reducer";
 import authReducer from "./reducers/auth-reducer";
 import ReduxThunk from 'redux-thunk'
+import ReduxLogger from 'redux-logger'
 
 let reducers = combineReducers({
   messenger: messengerReducer,
@@ -14,7 +15,7 @@ let reducers = combineReducers({
   auth: authReducer
 });
 
-let store = createStore(reducers, compose(applyMiddleware(ReduxThunk), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()))
+let store = createStore(reducers, compose(applyMiddleware(ReduxThunk, ReduxLogger), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()))
 
   //, applyMiddleware(ReduxThunk)
 //   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()

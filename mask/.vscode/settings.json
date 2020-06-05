@@ -4,5 +4,6 @@
     ".vscode": true,
     "node_modules": true,
     ".idea": true
-  }
+  },
+  "oneDark.italic": false
 }
