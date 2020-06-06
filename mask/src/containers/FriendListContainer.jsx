@@ -4,8 +4,7 @@ import {
     loadUsers,
     setCurrentPage,
     setTotalUsersCount,
-    toggleGettingData,
-    toggleFollowing, getUsersThunkCreator,
+    toggleFollowing, getUsers,
 } from "../redux/reducers/friends-reducer";
 
 import { connect } from "react-redux";
@@ -26,7 +25,7 @@ class FriendListContainer extends React.Component {
         }
     };
     getUsers = (page, count) => {
-        this.props.getUsersThunkCreator(page, count)
+        this.props.getUsers(page, count)
     };
 
     componentDidMount() {
@@ -86,7 +85,6 @@ export default connect(mapStateToProps, {
     loadUsers,
     setCurrentPage,
     setTotalUsersCount,
-    toggleGettingData,
     toggleFollowing,
-    getUsersThunkCreator
+    getUsers
 })(FriendListContainer);

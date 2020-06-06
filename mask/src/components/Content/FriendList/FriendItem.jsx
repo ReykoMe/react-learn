@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { friendsApi } from "../../../service/api/axiosQueries";
 
 let FriendItem = (props) => {
-    //let changeSubscribeStatus = (userId) => {props.changeSubscribeStatus(userId)}
     let changeSubscribeStatus = (userId, followed) => {
         props.toggleFollowing(true, userId);
         console.log(props.following);

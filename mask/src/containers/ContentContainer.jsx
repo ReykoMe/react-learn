@@ -23,7 +23,7 @@ class ContentContainer extends React.Component {
         return <Content {...this.props} />;
     }
 }
-n;
+
 let mapStateToProps = (state) => ({
     userProfile: state.profile.currentProfile,
 });

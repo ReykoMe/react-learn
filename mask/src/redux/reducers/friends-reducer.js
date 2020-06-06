@@ -50,6 +50,7 @@ const FriendsReducer = (state = initState, action) => {
             return state;
     }
 };
+
 export const toggleFollowing = (toggle, userId) => ({ type: "TOGGLE_FOLLOWING", toggle, userId });
 export const toggleGettingData = (toggle) => ({ type: "TOGGLE_GETTING_DATA", toggle });
 export const setTotalUsersCount = (usersCount) => ({ type: "SET_TOTAL_USERS_COUNT", usersCount });
@@ -59,7 +60,7 @@ export const changeSubscribeStatus = (userId) => ({ type: "CHANGE_SUBSCRIBE_STAT
 export const loadUsers = (users) => ({ type: "LOAD_USERS", users: users });
 export const updateSearchInputAC = (text) => ({ type: "UPDATE_SEARCH_INPUT_TEXT", text });
 
-export const getUsersThunkCreator = (page, count) => {
+export const getUsers = (page, count) => {
     return (dispatch) => {
         dispatch(toggleGettingData(true));
         friendsApi.getAllUsers(page, count).then((response) => {
