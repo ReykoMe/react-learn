@@ -90,6 +90,7 @@ let FriendList = (props) => {
                         hideUser={props.hideUser}
                         userPhoto={user.photos.small !== null ? user.photos.small : avatarImg}
                         toggleFollowing={props.toggleFollowing}
+                        changeSubscribeStatusTh={props.changeSubscribeStatusTh}
                     />
                 ))}
             </div>

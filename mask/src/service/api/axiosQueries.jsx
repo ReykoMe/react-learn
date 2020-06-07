@@ -1,6 +1,5 @@
 import * as axios from "axios";
 
-
 const instance = axios.create({
     baseURL: "https://social-network.samuraijs.com/api/1.0/",
     withCredentials: true,
@@ -26,15 +25,19 @@ const friendsApi = {
         let url = `follow/${userId}`;
         return instance.delete(url).then((response) => response.data);
     },
-}
+};
 
 const profileApi = {
-   getProfileInfo(userId){
+    getMyProfile() {
+        let url = "auth/me";
+        return instance.get(url).then((response) => response.data);
+    },
+
+    getProfileInfo(userId) {
         console.log("getProfileInfo query");
         let url = `profile/${userId}`;
         return instance.get(url).then((response) => response.data);
-    }
-}
-
+    },
+};
 
 export { profileApi, friendsApi };

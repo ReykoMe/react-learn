@@ -1,5 +1,5 @@
 import {
-    changeSubscribeStatus,
+    changeSubscribeStatusTh,
     hideUser,
     loadUsers,
     setCurrentPage,
@@ -14,6 +14,7 @@ import Preloader from "../service/Preloader";
 
 
 class FriendListContainer extends React.Component {
+
     setCurrentPage = (page, count = this.props.countUsers) => {
         if (page === "...") {
             let enterPage = parseInt(prompt("Enter number of page"), 10);
@@ -49,6 +50,7 @@ class FriendListContainer extends React.Component {
                         changeSubscribeStatus={this.props.changeSubscribeStatus}
                         following={this.props.following}
                         toggleFollowing={this.props.toggleFollowing}
+                        changeSubscribeStatusTh={this.props.changeSubscribeStatusTh}
                     />
                 )}
             </>
@@ -80,7 +82,7 @@ let mapStateToProps = (state) => {
 //Вместо прописывания путей к AC для каждого действия и обертывания их переменной mapDispatchToProps можно сразу запихнуть АС (без аргументов) во вторую часть connect-a. Переименовав AC (убрав соответствующую приставку), также можно легко использовать синтаксис ЕS6 для сокращения записи. Вместо friends: friends достаточно просто использовать friends
 
 export default connect(mapStateToProps, {
-    changeSubscribeStatus,
+    changeSubscribeStatusTh,
     hideUser,
     loadUsers,
     setCurrentPage,

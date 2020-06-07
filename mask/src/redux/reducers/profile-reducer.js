@@ -1,5 +1,5 @@
 import {likesGen} from "../../state";
-
+import {profileApi} from "../../service/api/axiosQueries"
 const initState = {
   currentProfile: null,
   newText: "",
@@ -44,4 +44,11 @@ const profileReducer = (state = initState, action) => {
 export const loadUserProfile = (profileId) => ({type: 'LOAD_PROFILE', profileId})
 export const addPostAC = () => ({type: 'ADD-POST'});
 export const updateTextAC = (text) => ({type: 'UPDATE-TEXT', newText: text})
+
+
+export const getUserProfileInfo = (userId) => (dispatch) => {
+  profileApi.getProfileInfo(userId).then((response) => {
+     dispatch(loadUserProfile(response));
+  });
+}
 export default profileReducer;

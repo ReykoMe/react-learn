@@ -70,4 +70,20 @@ export const getUsers = (page, count) => {
         });
     };
 };
+
+export const changeSubscribeStatusTh = (userId, followed) => {
+    return (dispatch) => {
+        dispatch(toggleFollowing(true, userId));
+        followed
+            ? friendsApi.userUnsubscribe(userId).then((response) => {
+                  response.resultCode === 0 && dispatch(changeSubscribeStatus(userId));
+                  dispatch(toggleFollowing(false, userId));
+              })
+            : friendsApi.userSubscribe(userId).then((response) => {
+                  response.resultCode === 0 && dispatch(changeSubscribeStatus(userId));
+                  dispatch(toggleFollowing(false,userId));
+              });
+    };
+};
+
 export default FriendsReducer;

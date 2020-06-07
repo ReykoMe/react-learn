@@ -1,21 +1,18 @@
 import React from "react";
-import { loadUserProfile } from "../redux/reducers/profile-reducer";
+import {getUserProfileInfo } from "../redux/reducers/profile-reducer";
 import { connect } from "react-redux";
-import { profileApi } from "../service/api/axiosQueries";
+
 import Content from "../components/Content/Content";
 import { withRouter } from "react-router-dom";
 
 class ContentContainer extends React.Component {
-    getProfileInfo = ( userId ) => {
-        profileApi.getProfileInfo(userId).then((response) => {
-            this.props.loadUserProfile(response);
-        });
+    getProfileInfo = (userId) => {
+        this.props.getUserProfileInfo(userId);
     };
     componentDidMount() {
         let userId = this.props.match.params.userId;
         if (!userId) {
-            //Если userId === null || undefined
-            userId = 8509;
+            userId = 8509; //Если userId === null || undefined
         }
         this.getProfileInfo(userId);
     }
@@ -30,5 +27,5 @@ let mapStateToProps = (state) => ({
 
 let urlDataContainer = withRouter(ContentContainer);
 export default connect(mapStateToProps, {
-    loadUserProfile,
+    getUserProfileInfo,
 })(urlDataContainer);

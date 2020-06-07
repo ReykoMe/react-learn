@@ -1,28 +1,28 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { friendsApi } from "../../../service/api/axiosQueries";
 
 let FriendItem = (props) => {
     let changeSubscribeStatus = (userId, followed) => {
-        props.toggleFollowing(true, userId);
-        console.log(props.following);
-        switch (followed) {
-            case false:
-                friendsApi.userSubscribe(userId).then((response) => {
-                    response.resultCode === 0 && props.changeSubscribeStatus(userId);
-                    props.toggleFollowing(false);
-                });
-                break;
-            case true: {
-                friendsApi.userUnsubscribe(userId).then((response) => {
-                    response.resultCode === 0 && props.changeSubscribeStatus(userId);
-                    props.toggleFollowing(false, userId);
-                });
-                break;
-            }
-            default:
-                break;
-        }
+        props.changeSubscribeStatusTh(userId, followed)
+        
+        // props.toggleFollowing(true, userId);
+        // switch (followed) {
+        //     case false:
+        //         friendsApi.userSubscribe(userId).then((response) => {
+        //             response.resultCode === 0 && props.changeSubscribeStatus(userId);
+        //             props.toggleFollowing(false);
+        //         });
+        //         break;
+        //     case true: {
+        //         friendsApi.userUnsubscribe(userId).then((response) => {
+        //             response.resultCode === 0 && props.changeSubscribeStatus(userId);
+        //             props.toggleFollowing(false, userId);
+        //         });
+        //         break;
+        //     }
+        //     default:
+        //         break;
+        // }
     };
     let hideUser = (userId) => props.hideUser(userId);
 
