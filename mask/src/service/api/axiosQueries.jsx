@@ -25,6 +25,9 @@ const friendsApi = {
         let url = `follow/${userId}`;
         return instance.delete(url).then((response) => response.data);
     },
+    lastRegistered (count) {
+        
+    }
 };
 
 const profileApi = {

@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="Thunk learn continue">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="Thunk learn continue" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -183,6 +181,7 @@
       <workItem from="1591215534687" duration="191000" />
       <workItem from="1591215750536" duration="967000" />
       <workItem from="1591385723926" duration="3217000" />
+      <workItem from="1591606692527" duration="236000" />
     </task>
     <task id="LOCAL-00001" summary="Many little changes">
       <created>1588764656945</created>
