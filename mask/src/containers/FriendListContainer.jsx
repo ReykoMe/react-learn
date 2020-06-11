@@ -11,6 +11,8 @@ import { connect } from "react-redux";
 import React from "react";
 import FriendList from "../components/Content/FriendList/FriendList";
 import Preloader from "../service/Preloader";
+import { compose } from "redux";
+import { CheckAuth } from "../components/HOC/AuthRedirect";
 
 
 class FriendListContainer extends React.Component {
@@ -80,13 +82,24 @@ let mapStateToProps = (state) => {
 // };
 
 //Вместо прописывания путей к AC для каждого действия и обертывания их переменной mapDispatchToProps можно сразу запихнуть АС (без аргументов) во вторую часть connect-a. Переименовав AC (убрав соответствующую приставку), также можно легко использовать синтаксис ЕS6 для сокращения записи. Вместо friends: friends достаточно просто использовать friends
-
-export default connect(mapStateToProps, {
-    changeSubscribeStatusTh,
-    hideUser,
-    loadUsers,
-    setCurrentPage,
-    setTotalUsersCount,
-    toggleFollowing,
-    getUsers
-})(FriendListContainer);
+export default compose (
+    connect(mapStateToProps, {
+        changeSubscribeStatusTh,
+        hideUser,
+        loadUsers,
+        setCurrentPage,
+        setTotalUsersCount,
+        toggleFollowing,
+        getUsers
+    }),
+    CheckAuth
+)(FriendListContainer)
+// export default connect(mapStateToProps, {
+//     changeSubscribeStatusTh,
+//     hideUser,
+//     loadUsers,
+//     setCurrentPage,
+//     setTotalUsersCount,
+//     toggleFollowing,
+//     getUsers
+// })(FriendListContainer);

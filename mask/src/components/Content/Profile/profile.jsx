@@ -1,14 +1,16 @@
 import React from "react";
-import Preloader from "../../../service/Preloader";
 import avatarImg from "../../../media/avatar_template.png";
-
+import Preloader from "../../../service/Preloader";
+import ProfileStatus from "./ProfileStatus"
 
 const Profile = (props) => {
+
     const profile = props.userProfile;
     //Если profile пустой, показывать прелоадер
     if (!profile) {
         return <Preloader />;
     }
+    //
     let socialLinks = [];
     for (let link in profile.contacts) {
         profile.contacts[link] && socialLinks.push({ name: link, key: link, link: profile.contacts[link] });
@@ -27,7 +29,8 @@ const Profile = (props) => {
                     <span className='badge badge-secondary mr-2'>UserId: {profile.userId}</span>
                     {profile.fullName}
                 </h3>
-                <p>{profile.aboutMe}</p>
+                
+                <ProfileStatus status={'Заглушка для проверки статуса'}/>
                 <ul>
                     {socialLinks.map((link) => (
                         <li key={link.key}>

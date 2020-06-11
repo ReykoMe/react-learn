@@ -3,7 +3,8 @@ import { getUserProfileInfo } from "../redux/reducers/profile-reducer";
 import { connect } from "react-redux";
 import Content from "../components/Content/Content";
 import { withRouter } from "react-router-dom";
-import { CheckAuth } from "../components/HOC/AuthRedirect";
+//import { CheckAuth } from "../components/HOC/AuthRedirect";
+import { compose } from "redux";
 class ContentContainer extends React.Component {
     getProfileInfo = (userId) => {
         this.props.getUserProfileInfo(userId);
@@ -22,14 +23,25 @@ class ContentContainer extends React.Component {
 
 let mapStateToProps = (state) => ({
     userProfile: state.profile.currentProfile,
-    //authorised: state.auth.authorised,
+    //authorised: state.auth.authorised, теперь этот параметр находится в хоке
 });
-//Отрисовываем контент, если пользователь авторизован, если нет - добро пожаловать на страницу логина. TODO: необходимо разделить некоторые компоненты и выделить их в отдельные потоки, чтобы пользователь смог просматривать, напримр, последние новости или пользователей, но не смог на них подписываться.
-const AuthRedirect = CheckAuth(ContentContainer);
+
+export default compose(
+    connect(mapStateToProps, {
+        getUserProfileInfo,
+    }),
+    withRouter,
+    //CheckAuth
+)(ContentContainer);
+
+//TODO: необходимо разделить некоторые компоненты и выделить их в отдельные потоки, чтобы пользователь смог просматривать, напримр, последние новости или пользователей, но не смог на них подписываться.
+
+//Отрисовываем контент, если пользователь авторизован, если нет - добро пожаловать на страницу логина.
+// const AuthRedirect = CheckAuth(ContentContainer);
 //WithRouter позволяет перекинуть в пропсы подключенного компонента текущий URL и другие данные относительно текущего адреса.
 //Общим планом картина выглядит примерно так: connect(withRouter(checkAuth(ContentContainer)))
-const urlDataContainer = withRouter(AuthRedirect);
+// const urlDataContainer = withRouter(AuthRedirect);
 
-export default connect(mapStateToProps, {
-    getUserProfileInfo,
-})(urlDataContainer);
+// export default connect(mapStateToProps, {
+//     getUserProfileInfo,
+// })(urlDataContainer);
