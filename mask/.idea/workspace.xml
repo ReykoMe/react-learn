@@ -16,25 +16,28 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164f9115-05b3-46e1-b4f4-1cb4b5b5d24d" name="Default Changelist" comment="Changed standart path of props's">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Messenger/Chats/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messenger/Chats/users.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="Thunk learn continue" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="26cb1cbf5907ce624f4ab878b42a52fa5b1ff3c8" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="RESET_MODE" value="HARD" />
   </component>
@@ -48,21 +51,31 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="W:\denwer\www\denwer\react-learn\mask\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="W:\denwer\www\denwer\react-learn\mask\src" />
+      <recent name="W:\denwer\www\denwer\react-learn\mask\src\components\Content" />
+      <recent name="W:\denwer\www\denwer\react-learn\mask\src\components" />
+      <recent name="W:\denwer\www\denwer\react-learn\mask\src\containers" />
+      <recent name="W:\denwer\www\denwer\react-learn\mask\src\redux" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\denwer\www\denwer\react-learn\mask\src\FriendList" />
+      <recent name="W:\denwer\www\denwer\react-learn\mask\src\containers" />
+      <recent name="W:\denwer\www\denwer\react-learn\mask\src\redux\reducers" />
       <recent name="W:\denwer\www\denwer\react-learn\mask\src" />
     </key>
   </component>
@@ -89,8 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.test" />
         <item itemvalue="npm.test" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.test" />
       </list>
     </recent_temporary>
   </component>
@@ -102,7 +118,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="164f9115-05b3-46e1-b4f4-1cb4b5b5d24d" name="Default Changelist" comment="ddf" />
+      <changelist id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="Changed standart path of props's" />
       <created>1588587403132</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -133,6 +149,39 @@
       <workItem from="1589663056360" duration="286000" />
       <workItem from="1589663362709" duration="630000" />
       <workItem from="1589664017369" duration="1129000" />
+      <workItem from="1589900992307" duration="935000" />
+      <workItem from="1589904962203" duration="35000" />
+      <workItem from="1589905238280" duration="250000" />
+      <workItem from="1589906108754" duration="851000" />
+      <workItem from="1589907481014" duration="747000" />
+      <workItem from="1589908352292" duration="622000" />
+      <workItem from="1590000367487" duration="606000" />
+      <workItem from="1590001000927" duration="1365000" />
+      <workItem from="1590076811519" duration="2138000" />
+      <workItem from="1590082379901" duration="2411000" />
+      <workItem from="1590085708761" duration="422000" />
+      <workItem from="1590238857298" duration="6435000" />
+      <workItem from="1590245624196" duration="4450000" />
+      <workItem from="1590259448816" duration="10026000" />
+      <workItem from="1590269603803" duration="24765000" />
+      <workItem from="1590434340164" duration="538000" />
+      <workItem from="1590434899425" duration="17375000" />
+      <workItem from="1590749657878" duration="33836000" />
+      <workItem from="1590842184188" duration="25000" />
+      <workItem from="1590842948155" duration="3000" />
+      <workItem from="1591107552563" duration="81000" />
+      <workItem from="1591107637626" duration="5960000" />
+      <workItem from="1591125167310" duration="6088000" />
+      <workItem from="1591177982121" duration="1774000" />
+      <workItem from="1591184554594" duration="408000" />
+      <workItem from="1591184991447" duration="45000" />
+      <workItem from="1591185056603" duration="106000" />
+      <workItem from="1591213698594" duration="47000" />
+      <workItem from="1591214017239" duration="639000" />
+      <workItem from="1591215534687" duration="191000" />
+      <workItem from="1591215750536" duration="967000" />
+      <workItem from="1591385723926" duration="3217000" />
+      <workItem from="1591606692527" duration="236000" />
     </task>
     <task id="LOCAL-00001" summary="Many little changes">
       <created>1588764656945</created>
@@ -190,7 +239,84 @@
       <option name="project" value="LOCAL" />
       <updated>1589664599258</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Many many changes">
+      <created>1590076171809</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1590076171809</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Changed styles">
+      <created>1590084729195</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1590084729195</updated>
+    </task>
+    <task id="LOCAL-00011" summary="23.06.2020">
+      <created>1590238904590</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1590238904590</updated>
+    </task>
+    <task id="LOCAL-00012" summary="2020/05/24 Added:&#10;- Friends page,&#10;- buttons (follow, unfollow, hide)&#10;- Friends (R, C, AC) methods">
+      <created>1590335707873</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1590335707873</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added friend list filter">
+      <created>1590344144302</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1590344144302</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added friend list filter">
+      <created>1590434835373</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1590434835373</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added hooks to FriendList.jsx">
+      <created>1590771711842</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1590771711842</updated>
+    </task>
+    <task id="LOCAL-00016" summary="30/05/2020 added some components, refactoret userList, added Pagination">
+      <created>1590840924502</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1590840924502</updated>
+    </task>
+    <task id="LOCAL-00017" summary="02/05/2020 add more changes">
+      <created>1591107607040</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1591107607040</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Begin thunk learn...">
+      <created>1591126202991</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1591126202991</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Thunk learn continue">
+      <created>1591385788135</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1591385788135</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +347,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Many little changes" />
     <MESSAGE value="Added lst online friends block" />
     <MESSAGE value="11/05/2020 (many many changes)" />
@@ -229,37 +356,55 @@
     <MESSAGE value="Created reducers" />
     <MESSAGE value="ddf" />
     <MESSAGE value="Changed standart path of props's" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed standart path of props's" />
+    <MESSAGE value="Many many changes" />
+    <MESSAGE value="Changed styles" />
+    <MESSAGE value="23.06.2020" />
+    <MESSAGE value="2020/05/24 Added:&#10;- Friends page,&#10;- buttons (follow, unfollow, hide)&#10;- Friends (R, C, AC) methods" />
+    <MESSAGE value="Added friend list filter" />
+    <MESSAGE value="Added hooks to FriendList.jsx" />
+    <MESSAGE value="30/05/2020 added some components, refactoret userList, added Pagination" />
+    <MESSAGE value="02/05/2020 add more changes" />
+    <MESSAGE value="Begin thunk learn..." />
+    <MESSAGE value="Thunk learn continue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Thunk learn continue" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1588769771933">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="309" y="47" key="#Inspections/0.0.1366.738@0.0.1366.738" timestamp="1588769771933" />
-    <state x="493" y="89" key="#Menus_and_Toolbars" timestamp="1589191894154">
+    <state x="421" y="77" key="#JavaScript" timestamp="1591116792163">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="493" y="89" key="#Menus_and_Toolbars/0.0.1366.738@0.0.1366.738" timestamp="1589191894154" />
-    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1589664781687">
+    <state x="421" y="77" key="#JavaScript/0.0.1366.738@0.0.1366.738" timestamp="1591116792163" />
+    <state x="493" y="89" key="#Menus_and_Toolbars" timestamp="1590259464607">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1589664781687" />
-    <state width="1345" height="218" key="GridCell.Tab.0.bottom" timestamp="1589659942359">
+    <state x="493" y="89" key="#Menus_and_Toolbars/0.0.1366.738@0.0.1366.738" timestamp="1590259464607" />
+    <state x="437" y="171" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590437474991">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="218" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1589659942359" />
-    <state width="1345" height="218" key="GridCell.Tab.0.center" timestamp="1589659942359">
+    <state x="437" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1590437474991" />
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1591107634224">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="218" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1589659942359" />
-    <state width="1345" height="218" key="GridCell.Tab.0.left" timestamp="1589659942359">
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1591107634224" />
+    <state width="1345" height="174" key="GridCell.Tab.0.bottom" timestamp="1590269579282">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="218" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1589659942359" />
-    <state width="1345" height="218" key="GridCell.Tab.0.right" timestamp="1589659942359">
+    <state width="1345" height="174" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1590269579282" />
+    <state width="1345" height="174" key="GridCell.Tab.0.center" timestamp="1590269579282">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="218" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1589659942359" />
+    <state width="1345" height="174" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1590269579282" />
+    <state width="1345" height="174" key="GridCell.Tab.0.left" timestamp="1590269579282">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="174" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1590269579282" />
+    <state width="1345" height="174" key="GridCell.Tab.0.right" timestamp="1590269579282">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="174" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1590269579282" />
     <state width="1345" height="218" key="GridCell.Tab.1.bottom" timestamp="1589659942360">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -308,29 +453,37 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1345" height="218" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1589659942361" />
-    <state x="103" y="0" key="SettingsEditor" timestamp="1589665135654">
+    <state x="450" y="30" width="916" height="708" key="SettingsEditor" timestamp="1591464022474">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="103" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1589665135654" />
+    <state x="450" y="30" width="916" height="708" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1591464022474" />
     <state x="489" y="66" key="VCS.ChangeListViewerDialog" timestamp="1589461553865">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="489" y="66" key="VCS.ChangeListViewerDialog/0.0.1366.738@0.0.1366.738" timestamp="1589461553865" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1589664608176">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591385791045">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1589664608176" />
-    <state x="391" y="88" width="583" height="562" key="find.popup" timestamp="1589193467605">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1591385791045" />
+    <state x="391" y="88" width="583" height="562" key="find.popup" timestamp="1591110165350">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="391" y="88" width="583" height="562" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1589193467605" />
-    <state x="339" y="165" key="run.anything.popup" timestamp="1589530737531">
+    <state x="391" y="88" width="583" height="562" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1591110165350" />
+    <state x="463" y="81" key="git4idea.branch.GitSmartOperationDialog" timestamp="1589747804537">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1589530737531" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1588767182703">
+    <state x="463" y="81" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.738@0.0.1366.738" timestamp="1589747804537" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1590826215462">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1588767182703" />
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1590826215462" />
+    <state x="475" y="228" key="scopes" timestamp="1590264304290">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="475" y="228" key="scopes/0.0.1366.738@0.0.1366.738" timestamp="1590264304290" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1590240023406">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1590240023406" />
   </component>
 </project>
