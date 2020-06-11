@@ -7,7 +7,7 @@ const Content = (props) => {
     return (
         <div className={"row"}>
             <div className='col'>
-                <Profile userProfile={props.userProfile} authorised={props.authorised} />
+                <Profile userProfile={props.userProfile} authorised={props.authorised} status={props.status} updateUserStatus={props.updateUserStatus}/>
                 <WallContainer />
             </div>
         </div>

@@ -25,9 +25,7 @@ const friendsApi = {
         let url = `follow/${userId}`;
         return instance.delete(url).then((response) => response.data);
     },
-    lastRegistered (count) {
-        
-    }
+   
 };
 
 const profileApi = {
@@ -41,6 +39,14 @@ const profileApi = {
         let url = `profile/${userId}`;
         return instance.get(url).then((response) => response.data);
     },
+    getStatus(userId) {
+
+        let url = `profile/status/${userId}`;
+        return instance.get(url).then((response) => response.data);
+    },
+    updateStatus (status) {
+        return instance.put("profile/status", {status: status});
+    }
 };
 
 export { profileApi, friendsApi };

@@ -1,5 +1,5 @@
 import React from "react";
-import { getUserProfileInfo } from "../redux/reducers/profile-reducer";
+import { getUserProfileInfo, getUserStatus, updateUserStatus } from "../redux/reducers/profile-reducer";
 import { connect } from "react-redux";
 import Content from "../components/Content/Content";
 import { withRouter } from "react-router-dom";
@@ -8,6 +8,7 @@ import { compose } from "redux";
 class ContentContainer extends React.Component {
     getProfileInfo = (userId) => {
         this.props.getUserProfileInfo(userId);
+        this.props.getUserStatus(userId)
     };
     componentDidMount() {
         let userId = this.props.match.params.userId;
@@ -23,12 +24,15 @@ class ContentContainer extends React.Component {
 
 let mapStateToProps = (state) => ({
     userProfile: state.profile.currentProfile,
+    status: state.profile.status
     //authorised: state.auth.authorised, теперь этот параметр находится в хоке
 });
 
 export default compose(
     connect(mapStateToProps, {
         getUserProfileInfo,
+        getUserStatus,
+        updateUserStatus
     }),
     withRouter,
     //CheckAuth

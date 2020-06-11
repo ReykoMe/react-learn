@@ -1,48 +1,52 @@
 import React from "react";
-import { useState } from "react";
+import { useReducer } from "react";
 
 const ProfileStatus = (props) => {
-    const [status, changeEditMode] = useState(false);
+    const localInit = {
+        editable: false,
+        statusText: props.status,
+    };
+    const localReducer = (state, action) => {
+        switch (action.type) {
+            case "ENTER_EDIT_MODE":
+                return { ...state, editable: true };
+            case "EXIT_EDIT_MODE":
+                return { ...state, editable: false };
+            case "STATUS_TEXT_CHANGE":
+                return { ...state, statusText: action.text };
+            default:
+                return state;
+        }
+    };
+    const [state, dispatch] = useReducer(localReducer, localInit);
+    const onTextStatusChange = (e) => {
+        dispatch({ type: "STATUS_TEXT_CHANGE", text: e.currentTarget.value });
+    };
+    const exitEditMode = () => {
+        dispatch({ type: "EXIT_EDIT_MODE" });
+        props.status !== state.statusText && props.updateUserStatus(state.statusText);
+    };
+    const handleKey = (e) => {
+        e.key === "Enter" && exitEditMode();
+    };
 
     return (
         <div>
-            {!status ? (
-                <span onDoubleClick={() => changeEditMode(true)}>{props.status}</span>
+            {!state.editable ? (
+                <span onDoubleClick={() => dispatch({ type: "ENTER_EDIT_MODE" })}>{props.status}</span>
             ) : (
                 <input
+                    onChange={onTextStatusChange}
+                    onKeyPress={handleKey}
                     autoFocus //автофокус при отрисовке компонента
-                    onBlur={() => changeEditMode(false)}
+                    onBlur={exitEditMode}
                     type='statusText'
-                    value={props.status}
+                    value={state.statusText}
                     className='form-control'
                 />
             )}
         </div>
     );
 };
-//Классовый компонент
-// class ProfileStatus extends React.Component {
-//     state = {
-//         editMode: false,
-//     };
-
-//     enterEditMode = () => {
-//         this.setState({
-//             editMode: true
-//         })
-//     }
-
-//     render() {
-//         return (
-//             <div>
-//                 {!this.state.editMode ? (
-//                     <span onDoubleClick={this.enterEditMode}>{this.props.status}</span>
-//                 ) : (
-//                     <input type='statusText' value={this.props.status} className='form-control' />
-//                 )}
-//             </div>
-//         );
-//     }
-// }
 
 export default ProfileStatus;

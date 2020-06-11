@@ -30,7 +30,7 @@ const Profile = (props) => {
                     {profile.fullName}
                 </h3>
                 
-                <ProfileStatus status={'Заглушка для проверки статуса'}/>
+                <ProfileStatus status={props.status} updateUserStatus={props.updateUserStatus}/>
                 <ul>
                     {socialLinks.map((link) => (
                         <li key={link.key}>

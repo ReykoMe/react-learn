@@ -2,16 +2,21 @@ import React from "react";
 import classes from "./NavigationBar.module.css";
 import { NavLink } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { loadUserProfile } from "../../../redux/reducers/profile-reducer";
+import { loadUserProfile, setStatus } from "../../../redux/reducers/profile-reducer";
 import { profileApi } from "../../../service/api/axiosQueries";
 
 const NavigationBar = (props) => {
-    //Решение костыльное, но все же работает (пока что)
+    //FIXME: необходимо, чтобы при клике на кнопку MyProfile отображались данные моего профиля. Костыль есть, но необходимо исправить
     const dispatch = useDispatch();
-    const getMyProfile = (userId) =>
+    const getMyProfile = (userId) => {
         profileApi.getProfileInfo(userId).then((response) => {
             dispatch(loadUserProfile(response));
-        });
+        })
+        profileApi.getStatus(userId).then((response) => {
+            dispatch(setStatus(response))
+        })
+    }
+       
     return (
         <div className={" d-flex p-2"}>
             {!props.authorised ? (
