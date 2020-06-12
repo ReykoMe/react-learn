@@ -1,11 +1,14 @@
 import React from "react";
-import { useReducer } from "react";
+import { useReducer, useEffect } from "react";
+
 
 const ProfileStatus = (props) => {
+    //Эту часть можно сразу передать вторым параметром в useReducer
     const localInit = {
         editable: false,
         statusText: props.status,
     };
+
     const localReducer = (state, action) => {
         switch (action.type) {
             case "ENTER_EDIT_MODE":
@@ -13,6 +16,8 @@ const ProfileStatus = (props) => {
             case "EXIT_EDIT_MODE":
                 return { ...state, editable: false };
             case "STATUS_TEXT_CHANGE":
+                return { ...state, statusText: action.text };
+            case "LOAD_STATUS_TEXT":
                 return { ...state, statusText: action.text };
             default:
                 return state;
@@ -29,7 +34,11 @@ const ProfileStatus = (props) => {
     const handleKey = (e) => {
         e.key === "Enter" && exitEditMode();
     };
-
+    //Эмуляция componentDidUpdat, вторым параметром передается зависимость
+    useEffect(()=> {
+        dispatch({type:'LOAD_STATUS_TEXT', text: props.status})
+    }, [props.status])
+    
     return (
         <div>
             {!state.editable ? (
