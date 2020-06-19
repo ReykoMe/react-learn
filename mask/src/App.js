@@ -5,7 +5,6 @@ import "./App.css";
 import Friends from "./components/Content/FriendList/Friends";
 import LoginPage from "./components/Content/LoginPage/LoginPage";
 import Footer from "./components/Footer/Footer";
-import Messenger from "./components/Messenger/Messenger";
 import ContentContainer from "./containers/ContentContainer";
 import HeaderContainer from "./containers/HeaderContainer";
 import SidebarContainer from "./containers/SidebarContainer";
@@ -33,7 +32,6 @@ const App = (props) => {
                     {/*Добавляем Route (необходимо установить из npm react-router-dom), с помощью которого реализуется логика "Если в строке браузера отображается /путь условный => отображать компоненту*/}
                     <Route path='/profile/:userId?' render={() => <ContentContainer />} />
                     <Route path='/login' render={() => <LoginPage />} />
-                    <Route path='/messenger' render={() => <Messenger />} />
                     <Route path='/friends' render={() => <Friends />} />
                 </div>
             </div>

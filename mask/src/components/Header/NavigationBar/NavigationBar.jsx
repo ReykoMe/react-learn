@@ -28,9 +28,7 @@ const NavigationBar = (props) => {
                         }}>
                         My Profile
                     </NavLink>
-                    <NavLink to='/messenger' className={"p-2 rounded text-light"} activeClassName={classes.underline}>
-                        Dialogs
-                    </NavLink>
+                   
                     <NavLink to='/friends' className={"p-2 rounded text-light"} activeClassName={classes.underline}>
                         Friends
                     </NavLink>
