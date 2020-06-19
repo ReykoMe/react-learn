@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="Thunk learn continue" />
+    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="many changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/FriendListContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/FriendListContainer.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +64,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -182,6 +185,9 @@
       <workItem from="1591215750536" duration="967000" />
       <workItem from="1591385723926" duration="3217000" />
       <workItem from="1591606692527" duration="236000" />
+      <workItem from="1592585659497" duration="398000" />
+      <workItem from="1592586087603" duration="298000" />
+      <workItem from="1592586506097" duration="69000" />
     </task>
     <task id="LOCAL-00001" summary="Many little changes">
       <created>1588764656945</created>
@@ -316,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591385788135</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="many changes">
+      <created>1592585731464</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1592585731465</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +379,8 @@
     <MESSAGE value="02/05/2020 add more changes" />
     <MESSAGE value="Begin thunk learn..." />
     <MESSAGE value="Thunk learn continue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Thunk learn continue" />
+    <MESSAGE value="many changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="many changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1588769771933">
@@ -453,18 +467,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1345" height="218" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1589659942361" />
-    <state x="450" y="30" width="916" height="708" key="SettingsEditor" timestamp="1591464022474">
+    <state x="394" y="0" width="916" height="708" key="SettingsEditor" timestamp="1592586574384">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="450" y="30" width="916" height="708" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1591464022474" />
+    <state x="394" y="0" width="916" height="708" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1592586574384" />
     <state x="489" y="66" key="VCS.ChangeListViewerDialog" timestamp="1589461553865">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="489" y="66" key="VCS.ChangeListViewerDialog/0.0.1366.738@0.0.1366.738" timestamp="1589461553865" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591385791045">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1592585744365">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1591385791045" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1592585744365" />
     <state x="391" y="88" width="583" height="562" key="find.popup" timestamp="1591110165350">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

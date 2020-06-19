@@ -7,8 +7,8 @@ import { userLogOut } from "../../../redux/reducers/auth-reducer";
 const NavigationBar = (props) => {
     const dispatch = useDispatch();
     const logout = () => {
-        dispatch(userLogOut())
-    }   
+        dispatch(userLogOut());
+    };
     return (
         <div className={" d-flex p-2"}>
             {!props.authorised ? (
@@ -34,7 +34,11 @@ const NavigationBar = (props) => {
                     <NavLink to='/friends' className={"p-2 rounded text-light"} activeClassName={classes.underline}>
                         Friends
                     </NavLink>
-                    <NavLink to='/login' className={"p-2 rounded text-light"} activeClassName={classes.underline} onClick={() => logout()}>
+                    <NavLink
+                        to='/login'
+                        className={"p-2 rounded text-light"}
+                        activeClassName={classes.underline}
+                        onClick={() => logout()}>
                         Logout
                     </NavLink>
                 </>
