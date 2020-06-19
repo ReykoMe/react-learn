@@ -2,21 +2,13 @@ import React from "react";
 import classes from "./NavigationBar.module.css";
 import { NavLink } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { loadUserProfile, setStatus } from "../../../redux/reducers/profile-reducer";
-import { profileApi } from "../../../service/api/axiosQueries";
+import { userLogOut } from "../../../redux/reducers/auth-reducer";
 
 const NavigationBar = (props) => {
-    //FIXME: необходимо, чтобы при клике на кнопку MyProfile отображались данные моего профиля. Костыль есть, но необходимо исправить
     const dispatch = useDispatch();
-    const getMyProfile = (userId) => {
-        profileApi.getProfileInfo(userId).then((response) => {
-            dispatch(loadUserProfile(response));
-        })
-        profileApi.getStatus(userId).then((response) => {
-            dispatch(setStatus(response))
-        })
-    }
-       
+    const logout = () => {
+        dispatch(userLogOut())
+    }   
     return (
         <div className={" d-flex p-2"}>
             {!props.authorised ? (
@@ -32,7 +24,7 @@ const NavigationBar = (props) => {
                         className={"p-2 rounded text-light"}
                         activeClassName={classes.underline}
                         onClick={() => {
-                            getMyProfile(props.userId);
+                            props.getMyProfile(props.userId);
                         }}>
                         My Profile
                     </NavLink>
@@ -41,6 +33,9 @@ const NavigationBar = (props) => {
                     </NavLink>
                     <NavLink to='/friends' className={"p-2 rounded text-light"} activeClassName={classes.underline}>
                         Friends
+                    </NavLink>
+                    <NavLink to='/login' className={"p-2 rounded text-light"} activeClassName={classes.underline} onClick={() => logout()}>
+                        Logout
                     </NavLink>
                 </>
             )}

@@ -3,7 +3,7 @@ import { getUserProfileInfo, getUserStatus, updateUserStatus } from "../redux/re
 import { connect } from "react-redux";
 import Content from "../components/Content/Content";
 import { withRouter } from "react-router-dom";
-//import { CheckAuth } from "../components/HOC/AuthRedirect";
+import { CheckAuth } from "../components/HOC/AuthRedirect";
 import { compose } from "redux";
 class ContentContainer extends React.Component {
     getProfileInfo = (userId) => {
@@ -35,7 +35,7 @@ export default compose(
         updateUserStatus
     }),
     withRouter,
-    //CheckAuth
+    CheckAuth
 )(ContentContainer);
 
 //TODO: необходимо разделить некоторые компоненты и выделить их в отдельные потоки, чтобы пользователь смог просматривать, напримр, последние новости или пользователей, но не смог на них подписываться.

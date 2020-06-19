@@ -8,10 +8,24 @@ import Friends from "./components/Content/FriendList/Friends";
 import ContentContainer from './containers/ContentContainer'
 import HeaderContainer from './containers/HeaderContainer';
 import LoginPage from './components/Content/LoginPage/LoginPage'
+import {profileApi} from './service/api/axiosQueries'
+import {loadUserProfile, setStatus} from './redux/reducers/profile-reducer'
+import { useDispatch } from "react-redux";
+
 const App = (props) => {
+    const dispatch = useDispatch();
+    const getMyProfile = (userId) => {
+        profileApi.getProfileInfo(userId).then((response) => {
+            dispatch(loadUserProfile(response));
+        })
+        profileApi.getStatus(userId).then((response) => {
+            dispatch(setStatus(response))
+        })
+    }
+    
     return (
         <div className='container'>
-            <HeaderContainer />
+            <HeaderContainer getMyProfile = {getMyProfile}/>
             <div className="row">
                 <SidebarContainer store={props.store}/>
                 <div className="col-md-9 content">

@@ -7,7 +7,7 @@ class HeaderContainer extends React.Component {
     componentDidMount() {
         profileApi.getMyProfile().then((response) => {
             let {id, email, login} = response.data
-            response.resultCode === 0 ? this.props.setUserData(id, email, login) : console.log('Not logined')
+            response.resultCode === 0 ? this.props.setUserData(id, email, login, true) : console.log('Not logined')
         });
     }
     render() {

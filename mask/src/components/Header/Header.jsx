@@ -5,7 +5,7 @@ const Header = (props) => {
     return (
         <div className="row bg-primary mt-2  mb-3 rounded shadow">
             <div className="col">
-                <NavigationBar authorised={props.authorised} login={props.login} userId = {props.userId} setUserData={props.setUserData}/>
+                <NavigationBar authorised={props.authorised} login={props.login} userId = {props.userId} setUserData = {props.setUserData} getMyProfile={props.getMyProfile}/>
             </div>
         </div>
     )

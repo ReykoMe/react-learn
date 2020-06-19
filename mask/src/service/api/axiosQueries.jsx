@@ -29,6 +29,14 @@ const friendsApi = {
 };
 
 const profileApi = {
+    login(data) {
+        let url = "auth/login";
+        return instance.post(url, data).then((response) => response.data);
+    },
+    logout() {
+        let url = "auth/login";
+        return instance.delete(url).then((response) => response.data);
+    },
     getMyProfile() {
         let url = "auth/me";
         return instance.get(url).then((response) => response.data);
