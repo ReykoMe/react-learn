@@ -2,7 +2,8 @@
   "dimmer.enabled": false,
   "files.exclude": {
     ".vscode": true,
-    ".idea": true
+    ".idea": true,
+    "node_modules": true
   },
   "oneDark.italic": false
 }

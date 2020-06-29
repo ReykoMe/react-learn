@@ -32,6 +32,9 @@ const NavigationBar = (props) => {
                     <NavLink to='/friends' className={"p-2 rounded text-light"} activeClassName={classes.underline}>
                         Friends
                     </NavLink>
+                    <NavLink to='/friends' className={"p-2 rounded text-light"} activeClassName={classes.underline}>
+                        Friends 2
+                    </NavLink>
                     <NavLink
                         to='/login'
                         className={"p-2 rounded text-light"}
