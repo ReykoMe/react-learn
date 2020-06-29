@@ -37,6 +37,8 @@ let FriendList = (props) => {
     }
 
     //if paginationPages.length > 10 show 1,2,3,4,5,6,7,8,9 ... & LAST_ELEM
+    //added test changes
+
     return (
         <div className='row'>
             <div className='col-md-12 mt-3'>
