@@ -12,8 +12,7 @@ import { loadUserProfile, setStatus } from "./redux/reducers/profile-reducer";
 import { profileApi } from "./service/api/axiosQueries";
 
 const App = (props) => {
-    const dispatch = useDispatch();
-
+    const dispatch = useDispatch()
     const getMyProfile = (userId) => {
         profileApi.getProfileInfo(userId).then((response) => {
             dispatch(loadUserProfile(response));
@@ -27,7 +26,7 @@ const App = (props) => {
         <div className='container'>
             <HeaderContainer getMyProfile={getMyProfile} />
             <div className='row'>
-                <SidebarContainer store={props.store} />
+                <SidebarContainer/>
                 <div className='col-md-9 content'>
                     {/*Добавляем Route (необходимо установить из npm react-router-dom), с помощью которого реализуется логика "Если в строке браузера отображается /путь условный => отображать компоненту*/}
                     <Route path='/profile/:userId?' render={() => <ContentContainer />} />

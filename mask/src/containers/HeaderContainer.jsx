@@ -12,8 +12,8 @@ class HeaderContainer extends React.Component {
     }
     render() {
         return <Header {...this.props} />;
-    }
-}
+    } 
+}Л
 const mapStateToProps = (state) => ({
     authorised: state.auth.authorised,
     login: state.auth.login,
