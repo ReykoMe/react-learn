@@ -61,13 +61,13 @@ export const loadUsers = (users) => ({ type: "LOAD_USERS", users: users });
 export const updateSearchInputAC = (text) => ({ type: "UPDATE_SEARCH_INPUT_TEXT", text });
 
 export const getUsers = (page, count) => {
-    return (dispatch) => {
+    return async (dispatch) => {
         dispatch(toggleGettingData(true));
-        friendsApi.getAllUsers(page, count).then((response) => {
+        let response = await friendsApi.getAllUsers(page, count)
             dispatch(toggleGettingData(false));
             dispatch(loadUsers(response.items));
             dispatch(setTotalUsersCount(response.totalCount));
-        });
+     
     };
 };
 

@@ -19,11 +19,10 @@ const sidebarReducer = (state = initState, action) => {
 };
 
 export const setLastRegisteredUsers = (lastUsers) => ({ type: "SET_LAST_REGISTERED_USERS", lastUsers });
-export const getLastRegisteredUsers = (page, count) => (dispatch) => {
-      friendsApi.getAllUsers(page, count).then((response) => {
-        console.log(response)
-        dispatch(setLastRegisteredUsers(response.items))
-      });
+export const getLastRegisteredUsers = (page, count) => async (dispatch) => {
+    let response = await friendsApi.getAllUsers(page, count)
+    dispatch(setLastRegisteredUsers(response.items))
+  
   };
 
 export default sidebarReducer;

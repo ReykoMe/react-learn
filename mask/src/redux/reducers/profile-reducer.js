@@ -50,23 +50,20 @@ export const addPostAC = () => ({ type: "ADD-POST" });
 export const updateTextAC = (text) => ({ type: "UPDATE-TEXT", newText: text });
 export const setStatus = (status) => ({ type: "SET_STATUS", status });
 
-export const getUserProfileInfo = (userId) => (dispatch) => {
-    profileApi.getProfileInfo(userId).then((response) => {
-        dispatch(loadUserProfile(response));
-    });
+export const getUserProfileInfo = (userId) => async (dispatch) => {
+    let response = await profileApi.getProfileInfo(userId);
+    dispatch(loadUserProfile(response));
 };
 
-export const getUserStatus = (userId) => (dispatch) => {
-  profileApi.getStatus(userId).then((response) => {
-    !response ? dispatch(setStatus('Нет статуса')):dispatch(setStatus(response))
-    })}    
+export const getUserStatus = (userId) => async (dispatch) => {
+    let response = await profileApi.getStatus(userId);
+    !response ? dispatch(setStatus("Нет статуса")) : dispatch(setStatus(response));
+};
 
-export const updateUserStatus = (status) => (dispatch) => {
-  profileApi.updateStatus(status).then((response) => {
+export const updateUserStatus = (status) => async (dispatch) => {
+    let response = await profileApi.updateStatus(status);
     if (response.data.resultCode === 0) {
-      dispatch(setStatus(status));
+        dispatch(setStatus(status));
     }
-    
-});
-}
+};
 export default profileReducer;
