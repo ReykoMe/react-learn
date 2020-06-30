@@ -4,7 +4,6 @@ import Preloader from "../../../service/Preloader";
 import ProfileStatus from "./ProfileStatus"
 
 const Profile = (props) => {
-    
     const loadAva =(e) => {
         if (e.target.files.length) {
             props.loadAvatarImage(e.target.files[0])

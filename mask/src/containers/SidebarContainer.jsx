@@ -7,14 +7,13 @@ const SidebarContainer = () => {
     const sidebar = useSelector((state) => state.sidebar);
     
     const dispatch = useDispatch();
-    
-    const callBack = useCallback(() => { //так как здесь у нас используется санка, нам необходимо не напрямую диспатчить, а возвращать коллбэк
-        dispatch(getLastRegisteredUsers(sidebar.page, sidebar.count))
-    }, [dispatch, sidebar.page, sidebar.count])
+    const getLastUsers = (page, count) => {
+        dispatch(getLastRegisteredUsers(page, count))
+    }
     
     useEffect(() => {
-       callBack()
-    },[callBack])
+       getLastUsers(sidebar.page, sidebar.count)
+    },[sidebar.count])
     return <Sidebar sidebar={sidebar} />;
 };
 

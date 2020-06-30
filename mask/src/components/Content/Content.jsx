@@ -2,17 +2,16 @@ import React from "react";
 import Profile from "./Profile/profile";
 import WallContainer from "../../containers/WallContainer";
 
-const Content = (props) => {
+const Content = ({userProfile, authorised, updateUserStatus, loadAvatarImage}, ...props) => {
     return (
         <div className={"row"}>
             <div className='col'>
                 <Profile
-                    userProfile={props.userProfile}
-                    authorised={props.authorised}
-                    status={props.status}
-                    updateUserStatus={props.updateUserStatus}
-                    loadAvatarImage={props.loadAvatarImage}
-                    
+                    userProfile={userProfile.currentProfile}
+                    authorised={authorised}
+                    status={userProfile.status}
+                    updateUserStatus={updateUserStatus}
+                    loadAvatarImage={loadAvatarImage}
                 />
                 <WallContainer />
             </div>

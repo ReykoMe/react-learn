@@ -1,6 +1,6 @@
 import {friendsApi} from '../../service/api/axiosQueries'
 const initState = {
-    count: 10,
+    count: 5,
     page: 1,
     friends: [
        
