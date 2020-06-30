@@ -54,7 +54,10 @@ export const addPostAC = () => ({ type: "ADD-POST" });
 export const updateTextAC = (text) => ({ type: "UPDATE-TEXT", newText: text });
 export const setStatus = (status) => ({ type: "SET_STATUS", status });
 export const loadAvatarImageOk = (file) => ({type: "LOAD_AVATAR_IMAGE_OK", file})
-
+export const getProfileSummary = (userId) => async (dispatch) => {
+    dispatch(getUserProfileInfo(userId))
+    dispatch(getUserStatus(userId))
+}
 export const getUserProfileInfo = (userId) => async (dispatch) => {
     let response = await profileApi.getProfileInfo(userId);
     dispatch(loadUserProfile(response));
