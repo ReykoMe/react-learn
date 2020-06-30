@@ -1,5 +1,5 @@
 import React from "react";
-import { getUserProfileInfo, getUserStatus, updateUserStatus } from "../redux/reducers/profile-reducer";
+import { getUserProfileInfo, getUserStatus, updateUserStatus, loadAvatarImage } from "../redux/reducers/profile-reducer";
 import { connect } from "react-redux";
 import Content from "../components/Content/Content";
 import { withRouter } from "react-router-dom";
@@ -17,8 +17,14 @@ class ContentContainer extends React.Component {
         }
         this.getProfileInfo(userId);
     }
+    //Обновляем компонент при изменении userID, которое приходит в пропсах
+    componentDidUpdate (prevProps) {
+       if (this.props.match.params.userId != prevProps.match.params.userId) {
+           this.getProfileInfo(8509)
+       }
+    }
     render() {
-        return <Content {...this.props} />;
+        return <Content {...this.props} updateProfile = {this.getProfileInfo}/>;
     }
 }
 
@@ -32,10 +38,12 @@ export default compose(
     connect(mapStateToProps, {
         getUserProfileInfo,
         getUserStatus,
-        updateUserStatus
+        updateUserStatus,
+        loadAvatarImage
     }),
     withRouter,
     CheckAuth
+    
 )(ContentContainer);
 
 //TODO: необходимо разделить некоторые компоненты и выделить их в отдельные потоки, чтобы пользователь смог просматривать, напримр, последние новости или пользователей, но не смог на них подписываться.

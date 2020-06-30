@@ -1,10 +1,15 @@
-import React from "react";
+import React, {useEffect} from "react";
 import avatarImg from "../../../media/avatar_template.png";
 import Preloader from "../../../service/Preloader";
 import ProfileStatus from "./ProfileStatus"
 
 const Profile = (props) => {
-
+    const loadAvatarImage =(e) => {
+        if (e.target.files) {
+            props.loadAvatarImage(e.target.files[0])
+        }
+    }
+   
     const profile = props.userProfile;
     //Если profile пустой, показывать прелоадер
     if (!profile) {
@@ -18,10 +23,17 @@ const Profile = (props) => {
     return (
         <div className='row mb-3'>
             <div className='col-md-3'>
-                {profile.photos.small ? (
+                {profile.photos.small ? (<>
                     <img src={profile.photos.small} className='w-100 rounded mb-2' alt='Avatar' />
-                ) : (
+                    <input type='file' onChange = {loadAvatarImage}/>
+                    </>
+                ) : (<>
                     <img src={avatarImg} className='w-100 rounded mb-2' alt='Avatar' />
+                  
+                    <input type='file' onChange = {loadAvatarImage}/>
+                        
+                  
+                    </>
                 )}
             </div>
             <div className='col-md-9'>

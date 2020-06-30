@@ -23,9 +23,7 @@ const NavigationBar = (props) => {
                         to='/profile/'
                         className={"p-2 rounded text-light"}
                         activeClassName={classes.underline}
-                        onClick={() => {
-                            props.getMyProfile(props.userId);
-                        }}>
+                        >
                         My Profile
                     </NavLink>
                    

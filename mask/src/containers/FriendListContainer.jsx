@@ -28,7 +28,7 @@ class FriendListContainer extends React.Component {
         if (page === "...") {
             let enterPage = parseInt(prompt("Enter number of page"), 10);
             if (!enterPage) {
-                alert('enter please!!!')
+                alert('Введите номер страницы илил нафиг')
                 return
             }
             this.props.setCurrentPage(enterPage);
@@ -48,7 +48,7 @@ class FriendListContainer extends React.Component {
 
     render() {
         return (
-            <>setCurrentPage(page, count = this.props.countUsers)
+            <>
                 {this.props.gettingData ? (
                     <Preloader />
                 ) : (

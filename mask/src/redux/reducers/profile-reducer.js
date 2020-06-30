@@ -41,6 +41,9 @@ const profileReducer = (state = initState, action) => {
         case "SET_STATUS": {
             return { ...state, status: action.status };
         }
+        case "LOAD_AVATAR_IMAGE_OK": {
+            return { ...state, currentProfile: {...state.currentProfile, photos: action.file} };
+        }
         default:
             return state;
     }
@@ -49,7 +52,7 @@ export const loadUserProfile = (profileId) => ({ type: "LOAD_PROFILE", profileId
 export const addPostAC = () => ({ type: "ADD-POST" });
 export const updateTextAC = (text) => ({ type: "UPDATE-TEXT", newText: text });
 export const setStatus = (status) => ({ type: "SET_STATUS", status });
-
+export const loadAvatarImageOk = (file) => ({type: "LOAD_AVATAR_IMAGE_OK", file})
 export const getUserProfileInfo = (userId) => async (dispatch) => {
     let response = await profileApi.getProfileInfo(userId);
     dispatch(loadUserProfile(response));
@@ -66,4 +69,14 @@ export const updateUserStatus = (status) => async (dispatch) => {
         dispatch(setStatus(status));
     }
 };
+
+export const loadAvatarImage = (file) => async (dispatch) => {
+    let response = await profileApi.loadAvatarImage(file)
+    if (response.resultCode === 0) {
+        dispatch(loadAvatarImageOk(response.data.photos))
+    }
+    
+    
+}
+
 export default profileReducer;
