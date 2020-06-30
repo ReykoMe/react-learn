@@ -5,7 +5,7 @@ import sidebarReducer from "./reducers/sidebar-reducer"
 import FriendsReducer from "./reducers/friends-reducer";
 import authReducer from "./reducers/auth-reducer";
 import ReduxThunk from 'redux-thunk'
-import ReduxLogger from 'redux-logger'
+
 
 let reducers = combineReducers({
   messenger: messengerReducer,

@@ -25,7 +25,6 @@ const messengerReducer = (state = initState, action) => {
       let newState = {
         ...state, newMessageText: action.dialogText
       };
-      console.log(newState.newMessageText);
       return newState;
     }
     case 'SEND-MESSAGE': {

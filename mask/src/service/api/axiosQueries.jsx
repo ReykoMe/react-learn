@@ -34,13 +34,14 @@ const profileApi = {
         return instance.post(url, data).then((response) => response.data);
     },
     logout() {
+        console.log("user Logout");
         let url = "auth/login";
         return instance.delete(url).then((response) => response.data);
     },
     getMyProfile() {
+        console.log("Check authorise");
         let url = "auth/me";
         return instance.get(url).then((response) => {
-            console.log(response.data);
             return response.data;
         });
     },
@@ -51,13 +52,16 @@ const profileApi = {
         return instance.get(url).then((response) => response.data);
     },
     getStatus(userId) {
+        console.log("getStatus query");
         let url = `profile/status/${userId}`;
         return instance.get(url).then((response) => response.data);
     },
     updateStatus(status) {
+        console.log("Update Status query");
         return instance.put("profile/status", { status: status });
     },
     loadAvatarImage(file) {
+        console.log("Load Avatar Image query");
         const formData = new FormData();
         formData.append("image", file);
         return instance.put("profile/photo", formData, {

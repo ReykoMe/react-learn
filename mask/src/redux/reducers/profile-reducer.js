@@ -27,13 +27,11 @@ const profileReducer = (state = initState, action) => {
             newState.wallPosts = [...state.wallPosts];
             newState.wallPosts.push(newPost);
             newState.newText = "";
-            console.log(`Текст: ${state.newText} добавлен в wallPosts`);
             return newState;
         }
         case "UPDATE-TEXT": {
             let newState = { ...state };
             newState.newText = action.newText;
-            console.log(state.newText);
             return newState;
         }
         case "LOAD_PROFILE": {

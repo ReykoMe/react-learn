@@ -2,7 +2,7 @@ import React from "react";
 import Profile from "./Profile/profile";
 import WallContainer from "../../containers/WallContainer";
 
-const Content = ({userProfile, authorised, updateUserStatus, loadAvatarImage}, ...props) => {
+const Content = ({userProfile, authorised, updateUserStatus, loadAvatarImage}) => {
     return (
         <div className={"row"}>
             <div className='col'>
