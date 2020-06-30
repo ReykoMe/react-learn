@@ -8,7 +8,6 @@ let mapStateToProps = (state) => ({
 //Хок - получает компонент и возвращает новый компонент на основе входящих данных. Внутри может быть как класс, так и функция.
 export const CheckAuth = (Component) => {
     class RedirectComponent extends React.Component {
-        
         render() {
             if (!this.props.authorised) return <Redirect to = {"/login"}/>
             // Так как CheckAuth служит всего лишь оболочкой, все входящие данные мы прокидываем в пропсы без разбора

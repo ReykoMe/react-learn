@@ -13,22 +13,5 @@ const WallContainer = () => {
     
     return <Wall wallPosts={wallPosts} inputText={inputText} updateText={updateText} addPost={addPost} />;
 };
-// let mapStateToProps = (state) => {
-//     return {
-//         wallPosts: state.profile.wallPosts,
-//         inputText: state.profile.newText,
-//     };
-// };
-// let mapDispatchToProps = (dispatch) => {
-//     return {
-//         updateText: (text) => {
-//             dispatch(updateTextAC(text));
-//         },
-//         addPost: () => {
-//             dispatch(addPostAC());
-//         },
-//     };
-// };
 
-// const WallContainer = connect(mapStateToProps, mapDispatchToProps)(Wall);
 export default WallContainer;
