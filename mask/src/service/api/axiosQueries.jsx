@@ -5,6 +5,7 @@ const instance = axios.create({
     withCredentials: true,
     headers: {
         "API-KEY": "6300383d-aed7-4a6a-ac63-3c9ab8e95bb3",
+        //"API-KEY": "8c9ba420-6f68-4643-bac4-eb54bfaf669c",
     },
 });
 
@@ -25,7 +26,6 @@ const friendsApi = {
         let url = `follow/${userId}`;
         return instance.delete(url).then((response) => response.data);
     },
-   
 };
 
 const profileApi = {
@@ -39,7 +39,10 @@ const profileApi = {
     },
     getMyProfile() {
         let url = "auth/me";
-        return instance.get(url).then((response) => response.data);
+        return instance.get(url).then((response) => {
+            console.log(response.data);
+            return response.data;
+        });
     },
 
     getProfileInfo(userId) {
@@ -48,22 +51,21 @@ const profileApi = {
         return instance.get(url).then((response) => response.data);
     },
     getStatus(userId) {
-
         let url = `profile/status/${userId}`;
         return instance.get(url).then((response) => response.data);
     },
-    updateStatus (status) {
-        return instance.put("profile/status", {status: status});
+    updateStatus(status) {
+        return instance.put("profile/status", { status: status });
     },
     loadAvatarImage(file) {
         const formData = new FormData();
-        formData.append('image', file)
-        return instance.put ("profile/photo", formData, {
+        formData.append("image", file);
+        return instance.put("profile/photo", formData, {
             headers: {
-                'Content-Type': 'multipart/form-data'
-            }
+                "Content-Type": "multipart/form-data",
+            },
         });
-    }
+    },
 };
 
 export { profileApi, friendsApi };

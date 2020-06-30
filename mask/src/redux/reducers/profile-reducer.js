@@ -14,6 +14,7 @@ const initState = {
 };
 
 const profileReducer = (state = initState, action) => {
+
     switch (action.type) {
         case "ADD-POST": {
             let newPost = {
@@ -53,6 +54,7 @@ export const addPostAC = () => ({ type: "ADD-POST" });
 export const updateTextAC = (text) => ({ type: "UPDATE-TEXT", newText: text });
 export const setStatus = (status) => ({ type: "SET_STATUS", status });
 export const loadAvatarImageOk = (file) => ({type: "LOAD_AVATAR_IMAGE_OK", file})
+
 export const getUserProfileInfo = (userId) => async (dispatch) => {
     let response = await profileApi.getProfileInfo(userId);
     dispatch(loadUserProfile(response));
@@ -72,8 +74,9 @@ export const updateUserStatus = (status) => async (dispatch) => {
 
 export const loadAvatarImage = (file) => async (dispatch) => {
     let response = await profileApi.loadAvatarImage(file)
-    if (response.resultCode === 0) {
-        dispatch(loadAvatarImageOk(response.data.photos))
+
+    if (response.data.resultCode === 0) {
+        dispatch(loadAvatarImageOk(response.data.data.photos))
     }
     
     

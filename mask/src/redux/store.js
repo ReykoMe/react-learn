@@ -15,7 +15,7 @@ let reducers = combineReducers({
   auth: authReducer
 });
 
-let store = createStore(reducers, compose(applyMiddleware(ReduxThunk, ReduxLogger), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()))
+let store = createStore(reducers, compose(applyMiddleware(ReduxThunk), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()))
 
   //, applyMiddleware(ReduxThunk)
 //   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()

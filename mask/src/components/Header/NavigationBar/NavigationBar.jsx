@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { userLogOut } from "../../../redux/reducers/auth-reducer";
 
 const NavigationBar = (props) => {
+
     const dispatch = useDispatch();
     const logout = () => {
         dispatch(userLogOut());
@@ -20,7 +21,7 @@ const NavigationBar = (props) => {
             ) : (
                 <>
                     <NavLink
-                        to='/profile/'
+                        to={'/profile/' + props.userId}
                         className={"p-2 rounded text-light"}
                         activeClassName={classes.underline}
                         >

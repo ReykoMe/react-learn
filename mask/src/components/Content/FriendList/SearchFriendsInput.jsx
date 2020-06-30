@@ -1,8 +1,8 @@
 import React from "react";
-
-let SearchFriendsInput = (props) => {
-    let inputValue = React.createRef()
-    let changeInput = () => props.updateInput(inputValue.current.value);
+//Вместо простых props можно юзать деструктуризацию. Так удобней, так как видно, что нам реально необходимо
+let SearchFriendsInput = ({textInput, updateInput}) => {
+    const inputValue = React.createRef()
+    const changeInput = () => updateInput(inputValue.current.value);
     return (
         <div className="row">
             <div className="col-12 p-0 mb-2 input-group">
@@ -10,7 +10,7 @@ let SearchFriendsInput = (props) => {
                        className="form-control"
                        placeholder="Press the button to load user list =>>>"
                        ref={inputValue}
-                       value={props.textInput}
+                       value={textInput}
                        onChange={changeInput}
                 />
                 <div className="input-group-append">

@@ -1,24 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header/Header";
-import {setUserData} from '../redux/reducers/auth-reducer'
-import {connect} from 'react-redux'
+import { setUserData } from "../redux/reducers/auth-reducer";
 import { profileApi } from "../service/api/axiosQueries";
-class HeaderContainer extends React.Component {
-    componentDidMount() {
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import {Redirect} from "react-router-dom";
+const HeaderContainer = () => {
+    const auth = useSelector((state) => state.auth); //селектор, возвращает необходимый кусок стейта, который потом прокидывается в хэдер
+    const setUser = useDispatch()
+    //при запуске приложения запросить на сервере данные авторизации.
+    
+    useEffect(()=> {
         profileApi.getMyProfile().then((response) => {
-            let {id, email, login} = response.data
-            response.resultCode === 0 ? this.props.setUserData(id, email, login, true) : console.log('Not logined')
-        });
-    }
-    render() {
-        return <Header {...this.props} />;
-    } 
-}
-const mapStateToProps = (state) => ({
-    authorised: state.auth.authorised,
-    login: state.auth.login,
-    userId: state.auth.userId
-})
+                        let {id, email, login} = response.data
+                        response.resultCode === 0 ? setUser(setUserData(id, email, login, true)) : console.log('Not logined')
+                    });
+    }, [setUser]) //необходимо установить данную зависимость, ибо небезопасно ???
+    
+    return <Header {...auth}/>;
+};
 
-
-export default connect (mapStateToProps,{setUserData}) (HeaderContainer);
+export default HeaderContainer;

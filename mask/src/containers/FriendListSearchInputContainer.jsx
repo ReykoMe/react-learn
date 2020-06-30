@@ -1,16 +1,21 @@
+import React from 'react';
 import { updateSearchInputAC } from "../redux/reducers/friends-reducer";
-import SearchFriendsInput from "../components/Content/FriendList/SearchFriendsInput";
-import { connect } from "react-redux";
+import { useSelector, useDispatch } from 'react-redux';
 
-let mapStateToProps = (state) => {
-    return {
-        textInput: state.friends.searchInputText,
-    };
+import SearchFriendsInput from "../components/Content/FriendList/SearchFriendsInput";
+
+
+const SearchFriendsInputContainer = () => {
+    const updateInput = useDispatch()
+    const searchInputSelector = useSelector(state => state.friends.searchInputText)
+    const updateTextInput = (text)=>  updateInput(updateSearchInputAC(text))
+    
+    return <SearchFriendsInput updateInput={updateTextInput} textInput={searchInputSelector}/>
 };
-let mapDispatchToProps = (dispatch) => {
-    return {
-        updateInput: (text) => dispatch(updateSearchInputAC(text)),
-    };
-};
-const SearchFriendsInputContainer = connect(mapStateToProps, mapDispatchToProps)(SearchFriendsInput);
+// let mapDispatchToProps = (dispatch) => {
+//     return {
+//         updateInput: (text) => dispatch(updateSearchInputAC(text)),
+//     };
+// };
+// const SearchFriendsInputContainer = connect(mapStateToProps, mapDispatchToProps)(SearchFriendsInput);
 export default SearchFriendsInputContainer;

@@ -13,6 +13,7 @@ const FriendItem = (props) => {
     );
 };
 const Sidebar = (props) => {
+
     //При каждой итерации возвращать возвращать следующий элемент с данными
     let lastFriends = props.sidebar.friends.map((friend) => (
         <FriendItem firstName={friend.name} userId={friend.id} key={friend.id} />
