@@ -1,21 +1,22 @@
-import React, {useEffect} from "react";
+import React from "react";
 import avatarImg from "../../../media/avatar_template.png";
 import Preloader from "../../../service/Preloader";
 import ProfileStatus from "./ProfileStatus"
 
 const Profile = (props) => {
-    const loadAvatarImage =(e) => {
-        if (e.target.files) {
+    
+    const loadAva =(e) => {
+        if (e.target.files.length) {
             props.loadAvatarImage(e.target.files[0])
         }
     }
-   
+
     const profile = props.userProfile;
     //Если profile пустой, показывать прелоадер
     if (!profile) {
         return <Preloader />;
     }
-    //
+    
     let socialLinks = [];
     for (let link in profile.contacts) {
         profile.contacts[link] && socialLinks.push({ name: link, key: link, link: profile.contacts[link] });
@@ -25,12 +26,12 @@ const Profile = (props) => {
             <div className='col-md-3'>
                 {profile.photos.small ? (<>
                     <img src={profile.photos.small} className='w-100 rounded mb-2' alt='Avatar' />
-                    <input type='file' onChange = {loadAvatarImage}/>
+                    <input type='file' onChange = {loadAva}/>
                     </>
                 ) : (<>
                     <img src={avatarImg} className='w-100 rounded mb-2' alt='Avatar' />
                   
-                    <input type='file' onChange = {loadAvatarImage}/>
+                    <input type='file' onChange = {loadAva}/>
                         
                   
                     </>

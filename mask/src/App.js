@@ -10,16 +10,7 @@ import SidebarContainer from "./containers/SidebarContainer";
 
 
 const App = (props) => {
-    // const dispatch = useDispatch()
-    // const getMyProfile = (userId) => {
-    //     profileApi.getProfileInfo(userId).then((response) => {
-    //         dispatch(loadUserProfile(response));
-    //     });
-    //     profileApi.getStatus(userId).then((response) => {
-    //         dispatch(setStatus(response));
-    //     });
-    // };
-    
+   
     return (
         <div className='container'>
             <HeaderContainer />

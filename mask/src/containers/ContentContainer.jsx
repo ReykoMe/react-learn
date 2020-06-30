@@ -17,14 +17,14 @@ class ContentContainer extends React.Component {
         }
         this.getProfileInfo(userId);
     }
-    //Обновляем компонент при изменении userID, которое приходит в пропсах
-    componentDidUpdate (prevProps) {
-       if (this.props.match.params.userId != prevProps.match.params.userId) {
+    //Обновляем компонент при изменении userID, которое приходит в
+    componentDidUpdate (prevProps, prevState) {
+       if (this.props.match.params.userId != prevProps.match.params.userId || this.state !== prevState) {
            this.getProfileInfo(8509)
        }
     }
     render() {
-        return <Content {...this.props} updateProfile = {this.getProfileInfo}/>;
+        return <Content {...this.props}/>;
     }
 }
 

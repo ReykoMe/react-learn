@@ -3,6 +3,7 @@ import Profile from "./Profile/profile";
 import WallContainer from "../../containers/WallContainer";
 
 const Content = (props) => {
+
     return (
         <div className={"row"}>
             <div className='col'>
@@ -12,7 +13,7 @@ const Content = (props) => {
                     status={props.status}
                     updateUserStatus={props.updateUserStatus}
                     loadAvatarImage={props.loadAvatarImage}
-                    updateProfile = {props.updateProfile}
+                    
                 />
                 <WallContainer />
             </div>
