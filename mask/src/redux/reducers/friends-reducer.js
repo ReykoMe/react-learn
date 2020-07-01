@@ -1,8 +1,9 @@
-import { friendsApi } from "../../service/api/axiosQueries";
+import { friendsApi, profileApi } from "../../service/api/axiosQueries";
 
 const initState = {
     searchInputText: "",
-    count: 10,
+    foundUsers: [],
+    count: 100,
     totalUsers: 0,
     users: [],
     currentPage: 1,
@@ -46,6 +47,8 @@ const FriendsReducer = (state = initState, action) => {
                     ? [...state.following, action.userId]
                     : [state.following.filter((id) => id !== action.userId)],
             };
+        case "SET_ALL_USER_LIST":
+            return { ...state, foundUsers: [...action.usersArray] };
         default:
             return state;
     }
@@ -59,30 +62,42 @@ export const hideUser = (userId) => ({ type: "HIDE_FRIEND_ITEM", userId });
 export const changeSubscribeStatus = (userId) => ({ type: "CHANGE_SUBSCRIBE_STATUS", userId });
 export const loadUsers = (users) => ({ type: "LOAD_USERS", users: users });
 export const updateSearchInputAC = (text) => ({ type: "UPDATE_SEARCH_INPUT_TEXT", text });
+export const setAllUserList = (usersArray) => ({ type: "SET_ALL_USER_LIST", usersArray });
 
+export const getAllUsersList = (maxPage) => async (dispatch) => {
+    let allUserList = []
+    
+    for (let i = 1; i <= maxPage; i++) {
+        let resp = await profileApi.loadAllUsers(i)
+        console.log(resp)
+        allUserList.push(...resp)
+    }
+    console.log(allUserList)
+    dispatch(setAllUserList(allUserList))
+}
 export const getUsers = (page, count) => {
     return async (dispatch) => {
         dispatch(toggleGettingData(true));
         let response = await friendsApi.getAllUsers(page, count)
-            dispatch(toggleGettingData(false));
-            dispatch(loadUsers(response.items));
-            dispatch(setTotalUsersCount(response.totalCount));
-     
+        dispatch(toggleGettingData(false));
+        dispatch(loadUsers(response.items));
+        dispatch(setTotalUsersCount(response.totalCount));
     };
 };
+
 
 export const changeSubscribeStatusTh = (userId, followed) => {
     return (dispatch) => {
         dispatch(toggleFollowing(true, userId));
         followed
             ? friendsApi.userUnsubscribe(userId).then((response) => {
-                  response.resultCode === 0 && dispatch(changeSubscribeStatus(userId));
-                  dispatch(toggleFollowing(false, userId));
-              })
+                response.resultCode === 0 && dispatch(changeSubscribeStatus(userId));
+                dispatch(toggleFollowing(false, userId));
+            })
             : friendsApi.userSubscribe(userId).then((response) => {
-                  response.resultCode === 0 && dispatch(changeSubscribeStatus(userId));
-                  dispatch(toggleFollowing(false,userId));
-              });
+                response.resultCode === 0 && dispatch(changeSubscribeStatus(userId));
+                dispatch(toggleFollowing(false, userId));
+            });
     };
 };
 

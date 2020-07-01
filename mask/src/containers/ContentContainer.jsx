@@ -9,10 +9,11 @@ import Content from "../components/Content/Content";
 import { withRouter } from "react-router-dom";
 import { CheckAuth } from "../components/HOC/AuthRedirect";
 import { compose } from "redux";
-
+import { getAllUsersList } from '../redux/reducers/friends-reducer'
 const ContentContainer = (props) => {
     const auth = useSelector(state => state.auth)
     const userProfile = useSelector(state => state.profile)
+
     const dispatch = useDispatch()
     let uId = props.match.params.userId //через let, так как uId меняется в зависимости от того, пришло оно в пропсах или не
     if (!uId) {
@@ -25,6 +26,8 @@ const ContentContainer = (props) => {
     //обновить аватарку
     const updateAvatar = (photoFile) => dispatch(loadAvatarImage(photoFile))
 //при начальной загрузке uId пустой, поэтому назначаем id нашего пользователя, который сидит в authReducer
+        
+
     useEffect(()=> { //
         dispatch(getProfileSummary(uId))
     }, [dispatch, uId]) //в зависимости отдаем uId (userId), так как при его изменении будет вызываться getUserInfo

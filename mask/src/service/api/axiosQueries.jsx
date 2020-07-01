@@ -60,6 +60,13 @@ const profileApi = {
         console.log("Update Status query");
         return instance.put("profile/status", { status: status });
     },
+    loadAllUsers(page) {
+        let url = `users?count=100&page=${page}`;
+        return instance.get(url).then((response) => {
+            return response.data.items
+            });
+    },
+  
     loadAvatarImage(file) {
         console.log("Load Avatar Image query");
         const formData = new FormData();
