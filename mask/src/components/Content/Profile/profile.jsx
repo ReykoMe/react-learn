@@ -1,5 +1,4 @@
 import React from "react";
-
 import avatarImg from "../../../media/avatar_template.png";
 import Preloader from "../../../service/Preloader";
 import ProfileStatus from "./ProfileStatus";
