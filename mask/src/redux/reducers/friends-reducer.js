@@ -1,4 +1,13 @@
-import { friendsApi, profileApi } from "../../service/api/axiosQueries";
+import { friendsApi } from "../../service/api/axiosQueries";
+
+const TOGGLE_FOLLOWING = "TOGGLE_FOLLOWING"
+const TOGGLE_GETTING_DATA ="TOGGLE_GETTING_DATA"
+const SET_TOTAL_USERS_COUNT="SET_TOTAL_USERS_COUNT"
+const CURRENT_PAGE = "CURRENT_PAGE"
+const HIDE_FRIEND_ITEM = "HIDE_FRIEND_ITEM"
+const CHANGE_SUBSCRIBE_STATUS = "CHANGE_SUBSCRIBE_STATUS"
+const LOAD_USERS = "LOAD_USERS"
+const UPDATE_SEARCH_INPUT_TEXT="UPDATE_SEARCH_INPUT_TEXT"
 
 const initState = {
     searchInputText: "",
@@ -13,13 +22,13 @@ const initState = {
 
 const FriendsReducer = (state = initState, action) => {
     switch (action.type) {
-        case "UPDATE_SEARCH_INPUT_TEXT": {
+        case UPDATE_SEARCH_INPUT_TEXT: {
             return {
                 ...state,
                 searchInputText: action.text,
             };
         }
-        case "CHANGE_SUBSCRIBE_STATUS":
+        case CHANGE_SUBSCRIBE_STATUS:
             return {
                 ...state,
                 users: state.users.map((user) => {
@@ -29,52 +38,41 @@ const FriendsReducer = (state = initState, action) => {
                     return user;
                 }),
             };
-        case "HIDE_FRIEND_ITEM":
+        case HIDE_FRIEND_ITEM:
             //копируем state, создаем в нем свойство users, куда присваиваем все значения, которые подходят под условия
             return { ...state, users: state.users.filter((user) => user.id !== action.userId) };
-        case "LOAD_USERS":
+        case LOAD_USERS:
             return { ...state, users: [...action.users] };
-        case "CURRENT_PAGE":
+        case CURRENT_PAGE:
             return { ...state, currentPage: action.page };
-        case "SET_TOTAL_USERS_COUNT":
+        case SET_TOTAL_USERS_COUNT:
             return { ...state, totalUsers: action.usersCount };
-        case "TOGGLE_GETTING_DATA":
+        case TOGGLE_GETTING_DATA:
             return { ...state, gettingData: action.toggle };
-        case "TOGGLE_FOLLOWING":
+        case TOGGLE_FOLLOWING:
             return {
                 ...state,
                 following: action.toggle
                     ? [...state.following, action.userId]
                     : [state.following.filter((id) => id !== action.userId)],
             };
-        case "SET_ALL_USER_LIST":
-            return { ...state, foundUsers: [...action.usersArray] };
         default:
             return state;
     }
 };
 
-export const toggleFollowing = (toggle, userId) => ({ type: "TOGGLE_FOLLOWING", toggle, userId });
-export const toggleGettingData = (toggle) => ({ type: "TOGGLE_GETTING_DATA", toggle });
-export const setTotalUsersCount = (usersCount) => ({ type: "SET_TOTAL_USERS_COUNT", usersCount });
-export const setCurrentPage = (page) => ({ type: "CURRENT_PAGE", page });
-export const hideUser = (userId) => ({ type: "HIDE_FRIEND_ITEM", userId });
-export const changeSubscribeStatus = (userId) => ({ type: "CHANGE_SUBSCRIBE_STATUS", userId });
-export const loadUsers = (users) => ({ type: "LOAD_USERS", users: users });
-export const updateSearchInputAC = (text) => ({ type: "UPDATE_SEARCH_INPUT_TEXT", text });
-export const setAllUserList = (usersArray) => ({ type: "SET_ALL_USER_LIST", usersArray });
 
-export const getAllUsersList = (maxPage) => async (dispatch) => {
-    let allUserList = []
-    
-    for (let i = 1; i <= maxPage; i++) {
-        let resp = await profileApi.loadAllUsers(i)
-        console.log(resp)
-        allUserList.push(...resp)
-    }
-    console.log(allUserList)
-    dispatch(setAllUserList(allUserList))
-}
+export const toggleFollowing = (toggle, userId) => ({ type: TOGGLE_FOLLOWING, toggle, userId });
+export const toggleGettingData = (toggle) => ({ type: TOGGLE_GETTING_DATA, toggle });
+export const setTotalUsersCount = (usersCount) => ({ type: SET_TOTAL_USERS_COUNT, usersCount });
+export const setCurrentPage = (page) => ({ type: CURRENT_PAGE, page });
+export const hideUser = (userId) => ({ type: HIDE_FRIEND_ITEM, userId });
+export const changeSubscribeStatus = (userId) => ({ type: CHANGE_SUBSCRIBE_STATUS, userId });
+export const loadUsers = (users) => ({ type: LOAD_USERS, users: users });
+export const updateSearchInputAC = (text) => ({ type: UPDATE_SEARCH_INPUT_TEXT, text });
+
+
+
 export const getUsers = (page, count) => {
     return async (dispatch) => {
         dispatch(toggleGettingData(true));
