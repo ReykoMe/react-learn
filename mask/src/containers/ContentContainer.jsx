@@ -9,7 +9,7 @@ import Content from "../components/Content/Content";
 import { withRouter } from "react-router-dom";
 import { CheckAuth } from "../components/HOC/AuthRedirect";
 import { compose } from "redux";
-import { getAllUsersList } from '../redux/reducers/friends-reducer'
+
 const ContentContainer = (props) => {
     const auth = useSelector(state => state.auth)
     const userProfile = useSelector(state => state.profile)

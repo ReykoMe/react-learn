@@ -71,17 +71,6 @@ class FriendListContainer extends React.Component {
     }
 }
 
-// let mapStateToProps = (state) => {
-//   return {
-//     users: state.friends.users,
-//     totalUsers: state.friends.totalUsers,
-//     countUsers: state.friends.count,
-//     currentPage: state.friends.currentPage,
-//     gettingData: state.friends.gettingData,
-//     following: state.friends.following,
-//   };
-// };
-
 let mapStateToProps = (state) => {
     return {
         users: getFriendsSelector(state),
@@ -92,16 +81,6 @@ let mapStateToProps = (state) => {
         following: getFollowing(state),
     };
 };
-// let mapDispatchToProps = (dispatch) => {
-//     return {
-//         changeSubscribeStatus: (userId) => dispatch(changeSubscribeStatusAC(userId)),
-//         hideUser: (userId) => dispatch(hideUserAC(userId)),
-//         loadUsers: (userList) => dispatch(loadUsersAC(userList)),
-//         setCurrentPage: (page) => dispatch(setCurrentPageAC(page)),
-//         setTotalUsersCount: (usersCount) => dispatch(setTotalUsersCountAC(usersCount)),
-//         toggleGettingData: (toggle) => dispatch(toggleGettingDataAC(toggle)),
-//     };
-// };
 
 //Вместо прописывания путей к AC для каждого действия и обертывания их переменной mapDispatchToProps можно сразу запихнуть АС (без аргументов) во вторую часть connect-a. Переименовав AC (убрав соответствующую приставку), также можно легко использовать синтаксис ЕS6 для сокращения записи. Вместо friends: friends достаточно просто использовать friends
 export default compose(
@@ -116,12 +95,3 @@ export default compose(
     }),
     CheckAuth
 )(FriendListContainer);
-// export default connect(mapStateToProps, {
-//     changeSubscribeStatusTh,
-//     hideUser,
-//     loadUsers,
-//     setCurrentPage,
-//     setTotalUsersCount,
-//     toggleFollowing,
-//     getUsers
-// })(FriendListContainer);

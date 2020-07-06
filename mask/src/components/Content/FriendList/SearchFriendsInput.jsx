@@ -1,5 +1,5 @@
 import React, { createRef } from "react";
-import { profileApi } from "../../../service/api/axiosQueries";
+
 
 //Вместо простых props можно юзать деструктуризацию. Так удобней, так как видно, что нам реально необходимо
 let SearchFriendsInput = ({ textInput, updateInput, loadAllUsers }) => {

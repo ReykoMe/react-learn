@@ -4,25 +4,6 @@ import { NavLink } from "react-router-dom";
 let FriendItem = (props) => {
     let changeSubscribeStatus = (userId, followed) => {
         props.changeSubscribeStatusTh(userId, followed)
-        
-        // props.toggleFollowing(true, userId);
-        // switch (followed) {
-        //     case false:
-        //         friendsApi.userSubscribe(userId).then((response) => {
-        //             response.resultCode === 0 && props.changeSubscribeStatus(userId);
-        //             props.toggleFollowing(false);
-        //         });
-        //         break;
-        //     case true: {
-        //         friendsApi.userUnsubscribe(userId).then((response) => {
-        //             response.resultCode === 0 && props.changeSubscribeStatus(userId);
-        //             props.toggleFollowing(false, userId);
-        //         });
-        //         break;
-        //     }
-        //     default:
-        //         break;
-        // }
     };
     let hideUser = (userId) => props.hideUser(userId);
 
