@@ -8,12 +8,12 @@ import {
     getUsers,
 } from "../redux/reducers/friends-reducer";
 
-import { connect } from "react-redux";
+import {connect} from "react-redux";
 import React from "react";
 import FriendList from "../components/Content/FriendList/FriendList";
 import Preloader from "../service/Preloader";
-import { compose } from "redux";
-import { CheckAuth } from "../components/HOC/AuthRedirect";
+import {compose} from "redux";
+import {CheckAuth} from "../components/HOC/AuthRedirect";
 import {
     getFriendsSelector,
     getFriendsCount,
@@ -50,7 +50,7 @@ class FriendListContainer extends React.Component {
         return (
             <>
                 {this.props.gettingData ? (
-                    <Preloader />
+                    <Preloader/>
                 ) : (
                     <FriendList
                         totalUsers={this.props.totalUsers}

@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="many changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/FriendListContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/FriendListContainer.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +66,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -188,6 +190,16 @@
       <workItem from="1592585659497" duration="398000" />
       <workItem from="1592586087603" duration="298000" />
       <workItem from="1592586506097" duration="69000" />
+      <workItem from="1593596240611" duration="905000" />
+      <workItem from="1594012054690" duration="85000" />
+      <workItem from="1594012160114" duration="176000" />
+      <workItem from="1594012376628" duration="189000" />
+      <workItem from="1594012598169" duration="689000" />
+      <workItem from="1594013318102" duration="43000" />
+      <workItem from="1594013382328" duration="233000" />
+      <workItem from="1594013646070" duration="76000" />
+      <workItem from="1594013740606" duration="548000" />
+      <workItem from="1594014322525" duration="128000" />
     </task>
     <task id="LOCAL-00001" summary="Many little changes">
       <created>1588764656945</created>
@@ -387,10 +399,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="309" y="47" key="#Inspections/0.0.1366.738@0.0.1366.738" timestamp="1588769771933" />
-    <state x="421" y="77" key="#JavaScript" timestamp="1591116792163">
+    <state x="421" y="77" key="#JavaScript" timestamp="1593607927963">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="421" y="77" key="#JavaScript/0.0.1366.738@0.0.1366.738" timestamp="1591116792163" />
+    <state x="421" y="77" key="#JavaScript/0.0.1366.738@0.0.1366.738" timestamp="1593607927963" />
     <state x="493" y="89" key="#Menus_and_Toolbars" timestamp="1590259464607">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -403,22 +415,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1591107634224" />
-    <state width="1345" height="174" key="GridCell.Tab.0.bottom" timestamp="1590269579282">
+    <state width="1346" height="174" key="GridCell.Tab.0.bottom" timestamp="1593607948277">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="174" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1590269579282" />
-    <state width="1345" height="174" key="GridCell.Tab.0.center" timestamp="1590269579282">
+    <state width="1346" height="174" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1593607948277" />
+    <state width="1346" height="174" key="GridCell.Tab.0.center" timestamp="1593607948277">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="174" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1590269579282" />
-    <state width="1345" height="174" key="GridCell.Tab.0.left" timestamp="1590269579282">
+    <state width="1346" height="174" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1593607948277" />
+    <state width="1346" height="174" key="GridCell.Tab.0.left" timestamp="1593607948277">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="174" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1590269579282" />
-    <state width="1345" height="174" key="GridCell.Tab.0.right" timestamp="1590269579282">
+    <state width="1346" height="174" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1593607948277" />
+    <state width="1346" height="174" key="GridCell.Tab.0.right" timestamp="1593607948277">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="174" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1590269579282" />
+    <state width="1346" height="174" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1593607948277" />
     <state width="1345" height="218" key="GridCell.Tab.1.bottom" timestamp="1589659942360">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -467,10 +479,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1345" height="218" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1589659942361" />
-    <state x="394" y="0" width="916" height="708" key="SettingsEditor" timestamp="1592586574384">
+    <state x="450" y="0" width="916" height="708" key="SettingsEditor" timestamp="1594014430857">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="394" y="0" width="916" height="708" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1592586574384" />
+    <state x="450" y="0" width="916" height="708" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1594014430857" />
     <state x="489" y="66" key="VCS.ChangeListViewerDialog" timestamp="1589461553865">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -487,6 +499,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="81" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.738@0.0.1366.738" timestamp="1589747804537" />
+    <state x="402" y="159" key="git4idea.merge.GitPullDialog" timestamp="1593596290993">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="402" y="159" key="git4idea.merge.GitPullDialog/0.0.1366.738@0.0.1366.738" timestamp="1593596290993" />
     <state x="339" y="165" key="run.anything.popup" timestamp="1590826215462">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

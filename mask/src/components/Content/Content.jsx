@@ -13,7 +13,7 @@ const Content = ({userProfile, authorised, updateUserStatus, loadAvatarImage}) =
                     updateUserStatus={updateUserStatus}
                     loadAvatarImage={loadAvatarImage}
                 />
-                <WallContainer />
+                <WallContainer/>
             </div>
         </div>
     );
