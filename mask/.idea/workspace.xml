@@ -21,9 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="many changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/FriendListContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/FriendListContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/FriendList/FriendList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/FriendList/FriendList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/auth-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/messenger-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/messenger-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,6 +202,7 @@
       <workItem from="1594013646070" duration="76000" />
       <workItem from="1594013740606" duration="548000" />
       <workItem from="1594014322525" duration="128000" />
+      <workItem from="1594015034843" duration="757000" />
     </task>
     <task id="LOCAL-00001" summary="Many little changes">
       <created>1588764656945</created>
@@ -479,10 +482,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1345" height="218" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1589659942361" />
-    <state x="450" y="0" width="916" height="708" key="SettingsEditor" timestamp="1594014430857">
+    <state x="257" y="30" width="916" height="708" key="SettingsEditor" timestamp="1594015346347">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="450" y="0" width="916" height="708" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1594014430857" />
+    <state x="257" y="30" width="916" height="708" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1594015346347" />
     <state x="489" y="66" key="VCS.ChangeListViewerDialog" timestamp="1589461553865">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

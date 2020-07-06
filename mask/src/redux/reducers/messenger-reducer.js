@@ -1,5 +1,6 @@
 import {likesGen} from "../../state";
-
+const UPDATE_DIALOG_TEXT = 'UPDATE_DIALOG_TEXT'
+const SEND_MESSAGE = 'SEND_MESSAGE'
 const initState = {
   newMessageText: "Bingo",
   messages: [
@@ -21,13 +22,13 @@ const initState = {
 
 const messengerReducer = (state = initState, action) => {
   switch (action.type) {
-    case 'UPDATE-DIALOG-TEXT': {
+    case UPDATE_DIALOG_TEXT: {
       let newState = {
         ...state, newMessageText: action.dialogText
       };
       return newState;
     }
-    case 'SEND-MESSAGE': {
+    case SEND_MESSAGE: {
       let newState = {
         ...state,
         messages: [...state.messages]
@@ -46,6 +47,6 @@ const messengerReducer = (state = initState, action) => {
   }
 }
 
-export const updateInputTextAC = (text) => ({type: 'UPDATE-DIALOG-TEXT', dialogText: text})
-export const sendMessageAC = () => ({type: "SEND-MESSAGE"})
+export const updateInputTextAC = (text) => ({type: 'UPDATE_DIALOG_TEXT', dialogText: text})
+export const sendMessageAC = () => ({type: "SEND_MESSAGE"})
 export default messengerReducer;

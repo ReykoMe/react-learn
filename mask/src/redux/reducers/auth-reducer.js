@@ -1,6 +1,6 @@
 import { profileApi } from "../../service/api/axiosQueries";
 import { getUserProfileInfo } from "./profile-reducer";
-
+const SET_USER_DATA = "SET_USER_DATA"
 const initState = {
     userId: null,
     email: null,
@@ -10,7 +10,7 @@ const initState = {
 
 const authReducer = (state = initState, action) => {
     switch (action.type) {
-        case "SET_USER_DATA":
+        case SET_USER_DATA:
             return {
                 ...state, //делаем поверхностную копию state
                 ...action.payload, //достаем из action.data все данные и запихиваем мх в state. Имена соответствуют API, поэтому они должны сохраниться               
@@ -21,7 +21,7 @@ const authReducer = (state = initState, action) => {
     }
 };
 
-export const setUserData = (userId, email, login, authorised) => ({ type: "SET_USER_DATA", payload: { userId, email, login, authorised } });
+export const setUserData = (userId, email, login, authorised) => ({ type: SET_USER_DATA, payload: { userId, email, login, authorised } });
 
 export const userLogin = (data) => (dispatch) => {
     profileApi.login(data).then((response) => {
