@@ -1,6 +1,6 @@
 import { profileApi } from "../../service/api/axiosQueries";
 import { getUserProfileInfo } from "./profile-reducer";
-const SET_USER_DATA = "SET_USER_DATA"
+import {SET_USER_DATA } from '../actions/actions'
 const initState = {
     userId: null,
     email: null,

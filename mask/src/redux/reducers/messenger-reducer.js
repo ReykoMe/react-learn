@@ -47,6 +47,6 @@ const messengerReducer = (state = initState, action) => {
   }
 }
 
-export const updateInputTextAC = (text) => ({type: 'UPDATE_DIALOG_TEXT', dialogText: text})
-export const sendMessageAC = () => ({type: "SEND_MESSAGE"})
+export const updateInputTextAC = (text) => ({type: UPDATE_DIALOG_TEXT, dialogText: text})
+export const sendMessageAC = () => ({type: SEND_MESSAGE})
 export default messengerReducer;

@@ -1,5 +1,12 @@
 import { likesGen } from "../../state";
 import { profileApi } from "../../service/api/axiosQueries";
+
+const LOAD_PROFILE = 'LOAD_PROFILE';
+const ADD_POST = 'ADD_POST'
+const UPDATE_TEXT = 'UPDATE_TEXT'
+const SET_STATUS = 'SET_STATUS'
+const LOAD_AVATAR_IMAGE_OK = 'LOAD_AVATAR_IMAGE_OK'
+
 const initState = {
     currentProfile: null,
     status: "",
@@ -16,7 +23,7 @@ const initState = {
 const profileReducer = (state = initState, action) => {
 
     switch (action.type) {
-        case "ADD-POST": {
+        case ADD_POST: {
             let newPost = {
                 id: state.wallPosts.length + 1,
                 author: "state.currentProfile.fullName",
@@ -29,29 +36,31 @@ const profileReducer = (state = initState, action) => {
             newState.newText = "";
             return newState;
         }
-        case "UPDATE-TEXT": {
+        case UPDATE_TEXT: {
             let newState = { ...state };
             newState.newText = action.newText;
             return newState;
         }
-        case "LOAD_PROFILE": {
+        case LOAD_PROFILE: {
             return { ...state, currentProfile: action.profileId };
         }
-        case "SET_STATUS": {
+        case SET_STATUS: {
             return { ...state, status: action.status };
         }
-        case "LOAD_AVATAR_IMAGE_OK": {
+        case LOAD_AVATAR_IMAGE_OK: {
             return { ...state, currentProfile: {...state.currentProfile, photos: action.file} };
         }
         default:
             return state;
     }
 };
+
 export const loadUserProfile = (profileId) => ({ type: "LOAD_PROFILE", profileId });
 export const addPostAC = () => ({ type: "ADD-POST" });
 export const updateTextAC = (text) => ({ type: "UPDATE-TEXT", newText: text });
 export const setStatus = (status) => ({ type: "SET_STATUS", status });
 export const loadAvatarImageOk = (file) => ({type: "LOAD_AVATAR_IMAGE_OK", file})
+
 export const getProfileSummary = (userId) => async (dispatch) => {
     dispatch(getUserProfileInfo(userId))
     dispatch(getUserStatus(userId))
