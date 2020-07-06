@@ -1,6 +1,6 @@
 import {createStore, combineReducers, applyMiddleware, compose} from "redux";
 import profileReducer from "./reducers/profile-reducer"
-import messengerReducer from "./reducers/messenger-reducer"
+
 import sidebarReducer from "./reducers/sidebar-reducer"
 import FriendsReducer from "./reducers/friends-reducer";
 import authReducer from "./reducers/auth-reducer";
@@ -8,7 +8,6 @@ import ReduxThunk from 'redux-thunk'
 
 
 let reducers = combineReducers({
-  messenger: messengerReducer,
   profile: profileReducer,
   sidebar: sidebarReducer,
   friends: FriendsReducer,

@@ -1,5 +1,5 @@
 import profileReducer from "./redux/reducers/profile-reducer";
-import messengerReducer from "./redux/reducers/messenger-reducer";
+
 import sidebarReducer from "./redux/reducers/sidebar-reducer";
 
 let Store = {
@@ -51,7 +51,7 @@ let Store = {
   },
   dispatch(action) {
     this._state.profile = profileReducer(this._state.profile, action);
-    this._state.messenger = messengerReducer(this._state.messenger, action)
+
     this._state.sidebar = sidebarReducer(this._state.sidebar, action)
     this._callSubscriber(this._state);
   }

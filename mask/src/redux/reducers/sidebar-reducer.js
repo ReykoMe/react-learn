@@ -1,14 +1,7 @@
 import {friendsApi} from '../../service/api/axiosQueries'
 import { SET_LAST_REGISTERED_USERS } from '../actions/actions'
+import initState from '../initials/sidebar'
 
-
-const initState = {
-    count: 5,
-    page: 1,
-    friends: [
-       
-    ],
-};
 
 const sidebarReducer = (state = initState, action) => {
     switch (action.type) {

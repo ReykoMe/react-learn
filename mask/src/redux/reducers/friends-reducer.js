@@ -1,24 +1,15 @@
 import { friendsApi } from "../../service/api/axiosQueries";
-
-const TOGGLE_FOLLOWING = "TOGGLE_FOLLOWING"
-const TOGGLE_GETTING_DATA ="TOGGLE_GETTING_DATA"
-const SET_TOTAL_USERS_COUNT="SET_TOTAL_USERS_COUNT"
-const CURRENT_PAGE = "CURRENT_PAGE"
-const HIDE_FRIEND_ITEM = "HIDE_FRIEND_ITEM"
-const CHANGE_SUBSCRIBE_STATUS = "CHANGE_SUBSCRIBE_STATUS"
-const LOAD_USERS = "LOAD_USERS"
-const UPDATE_SEARCH_INPUT_TEXT="UPDATE_SEARCH_INPUT_TEXT"
-
-const initState = {
-    searchInputText: "",
-    foundUsers: [],
-    count: 100,
-    totalUsers: 0,
-    users: [],
-    currentPage: 1,
-    gettingData: false,
-    following: [],
-};
+import {
+    CHANGE_SUBSCRIBE_STATUS,
+    CURRENT_PAGE,
+    HIDE_FRIEND_ITEM,
+    LOAD_USERS,
+    SET_TOTAL_USERS_COUNT,
+    TOGGLE_FOLLOWING,
+    TOGGLE_GETTING_DATA,
+    UPDATE_SEARCH_INPUT_TEXT
+} from "../actions/actions";
+import initState from '../initials/friends'
 
 const FriendsReducer = (state = initState, action) => {
     switch (action.type) {

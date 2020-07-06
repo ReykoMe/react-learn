@@ -19,7 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="Rebuilded package.json" />
+    <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="Rebuilded package.json">
+      <change afterPath="$PROJECT_DIR$/src/redux/initials/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/initials/friends.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/initials/profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/initials/sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/actions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/actions.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/auth-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/friends-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/friends-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/messenger-reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/profile-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/sidebar-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/sidebar-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -196,6 +210,7 @@
       <workItem from="1594013740606" duration="548000" />
       <workItem from="1594014322525" duration="128000" />
       <workItem from="1594015034843" duration="1159000" />
+      <workItem from="1594029191142" duration="1663000" />
     </task>
     <task id="LOCAL-00001" summary="Many little changes">
       <created>1588764656945</created>
@@ -411,10 +426,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="493" y="89" key="#Menus_and_Toolbars/0.0.1366.738@0.0.1366.738" timestamp="1590259464607" />
-    <state x="437" y="171" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590437474991">
+    <state x="437" y="171" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594029895543">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="437" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1590437474991" />
+    <state x="437" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1594029895543" />
     <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1591107634224">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

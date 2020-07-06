@@ -1,12 +1,8 @@
 import { profileApi } from "../../service/api/axiosQueries";
 import { getUserProfileInfo } from "./profile-reducer";
 import {SET_USER_DATA } from '../actions/actions'
-const initState = {
-    userId: null,
-    email: null,
-    login: null,
-    authorised: false,
-};
+import initState from '../initials/auth'
+
 
 const authReducer = (state = initState, action) => {
     switch (action.type) {

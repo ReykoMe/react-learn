@@ -1,24 +1,8 @@
 import { likesGen } from "../../state";
 import { profileApi } from "../../service/api/axiosQueries";
+import {ADD_POST, LOAD_AVATAR_IMAGE_OK, LOAD_PROFILE, SET_STATUS, UPDATE_TEXT} from "../actions/actions";
+import initState from '../initials/profile'
 
-const LOAD_PROFILE = 'LOAD_PROFILE';
-const ADD_POST = 'ADD_POST'
-const UPDATE_TEXT = 'UPDATE_TEXT'
-const SET_STATUS = 'SET_STATUS'
-const LOAD_AVATAR_IMAGE_OK = 'LOAD_AVATAR_IMAGE_OK'
-
-const initState = {
-    currentProfile: null,
-    status: "",
-    newText: "",
-    wallPosts: [
-        { id: 1, author: "Василий Чичкалкин", message: "Не-а", likes: 5 },
-        { id: 2, author: "Вероника Бусилкина", message: "Все понятно", likes: 11 },
-        { id: 3, author: "Аркадий Запоротый", message: "Проверочный пост номер какой-то", likes: 32 },
-        { id: 4, author: "Зинаида Зидановна", message: "Привет, давай попробуем в React", likes: 0 },
-        { id: 5, author: "Дмитрий леваков", message: "Однако дратути", likes: 21 },
-    ],
-};
 
 const profileReducer = (state = initState, action) => {
 
