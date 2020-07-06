@@ -20,19 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4eb6050a-dde7-484f-93df-aa69125daa2b" name="Default Changelist" comment="Rebuilded package.json">
-      <change afterPath="$PROJECT_DIR$/src/redux/initials/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/initials/friends.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/initials/profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/initials/sidebar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/actions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/actions.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/auth-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/friends-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/friends-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/messenger-reducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/profile-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/sidebar-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/sidebar-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +63,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -211,6 +199,7 @@
       <workItem from="1594014322525" duration="128000" />
       <workItem from="1594015034843" duration="1159000" />
       <workItem from="1594029191142" duration="1663000" />
+      <workItem from="1594033858535" duration="196000" />
     </task>
     <task id="LOCAL-00001" summary="Many little changes">
       <created>1588764656945</created>
@@ -498,10 +487,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1345" height="218" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1589659942361" />
-    <state x="257" y="30" width="916" height="708" key="SettingsEditor" timestamp="1594015346347">
+    <state x="257" y="9" width="916" height="729" key="SettingsEditor" timestamp="1594034025913">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="257" y="30" width="916" height="708" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1594015346347" />
+    <state x="257" y="9" width="916" height="729" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1594034025913" />
     <state x="489" y="66" key="VCS.ChangeListViewerDialog" timestamp="1589461553865">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

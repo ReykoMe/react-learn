@@ -7,8 +7,8 @@ let FriendList = (props) => {
     return (
         <div className='row'>
             <Pagination
-                totalUsers={props.totalUsers}
-                countUsers={props.countUsers}
+                totalUsers={ props.totalUsers }
+                countUsers={ props.countUsers }
                 currentPage={props.currentPage}
                 setCurrentPage={props.setCurrentPage}
             />

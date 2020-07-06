@@ -11,7 +11,7 @@ import {
 } from "../actions/actions";
 import initState from '../initials/friends'
 
-const FriendsReducer = (state = initState, action) => {
+const FriendsReducer = ( state = initState, action) => {
     switch (action.type) {
         case UPDATE_SEARCH_INPUT_TEXT: {
             return {
